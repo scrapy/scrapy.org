@@ -1,0 +1,7 @@
+Dependencies:
+
+    * python docutils (python-docutils in debian)
+      Needed for ReST markup
+
+    * Sphinx python package (easy_install Sphinx)
+      Needed for documentation
