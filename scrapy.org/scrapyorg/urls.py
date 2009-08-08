@@ -1,27 +1,16 @@
 from django.conf import settings
-from django.conf.urls.defaults import *
-from django.contrib import admin
+from django.conf.urls.defaults import patterns, url
 
-
-admin.autodiscover()
-
-
-urlpatterns = patterns('',
-    # admin
-    url(r'^admin/(.*)', admin.site.root),
-    url(r"^docs/.*", 'django.views.generic.simple.redirect_to', {'url': '/doc/'}),
+urlpatterns = patterns('django.views.generic.simple',
+    url(r"^docs/.*", 'redirect_to', {'url': '/doc/'}),
+    url(r"^$", 'direct_to_template', {'template': 'pages/home.html'}),
+    url(r"^download/", 'direct_to_template', {'template': 'pages/download.html'}),
+    url(r"^doc/", 'direct_to_template', {'template': 'pages/doc.html'}),
+    url(r"^community/", 'direct_to_template', {'template': 'pages/community.html'}),
 )
-
 
 if settings.DEBUG: # devel
     urlpatterns += patterns('',
-        (r'^%s/(?P<path>.*)$' % settings.MEDIA_URL[1:],
-          'django.views.static.serve',
-          {'document_root': settings.MEDIA_ROOT}),
+        (r'^%s/(?P<path>.*)$' % settings.MEDIA_URL[1:], \
+            'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
     )
-
-# last resort, it's an article
-urlpatterns += patterns('',
-    url(r"", include("scrapyorg.article.urls")),
-)
-

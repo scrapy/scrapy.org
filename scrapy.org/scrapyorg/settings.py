@@ -77,7 +77,6 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.admin',
     'django.contrib.markup',
-    'scrapyorg.article',
 )
 
 # Override previous settings with values in local_settings.py settings file.
