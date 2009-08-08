@@ -8,7 +8,6 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # admin
-    url(r"^admin/download/downloadlink/", include("scrapyorg.download.urls")),
     url(r'^admin/(.*)', admin.site.root),
     url(r"^docs/.*", 'django.views.generic.simple.redirect_to', {'url': '/doc/'}),
     url(r"^news/", include("scrapyorg.blog.urls")),
