@@ -2,7 +2,6 @@ from django.conf import settings
 from django.conf.urls.defaults import patterns, url
 
 urlpatterns = patterns('django.views.generic.simple',
-    url(r"^docs/.*", 'redirect_to', {'url': '/doc/'}),
     url(r"^$", 'direct_to_template', {'template': 'pages/home.html'}),
     url(r"^download/", 'direct_to_template', {'template': 'pages/download.html'}),
     url(r"^doc/", 'direct_to_template', {'template': 'pages/doc.html'}),
