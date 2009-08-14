@@ -3,6 +3,8 @@
 
 <script type="text/javascript">
 
+var blankImg = '/blank.gif';
+
 // IE5.5+ PNG Alpha Fix v1.0
 // (c) 2004-2008 Angus Turnbull http://www.twinhelix.com
 
