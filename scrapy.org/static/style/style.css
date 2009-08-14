@@ -1,7 +1,5 @@
 /* Scrapy.org style sheet *******************************/
 
-img, div, input { behavior: url("iepngfix.htc") }
-
 html, body {
   margin: 0;
   padding: 0;
