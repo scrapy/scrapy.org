@@ -56,16 +56,10 @@ p { line-height: 1.5em; }
 #content-wrapper {
   width: 100%;
   float: left;
-  margin-right: -300px;
 }
 
 #content {
-  margin: 0 320px 0 20px;
-}
-
-#sidebar {
-  width: 300px;
-  float: right;
+  margin: 0 20px 0 20px;
 }
 
 #footer {
