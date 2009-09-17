@@ -1,48 +1,60 @@
 {% extends "base.html" %}
 
+{% block title %}Download{% endblock %}
+
 {% block main-content %}
     <h2>Download</h2>
 
-    <p>
-    Scrapy is available under the <a class="reference" href="http://dev.scrapy.org/browser/LICENSE">BSD license</a>.
-    It runs on Linux, Windows and Mac. It requires Python 2.5 and some other Python libraries (see Requirements below)
-    </p>
+    <p>Here you can find links to download the latest Scrapy release, or get
+    the latest development version. If this is your first time with Scrapy, we
+    recommend you to read the <a
+    href="http://doc.scrapy.org/intro/tutorial.html">Scrapy Tutorial</a>.
 
     <h3>Requirements</h3>
 
     <ul>
-       <li>Python 2.5 (or 2.6)</li>
-       <li>Twisted 8.0 or above</li>
+       <li>Python 2.5 or above</li>
+       <li>Twisted 2.5.0 or above</li>
        <li>libxml2 2.6.28 or above (including Python bidings)</li>
+       <li>pyopenssl - only if you want to crawl secure (HTTPS) pages</li>
     </ul>
 
-    <p>
-    The following libraries are also recommended:
-    </p>
+    <p>Check the <a
+    href="http://doc.scrapy.org/intro/install.html">installation
+    instructions</a> for a guide on how to install them in several platforms
+    (Linux, Windows, Mac OS X, etc).</p>
+
+    <h3>Latest release: 0.7.0-rc1</h3>
 
     <ul>
-       <li>pyopenssl - for crawling secure (HTTPS) pages</li>
+      <li>Source tarball: <a
+      href="/releases/0.7.0-rc1/scrapy-0.7.0-rc1.tar.gz">scrapy-0.7.0-rc1.tar.gz</a></li>
+      <li>Windows installer: <a
+      href="/releases/0.7.0-rc1/scrapy-0.7.0-rc1.win32.exe">scrapy-0.7.0-rc1.win32.exe</a></li>
     </ul>
-    
-    
-    <h3>Latest release</h3>
 
-    <p>We're working hard to get the first stable release out. In the meantime,
-    you can download the latest development code (as a <a
-    href="http://hg.scrapy.org/scrapy/archive/tip.zip">zip file</a> or 
-    <a href="http://hg.scrapy.org/scrapy/archive/tip.tar.gz">tar.gz file</a>)
-    directly from the Mercurial repo, or just checkout/pull the latest
-    revision.</p>
+    <h3>Using easy_install</h3>
 
-    <h3>Development version</h3>
-    
-    <p>You can get the latest (and more stable) release of Scrapy from the
-    mercurial repository at: <a
-    href="http://hg.scrapy.org/scrapy/">http://hg.scrapy.org/scrapy/</a></p>
+    <p>Scrapy is available on <a href="http://pypi.python.org/">PyPI</a>, so
+    you can install it by running:</p>
 
-    <h3>After you get it</h3>
+    <code<pre>easy_install -U scrapy</pre></code>
 
-    <p>Read the <a href="http://doc.scrapy.org/intro/install.html">Installation
-    steps</a> (in the documentation) for further instructions </p>
+    <h3>Development snapshots</h3>
+
+    <ul>
+      <li>Latest development tarball: <a
+      href="http://hg.scrapy.org/scrapy/archive/tip.tar.gz">tip.tar.gz</a></li>
+      <li>Latest development zip file: <a
+      href="http://hg.scrapy.org/scrapy/archive/tip.zip">tip.zip</a></li> </ul>
+
+    <h3>Check out source code</h3>
+
+    <ul>
+    <li>You can clone the official Mercurial repository: <a
+    href="http://hg.scrapy.org/scrapy/">http://hg.scrapy.org/scrapy/</a></li>
+    <li>There is a mirror of the official repository on Bitbucket: <a
+    href="http://bitbucket.org/pmezard/scrapy/">http://bitbucket.org/pmezard/scrapy/</a></li>
+    </ul>
 
 {% endblock %}

@@ -6,6 +6,7 @@ urlpatterns = patterns('django.views.generic.simple',
     url(r"^download/", 'direct_to_template', {'template': 'pages/download.html'}),
     url(r"^doc/", 'direct_to_template', {'template': 'pages/doc.html'}),
     url(r"^community/", 'direct_to_template', {'template': 'pages/community.html'}),
+    url(r"^support/", 'direct_to_template', {'template': 'pages/support.html'}),
 )
 
 if settings.DEBUG: # devel
