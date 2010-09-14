@@ -9,6 +9,7 @@ html, body {
 body { 
   background: url('../images/main-bg.jpg') repeat-x left top;
   font-family: "Lucida Sans", Verdana, Helvetica, "Bitstream Vera Sans", sans-serif;
+  font-size: small;
   color: #333;
   background-color: #fff;
 }
@@ -31,8 +32,6 @@ dt { margin-left: 12px; font-style: italic; }
 dd { margin-left: 30px; }
 
 blockquote { padding: 0px 15px; color:#5b1111; font-size: 125%; margin: 0;}
-
-p { line-height: 1.5em; }
 
 .clear { 
   clear: both; 
@@ -91,10 +90,6 @@ p { line-height: 1.5em; }
 #navigation li.last { border-right: none; }
 #navigation li a { text-decoration: none; border-bottom: 1px solid #ffca9b;  color:#e57919;}
 #navigation li a:hover { color:#c35012; border-bottom: 1px solid #ef994c} 
-
-.breadcrumb a {
-  border-bottom: none;
-}
 
 #footer a:hover {
   color: #ffe114;
