@@ -12,6 +12,20 @@
     then the the <a href="http://doc.scrapy.org/intro/tutorial.html">Scrapy
     Tutorial</a>.
 
+    <h3>Requirements</h3>
+
+    <ul>
+       <li>Python 2.5 or above</li>
+       <li>Twisted 2.5.0 or above</li>
+       <li>libxml2 2.6.28 or above (including Python bidings)</li>
+       <li>pyopenssl - only if you want to crawl secure (HTTPS) pages</li>
+    </ul>
+
+    <p>Check the <a
+    href="http://doc.scrapy.org/intro/install.html">installation
+    instructions</a> for a guide on how to install them in several platforms
+    (Linux, Windows, Mac OS X, etc).</p>
+
     <h3>Latest stable release: Scrapy 0.10.3</h3>
 
     The latest stable release is available from several sources:
@@ -32,40 +46,35 @@
     <p>Release files and checksums are available <a
     href="http://scrapy.org/releases/0.10.3/">here</a>.</p>
 
-    <h3>Requirements</h3>
+    <h3>Latest stable code with bugfixes</h3>
+
+    <p>If you don't want to wait for the next stable release, you can still get
+    the latest stable code (containing all committed bugfixes) from the
+    following sources:</p>
 
     <ul>
-       <li>Python 2.5 or above</li>
-       <li>Twisted 2.5.0 or above</li>
-       <li>libxml2 2.6.28 or above (including Python bidings)</li>
-       <li>pyopenssl - only if you want to crawl secure (HTTPS) pages</li>
-    </ul>
-
-    <p>Check the <a
-    href="http://doc.scrapy.org/intro/install.html">installation
-    instructions</a> for a guide on how to install them in several platforms
-    (Linux, Windows, Mac OS X, etc).</p>
-
-    <h3>Development snapshots (Scrapy 0.11)</h3>
-
-    <ul>
-      <li>Latest development snapshot:
-      <a href="http://hg.scrapy.org/scrapy/archive/tip.tar.gz">Tarball</a> |
-      <a href="http://hg.scrapy.org/scrapy/archive/tip.zip">Zip file</a>
-      </li>
+       <li>A
+        <a href="http://hg.scrapy.org/scrapy-0.10/archive/tip.tar.gz">tarball</a> or
+        <a href="http://hg.scrapy.org/scrapy-0.10/archive/tip.zip">zip file</a>
+        of the latest stable code, directly from the Mercurial repo</li>
+      <li><a href="http://doc.scrapy.org/topics/ubuntu.html">Official Ubuntu
+      APT repos</a></li>
+      <li><a href="http://scrapy.org/releases/trunk/0.10/">Windows installers for latest stable builds</a></li>
     </ul>
 
     <h3>Check out source code</h3>
 
-    <p>You can clone either of the following repos:</p>
-
     <ul>
-    <li>Main Mercurial repository: <a
+    <li>Official Mercurial repository: <a
     href="http://hg.scrapy.org/scrapy/">http://hg.scrapy.org/scrapy/</a></li>
     <li>Official Github mirror: <a
     href="http://github.com/insophia/scrapy/">http://github.com/insophia/scrapy/</a></li>
     <li>Official Bitbucket mirror: <a
     href="http://bitbucket.org/insophia/scrapy/">http://bitbucket.org/insophia/scrapy/</a></li>
+    <li>Latest development snapshot:
+     <a href="http://hg.scrapy.org/scrapy/archive/tip.tar.gz">Tarball</a> |
+     <a href="http://hg.scrapy.org/scrapy/archive/tip.zip">Zip file</a>
+    </li>
     </ul>
 
 {% endblock %}
