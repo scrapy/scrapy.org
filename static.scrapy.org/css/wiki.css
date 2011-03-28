@@ -42,3 +42,23 @@
 .wiki-toc ul ul, .wiki-toc ol ol { padding-left: 1.2em }
 .wiki-toc li { margin: 0; padding: 0 }
 .wiki-toc .active { background: #ff9; position: relative; }
+
+/* Styles for the path of hierarchical pages */
+#pagepath {
+ font-size: 10px; /* same as .nav ul in trac.css */
+ float: left;
+}
+#pagepath :link, #pagepath :visited { margin: 0 .2em }
+#pagepath .first:link, #pagepath .first:visited { color: #998 }
+#pagepath .sep { color: #666; padding: 0 .1em }
+#pagepath .pathentry { float: left }
+
+div.trac-modifiedby {
+ margin: .3em .5em;
+ color: #888;
+ font-size: 80%;
+ font-style: italic;
+ text-align: right;
+ float: right;
+}
+div.trac-modifiedby :link, div.trac-modifiedby :visited { color: inherit }
