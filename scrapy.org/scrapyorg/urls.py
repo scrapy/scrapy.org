@@ -10,6 +10,7 @@ urlpatterns = patterns('django.views.generic.simple',
     url(r"^donate/", 'direct_to_template', {'template': 'pages/donate.html'}),
     url(r"^timeline/", 'direct_to_template', {'template': 'pages/timeline.html'}),
     url(r"^companies/", 'direct_to_template', {'template': 'pages/companies.html'}),
+    url(r"^jobs/", 'direct_to_template', {'template': 'pages/jobs.html'}),
 )
 
 if settings.DEBUG: # devel
