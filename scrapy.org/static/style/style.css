@@ -70,7 +70,18 @@ blockquote { padding: 0px 15px; color:#5b1111; font-size: 125%; margin: 0;}
   background: url('../images/footer-bg.jpg') repeat-x left top #5b2a16;
 }
 
-#logo { float: right; }
+#twitter {
+  float: right;
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+}
+
+#logo {
+  float: right;
+  padding-right: 20px;
+}
 
 #logo h1 {
   float: left;

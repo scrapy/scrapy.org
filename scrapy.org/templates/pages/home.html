@@ -2,6 +2,37 @@
 
 {% block main-content %}
 
+    <div id="twitter">
+    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+    <script>
+    new TWTR.Widget({
+      version: 2,
+      type: 'profile',
+      rpp: 4,
+      interval: 30000,
+      width: 250,
+      height: 300,
+      theme: {
+        shell: {
+          background: '#333333',
+          color: '#ffffff'
+        },
+        tweets: {
+          background: '#000000',
+          color: '#ffffff',
+          links: '#ebab07'
+        }
+      },
+      features: {
+        scrollbar: false,
+        loop: false,
+        live: false,
+        behavior: 'all'
+      }
+    }).render().setUser('ScrapyProject').start();
+    </script>
+    </div>
+
     <h2>Welcome to Scrapy</h2>
 
     <blockquote><p>Scrapy is a fast high-level screen scraping and web crawling
@@ -9,20 +40,6 @@
     pages. It can be used for a wide range of purposes, from data mining to
     monitoring and automated testing.</p></blockquote>
     
-    <h3>News</h3>
-
-    <p>
-    2011-09-16 Scrapy (source code, wiki &amp; issues) has <a href="https://github.com/scrapy/scrapy">moved to Github!</a><br />
-    2011-01-02 Scrapy 0.12 released!<br />
-    2010-09-29 Scrapy 0.10.3 released!<br />
-    2010-09-15 Scrapy 0.10.1 and 0.10.2 released!<br />
-    2010-09-10 Scrapy 0.10 released!<br />
-    2010-09-10 <a href="http://blog.scrapy.org/">Scrapy Blog</a> launched!<br />
-    2010-08-24 <a href="http://snippets.scrapy.org/">Scrapy Snippets</a> site launched!<br />
-    2010-06-28 Scrapy 0.9 released!
-    </p>
-    <p><a href="/timeline/">See older news</a></p>
-
     <h3>Features</h3>
 
     <dl>
