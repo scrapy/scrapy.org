@@ -118,11 +118,3 @@ blockquote { padding: 0px 15px; color:#5b1111; font-size: 125%; margin: 0;}
   color: #fff;
 }
 
-#badge {
-  float: right;
-}
-
-#badge a {
-  border-bottom: none;
-}
-
