@@ -1,0 +1,20 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    configure)
+        update-python-modules -p # update code before restarting apache
+        a2enmod wsgi >/dev/null # enable wsgi module
+        invoke-rc.d apache2 reload
+    ;;
+
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0

@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import os
+import sys
+
+try:
+    import scrapyorg
+except ImportError:
+    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
+    try:
+        import scrapyorg
+    except ImportError:
+        sys.stderr.write("Error: Can't find the project package 'scrapyorg'.\n")
+        sys.exit(1)
+
+from scrapyorg import settings
+from django.core.management import setup_environ
+from django.core.management import execute_from_command_line
+
+setup_environ(settings, 'scrapyorg.settings')
+execute_from_command_line()

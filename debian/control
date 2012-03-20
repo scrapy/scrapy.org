@@ -1,0 +1,16 @@
+Source: scrapyorg
+Section: misc
+Priority: extra
+Maintainer: Insophia Team <info@insophia.com>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.8.3
+Homepage: http://scrapy.org/
+
+Package: scrapyorg
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends},
+ python-django (>= 1.2),
+ apache2,
+ libapache2-mod-wsgi
+Description: Scrapinghub website
+ This package contains the main www.scrapinghub.com website

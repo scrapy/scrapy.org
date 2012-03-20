@@ -1,0 +1,5 @@
+debian/django.wsgi        /usr/share/scrapyorg
+templates                 /usr/share/scrapyorg
+static                    /usr/share/scrapyorg
+debian/scrapyorg.conf     /etc/apache2/sites-enabled
+debian/local_settings.py  /etc/scrapyorg
