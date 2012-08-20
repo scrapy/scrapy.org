@@ -9,8 +9,8 @@ html, body {
 body { 
   background: url('../images/main-bg.jpg') repeat-x left top;
   font-family: "Lucida Sans", Verdana, Helvetica, "Bitstream Vera Sans", sans-serif;
-  font-size: small;
   color: #333;
+  font-size: 14px;
   background-color: #fff;
 }
 
@@ -18,9 +18,7 @@ a { color: #6e0909; text-decoration: none; border-bottom: 1px solid #d78888;}
 
 a:hover { color: #f99800; border-bottom: 1px solid #f7b7b7; }
 
-a img {
-  border: none;
-}
+a img { border: none; }
 
 h1, h2 { color:#331f0a; }
 
@@ -33,33 +31,10 @@ dd { margin-left: 30px; }
 
 blockquote { padding: 0px 15px; color:#5b1111; font-size: 125%; margin: 0;}
 
-.clear { 
-  clear: both; 
-  height: 0;
-}
+.clear { clear: both;  height: 0; }
 
-#wrapper {
-  position: relative;
-  min-height: 100%;
-}
-
-#header {
-  padding-top: 42px;
-  margin: 0 20px;
-}
-
-#body {
-  padding-bottom: 35px;
-}
-
-#content-wrapper {
-  width: 100%;
-  float: left;
-}
-
-#content {
-  margin: 0 20px 0 20px;
-}
+#content-wrapper { text-align: center; }
+#content { width: 960px; margin: 0 auto; text-align: left; }
 
 #twitter {
   float: right;
@@ -69,27 +44,18 @@ blockquote { padding: 0px 15px; color:#5b1111; font-size: 125%; margin: 0;}
   padding-bottom: 40px;
 }
 
-#logo {
-  float: right;
-  padding-right: 20px;
-}
+#logo { text-align: center; margin: 10px 0 0 0; padding: 0;}
+#logo a { border: none; margin: 0; padding: 0;}
 
-#logo h1 {
-  float: left;
-  margin: 0;
-}
+#header { text-align: center; }
 
-#logo h1 a {
-  border: none;
-}
-
-#navigation {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-#navigation li { float: left; padding: 0 10px; }
-#navigation li.last { border-right: none; }
-#navigation li a { text-decoration: none; border-bottom: 1px solid #ffca9b;  color:#e57919;}
+#navigation { font-size: small; margin: 0; padding: 0 }
+#navigation li { display: inline; padding: 0 10px; list-style-type: none; }
+#navigation li a { text-decoration: none; border: none; color:#e57919;}
 #navigation li a:hover { color:#c35012; border-bottom: 1px solid #ef994c} 
+
+.logolist th { text-align: right; height: 100px; border-right: 1px solid #ccc; padding-right: 20px; margin-right: 20px; }
+.logolist th a { border: none; }
+.logolist td { padding-left: 20px; }
+
+.note { font-size: x-small; }

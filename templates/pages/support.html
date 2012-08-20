@@ -4,16 +4,28 @@
 
 {% block main-content %}
 
-    <h2>Commercial support</h2>
+<h2>Commercial support</h2>
 
-    <p>The following companies offer support contracts and consultancy services
-    for Scrapy, and can also develop bespoke crawlers to meet your needs:</p>
+<p>The following companies offer support contracts and consultancy services
+for Scrapy, and can also develop bespoke crawlers to meet your needs:</p>
 
-    <ul>
-      <li><a href="http://www.scrapinghub.com">Scrapinghub</a></li>
-      <li><a href="http://insophia.com">Insophia</a></li>
-      <li><a href="http://www.tryolabs.com">Tryolabs</a></li>
-      <li><a href="http://thalasar.com/custom-application-development/scrapy-custom-development-and-support">Thalasar Ventures</a></li>
-    </ul>
+<table class="logolist">
+<tr>
+    <th><a href="http://scrapinghub.com"><img src="{{ MEDIA_URL }}/images/logos/scrapinghub.png"></a></th>
+    <td><a href="http://www.scrapinghub.com/">Scrapinghub</a> is the largest company sponsoring Scrapy development. It specializes in web crawling, it was <a href="http://www.scrapinghub.com/about.html">founded by Scrapy creators</a> and employs crawling experts including many Scrapy core developers.</td>
+</tr>
+
+<tr>
+    <th><a href="http://arbisoft.com/services.html"><img src="{{ MEDIA_URL }}/images/logos/arbisoft.png"></a></th>
+    <td>Arbisoft is using Scrapy for a number of aggregation projects for our clients and partners.  They have more than 20 trained Scrapy/Python engineers and usually recommend it as the first choice when their partners ask for scraping services.</td>
+</tr>
+
+<tr>
+    <th><a href="http://thalasar.com/custom-application-development/scrapy-custom-development-and-support"><img src="{{ MEDIA_URL }}/images/logos/thalasar.png"></a></th>
+    <td>Thalasar Ventures offers Scrapy support and development</td>
+</tr>
+</table>
+
+<p class="note">Does your company offer Scrapy development/consultancy/support?. Email <a href="mailto:info@scrapinghub.com">info@scrapinghub.com</a> and request to be added.</p>
 
 {% endblock %}
