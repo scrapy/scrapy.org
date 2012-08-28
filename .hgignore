@@ -1,2 +1,4 @@
 syntax: glob
 *.pyc
+local_settings.py
+scrapyorg.db
