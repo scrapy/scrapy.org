@@ -36,6 +36,7 @@ blockquote { padding: 0px 15px; color:#5b1111; font-size: 125%; margin: 0;}
 #logo a { border: none; margin: 0; padding: 0;}
 
 #header { text-align: center; }
+#footer { text-align: center; }
 
 #navigation { font-size: small; margin: 0; padding: 0 }
 #navigation li { display: inline; padding: 0 10px; list-style-type: none; }
