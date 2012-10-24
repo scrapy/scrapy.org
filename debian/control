@@ -13,5 +13,5 @@ Depends: ${misc:Depends}, ${python:Depends},
  python-django (< 1.4),
  apache2,
  libapache2-mod-wsgi
-Description: Scrapinghub website
- This package contains the main www.scrapinghub.com website
+Description: scrapy.org website
+ This package contains the scrapy.org website
