@@ -47,4 +47,8 @@ blockquote { padding: 0px 15px; color:#5b1111; font-size: 125%; margin: 0;}
 .logolist th a { border: none; }
 .logolist td { padding-left: 20px; }
 
+.companieslist th { text-align: right; height: 50px; width: 200px; border-right: 1px solid #ccc; padding-right: 20px; margin-right: 20px; }
+.companieslist th a { border: none; }
+.companieslist td { padding-left: 20px; }
+
 .note { font-size: x-small; }
