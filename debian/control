@@ -1,7 +1,7 @@
 Source: scrapyorg
 Section: misc
 Priority: extra
-Maintainer: Insophia Team <info@insophia.com>
+Maintainer: Scrapinghub Team <info@scrapinghub.com>
 Build-Depends: debhelper (>= 7)
 Standards-Version: 3.8.3
 Homepage: http://scrapy.org/
