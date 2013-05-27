@@ -10,7 +10,7 @@ Package: scrapyorg
 Architecture: all
 Depends: ${misc:Depends}, ${python:Depends},
  python-django (>= 1.2),
- python-django (< 1.4),
+ python-django (< 1.5),
  apache2,
  libapache2-mod-wsgi
 Description: scrapy.org website
