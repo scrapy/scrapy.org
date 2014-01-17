@@ -1,8 +1,8 @@
-{% extends "base.html" %}
-
-{% block title %}Jobs{% endblock %}
-
-{% block main-content %}
+---
+layout: default
+title: Jobs
+permalink: jobs/
+---
 
 <h2>Jobs</h2>
 
@@ -10,27 +10,25 @@
 
 <table class="logolist">
 <tr>
-    <th><a href="http://scrapinghub.com"><img src="{{ MEDIA_URL }}/images/logos/scrapinghub.png"></a></th>
+    <th><a href="http://scrapinghub.com"><img src="/images/logos/scrapinghub.png"></a></th>
     <td><a href="http://www.scrapinghub.com">Scrapinghub</a> is always looking for talented Scrapy developers to joing their team. See the <a href="http://www.scrapinghub.com/careers.html">Careers page</a> to apply.</li>
 </tr>
 
 <tr>
-    <th><a href="http://medialab.sciences-po.fr/"><img src="{{ MEDIA_URL }}/images/logos/medialab.jpg"></a></th>
+    <th><a href="http://medialab.sciences-po.fr/"><img src="/images/logos/medialab.jpg"></a></th>
     <td><a href="http://medialab.sciences-po.fr/">Médialab de Sciences Po</a> (Paris, France) is looking for Scrapy developers to work on a Scrapy-based web mining tool for Social Sciences researchers. See <a href="https://groups.google.com/d/topic/scrapy-users/ApfTGGokSKo/discussion">announcement</a> to apply.</td>
 </tr>
 
 <tr>
-    <th><a href="https://www.odesk.com/o/jobs/browse/?q=scrapy"><img src="{{ MEDIA_URL }}/images/logos/odesk.jpg"></a></th>
+    <th><a href="https://www.odesk.com/o/jobs/browse/?q=scrapy"><img src="/images/logos/odesk.jpg"></a></th>
     <td>Scrapy job postings on oDesk.</td>
 </tr>
 
 <tr>
-    <th><a href="https://www.elance.com/r/jobs/q-scrapy/"><img src="{{ MEDIA_URL }}/images/logos/elance.png"></a></th>
+    <th><a href="https://www.elance.com/r/jobs/q-scrapy/"><img src="/images/logos/elance.png"></a></th>
     <td>Scrapy job postings on Elance.</td>
 </tr>
 
 </table>
 
 <p class="note">If you are looking for Scrapy developers, send an email to <a href="info@scrapinghub.com">info@scrapinghub.com</a> and request to be added.</p>
-
-{% endblock %}
