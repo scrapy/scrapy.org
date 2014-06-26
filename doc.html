@@ -3,26 +3,35 @@ layout: default
 title: Documentation
 permalink: doc/
 ---
+{% assign stable = site.data.scrapy.stable %}
+{% assign oldstable = site.data.scrapy.oldstable %}
+{% assign devel = site.data.scrapy.development %}
+
+
 <h2>Documentation</h2>
 
-<h3>Current stable release (0.22)</h3>
-
+<h3>Latest stable release - Scrapy {{ stable.version }}</h3>
 <ul>
-  <li style="font-size: larger; font-weight: bold;"><a href="http://doc.scrapy.org/">Read Scrapy 0.22 documentation online</a></li>
-  <li><a href="https://readthedocs.org/projects/scrapy/downloads/">Download Scrapy 0.22 documentation in other formats (PDF, epub, etc)</a></li>
+  <li style="font-size: larger; font-weight: bold;"><a href="http://doc.scrapy.org/en/{{ stable.rtd }}">Read stable documentation online</a></li>
+  <li> Documentation can be downloaded in
+    <a href="https://media.readthedocs.org/pdf/scrapy/{{ stable.rtd }}/scrapy.pdf">PDF</a>,
+    <a href="https://media.readthedocs.org/htmlzip/scrapy/{{ stable.rtd }}/scrapy.zip">zipped HTML</a>
+    and <a href="https://media.readthedocs.org/epub/scrapy/{{ stable.rtd }}/scrapy.epub">epub</a>
+    formats
+  </li>
 </ul>
 
-<h3>Development version</h3>
+<h3>Previous stable release - Scrapy {{ oldstable.version }}</h3>
 
 <ul>
-  <li><a href="http://doc.scrapy.org/en/latest/">Read Scrapy documentation online</a></li>
-  <li><a href="https://readthedocs.org/projects/scrapy/downloads/">Download Scrapy documentation in other formats (PDF, epub, etc)</a></li>
+  <li> <a href="http://doc.scrapy.org/en/{{ oldstable.rtd }}">Read old-stable documentation online</a></li>
 </ul>
 
-<h3>Previous releases</h3>
+<h3>Development version - Scrapy {{ devel.version }}</h3>
 
 <ul>
-  <li><a href="http://readthedocs.org/projects/scrapy/">Online documentation for previous releases</a></p>
+  <li><a href="http://doc.scrapy.org/en/{{ devel.rtd }}/">Read development documentation online</a></li>
+  <li>If you are willing to contribute please read <a href="http://doc.scrapy.org/en/{{ devel.rtd }}/contributing.html">contributing guidelines</a></li>
 </ul>
 
 <h3>Wiki, code snippets and other tutorials</h3>
@@ -37,9 +46,14 @@ permalink: doc/
 <p>Having trouble? We'd like to help!</p>
 
 <ul>
-  <li>Check the <a href="http://doc.scrapy.org/en/latest/faq.html">FAQ</a> - it's got answers to common questions.</li>
-  <li>Looking for specific information? Try the <a href="http://doc.scrapy.org/en/latest/genindex.html">Index</a> or the <a href="http://doc.scrapy.org/en/latest/py-modindex.html">Module Index</a>.</li>
-  <li>Search for information in <a href="http://groups.google.com/group/scrapy-users/">the archives of the scrapy-users mailing list</a>, or <a href="http://groups.google.com/group/scrapy-users/">post a question</a>.</li>
+  <li>Check the <a href="http://doc.scrapy.org/en/{{ stable.rtd }}/faq.html">FAQ</a> - it's got answers to common questions.</li>
+  <li>Looking for specific information? Try the <a href="http://doc.scrapy.org/en/{{ stable.rtd }}/genindex.html">Index</a>
+    or the <a href="http://doc.scrapy.org/en/{{ stable.rtd }}/py-modindex.html">Module Index</a>.
+  </li>
+  <li>Search for information in
+    <a href="http://groups.google.com/group/scrapy-users/">the archives of the scrapy-users mailing list</a>,
+    or <a href="http://groups.google.com/group/scrapy-users/">post a question</a>.
+  </li>
   <li>Ask a question in the <a href="irc://irc.freenode.net/scrapy">#scrapy  IRC channel</a>.</li>
   <li>Report <a href="https://github.com/scrapy/scrapy/issues">Scrapy bugs in Github</a>.</li>
 </ul>
