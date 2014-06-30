@@ -2,61 +2,94 @@
 layout: default
 title: An open source web scraping framework for Python
 ---
-<h2>Welcome to Scrapy</h2>
+<div class="container">
+  <div class="row text-center">
+    <h2>Welcome to Scrapy</h2>
+  </div>
+</div>
 
-<h3>What is Scrapy?</h3>
 
-<p>Scrapy is a fast high-level screen scraping and web crawling
-framework, used to crawl websites and extract structured data from their
-pages. It can be used for a wide range of purposes, from data mining to
-monitoring and automated testing.</p>
+<div class="container">
+  <div class="row">
+    <h3>What is Scrapy?</h3>
 
-<h3>Features</h3>
+    <p>Scrapy is a fast high-level screen scraping and web crawling
+    framework, used to crawl websites and extract structured data from their
+    pages. It can be used for a wide range of purposes, from data mining to
+    monitoring and automated testing.</p>
+  </div>
+</div>
 
-<dl>
 
-  <dt>Simple<dt>
-  <dd>Scrapy was designed with simplicity in mind, by providing the features
-  you need without getting in your way</dd>
+<div class="container">
+  <div class="row">
+    <h3>Features</h3>
+    <div class="col-xs-6">
+      <dl>
 
-  <dt>Productive</dt>
-  <dd>Just write the rules to extract the data from web pages and let Scrapy
-  crawl the entire web site for you</dd>
+        <dt>Simple<dt>
+        <dd>Scrapy was designed with simplicity in mind, by providing the features
+        you need without getting in your way</dd>
+        <hr>
+        
+        <dt>Productive</dt>
+        <dd>Just write the rules to extract the data from web pages and let Scrapy
+        crawl the entire web site for you</dd>
+        <hr>
+        
+        <dt>Fast</dt>
+        <dd>Scrapy is used in production crawlers to completely scrape more than
+        500 retailer sites daily, all in one server</dd>
+        <hr>
 
-  <dt>Fast</dt>
-  <dd>Scrapy is used in production crawlers to completely scrape more than
-  500 retailer sites daily, all in one server</dd>
+        <dt>Extensible</dt>
+        <dd>Scrapy was designed with extensibility in mind and so it provides
+        several mechanisms to plug new code without having to touch the framework
+        core</dd>
+        <hr>
+        
+        <dt>Portable, open-source, 100% Python</dt>
+        <dd>Scrapy is completely written in Python and runs on Linux, Windows, Mac and BSD</dd>
+        <hr>
+      </dl>
+    </div>
+        
+        
+    <div class="col-xs-6">
+      <dl>
+        <dt>Batteries included</dt>
+        <dd>Scrapy comes with lots of functionality built in. Check <a
+            href="http://doc.scrapy.org/en/latest/intro/overview.html#what-else">this
+            section</a> of the documentation for a list of them.</dd>
+        <hr>
+        
+        <dt>Well-documented &amp; well-tested</dt>
+        <dd>Scrapy is <a href="/doc/">extensively documented</a> and has an comprehensive test suite
+        with <a href="http://static.scrapy.org/coverage-report/">very good code
+            coverage</a></dd>
+        <hr>
+        
+        <dt><a href="/community">Healthy community</a></dt>
+        <dd>
+        5,000 stars, 1,300 forks, 400 watchers on Github (<a href="https://github.com/scrapy/scrapy">link</a>)<br>
+        1,300 followers on Twitter (<a href="https://twitter.com/ScrapyProject">link</a>)<br>
+        1,900 questions on StackOverflow (<a href="http://stackoverflow.com/tags/scrapy/info">link</a>)<br>
+        1,800 members, 150 messages per month on mailing list (<a href="https://groups.google.com/forum/?fromgroups#!aboutgroup/scrapy-users">link</a>)<br>
+        40-50 users always connected to IRC channel (<a href="http://webchat.freenode.net/?channels=scrapy">link</a>)
+        </dd>
+        <hr>
+        
+        <dt><a href="/support">Commercial support</a></dt>
+        <dd>A few companies provide Scrapy consulting and support</dd>
+        <hr>
+      </dl>
+    </div>
+  </div><!-- row -->
+</div><!-- container -->
 
-  <dt>Extensible</dt>
-  <dd>Scrapy was designed with extensibility in mind and so it provides
-  several mechanisms to plug new code without having to touch the framework
-  core</li>
 
-  <dt>Portable, open-source, 100% Python</dt>
-  <dd>Scrapy is completely written in Python and runs on Linux, Windows, Mac and BSD</dd>
-
-  <dt>Batteries included</dt>
-  <dd>Scrapy comes with lots of functionality built in. Check <a
-    href="http://doc.scrapy.org/en/latest/intro/overview.html#what-else">this
-    section</a> of the documentation for a list of them.</dd>
-
-  <dt>Well-documented &amp; well-tested</dt>
-  <dd>Scrapy is <a href="/doc/">extensively documented</a> and has an comprehensive test suite
-  with <a href="http://static.scrapy.org/coverage-report/">very good code
-    coverage</a></dd>
-
-  <dt><a href="/community">Healthy community</a></dt>
-  <dd>
-  5,000 stars, 1,300 forks, 400 watchers on Github (<a href="https://github.com/scrapy/scrapy">link</a>)<br>
-  1,300 followers on Twitter (<a href="https://twitter.com/ScrapyProject">link</a>)<br>
-  1,900 questions on StackOverflow (<a href="http://stackoverflow.com/tags/scrapy/info">link</a>)<br>
-  1,800 members, 150 messages per month on mailing list (<a href="https://groups.google.com/forum/?fromgroups#!aboutgroup/scrapy-users">link</a>)<br>
-  40-50 users always connected to IRC channel (<a href="http://webchat.freenode.net/?channels=scrapy">link</a>)
-  </dd>
-
-  <dt><a href="/support">Commercial support</a></dt>
-  <dd>A few companies provide Scrapy consulting and support</dd>
-
+<div class="container">
+  <div class="row">
   <p>Still not sure if Scrapy is what you're looking for?. Check out <a
     href="http://doc.scrapy.org/en/latest/intro/overview.html">Scrapy at a
     glance</a>.
@@ -73,3 +106,5 @@ monitoring and automated testing.</p>
     href="http://doc.scrapy.org/en/latest/intro/overview.html">Scrapy at a glance</a>,
   then <a href="/download/">download Scrapy</a> and follow the <a
     href="http://doc.scrapy.org/en/latest/intro/tutorial.html">Tutorial</a>.
+  </div><!-- row -->
+</div><!-- container -->
