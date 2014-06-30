@@ -1,0 +1,195 @@
+/* Custom container */
+
+/* Replaced with normal container and standard footer */
+/*.container-narrow {
+  margin: 0 auto;
+  max-width: 700px; }
+
+.container-narrow > hr {
+  margin: 30px 0; }
+*/
+
+/* Replaced with standard BS3 Navbar */
+/*.navbar .nav {
+  float: right; }*/
+
+/* AniversarioPeru design */
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC);
+
+body {
+    background-color: #cbdddf;
+    max-width: 865px;
+    margin: 0px auto;
+    font-family: "Lucida Sans", Verdana, Helvetica, "Bitstream Vera Sans", sans-serif;
+}
+
+.navbar-default {
+    background-color: #f9fafc;
+    background-image: none;
+    background-repeat-x: no-repeat;
+    border-radius: 0px;
+    box-shadow: none;
+    border-color: #f9fafc;
+}
+
+.navbar {
+    min-height: 110px;
+    margin-bottom: 0px;
+}
+
+.nav-tabs.nav-justified>li>a {
+    border-bottom: 0px;
+}
+
+.navbar-brand {
+    padding: 11px;
+}
+
+.navbar-collapse.in {
+    overflow-y: visible;
+}
+
+.container {
+    background-color: #e6f1f3;
+    max-width: 865px;
+    width: auto;
+}
+
+hr {
+    border-top: 1px solid #cadddf;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footer {
+    height: 150px;
+    background-color: #e6f1f3;
+}
+
+#wrap {
+    margin: 0 auto -150px;
+    padding: 0 0 150px;
+}
+
+h2 {
+    font-family: 'Amatic SC', Arial, serif;
+    font-size: 50px;
+    color: #57e193;
+}
+
+h3 {
+    color: #36424b;
+    font-size: 18px;
+}
+
+dt {
+    color: #4384a1;
+    font-style: italic;
+    font-size: 16px;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.companieslist th {
+    text-align: right;
+    height: 50px;
+    width: 200px;
+    border-right: 1px solid #ccc;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+.companieslist td {
+    padding-left: 20px;
+    min-width: 350px;
+}
+
+.note {
+    font-size: x-small;
+}
+
+.logolist th {
+    text-align: right;
+    height: 100px;
+    border-right: 1px solid #ccc;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+.logolist td {
+    padding-left: 20px;
+    min-width: 350px;
+}
+
+
+/* Jekyll Bootstrap Colors */
+h1, h4 {
+  color: #f22430;
+}
+
+
+/* posts index */
+.post > h3.title {
+  position: relative;
+  padding-top: 10px; }
+
+.post > h3.title span.date {
+  position: absolute;
+  right: 0;
+  font-size: 0.9em; }
+
+.post > .more {
+  margin: 10px 0;
+  text-align: left; }
+
+/* post-full*/
+.post-full .date {
+  margin-bottom: 20px;
+  font-weight: bold; }
+
+/* tag_box */
+.tag_box {
+  list-style: none;
+  margin: 0;
+  overflow: hidden; }
+
+.tag_box li {
+  line-height: 28px; }
+
+.tag_box li i {
+  opacity: 0.9; }
+
+.tag_box.inline li {
+  float: left; }
+
+.tag_box a {
+  padding: 3px 6px;
+  margin: 2px;
+  background: #eee;
+  color: #555;
+  border-radius: 3px;
+  text-decoration: none;
+  border: 1px dashed #cccccc; }
+
+.tag_box a span {
+  vertical-align: super;
+  font-size: 0.8em; }
+
+.tag_box a:hover {
+  background-color: #e5e5e5; }
+
+.tag_box a.active {
+  background: #57A957;
+  border: 1px solid #4c964d;
+  color: #FFF; }
