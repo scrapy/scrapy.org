@@ -3,59 +3,116 @@ layout: default
 title: Community
 permalink: community/
 ---
-<h2>Community</h2>
+{% assign stable = site.data.scrapy.stable %}
+{% assign oldstable = site.data.scrapy.oldstable %}
+{% assign devel = site.data.scrapy.development %}
 
-<p>Scrapy has a healthy and active community. Here is a list of the places
-where you can get help and stay notified of latests Scrapy news.</p>
+		<div class="container">
 
-<h3>Getting involved and contributing</h3>
+			<h1>Meet the Scrapy community</h1>
+			<p>Scrapy has a healthy and active community. Check the places where you can get help and find the latests Scrapy news.</p>
 
-<p>If you want to get involved and contribute patches or help documenting, start by reading <a href="http://doc.scrapy.org/en/latest/contributing.html">Contributing to Scrapy</a>.</p>
-<p>All development happens on the <a href="https://github.com/scrapy/scrapy">Scrapy GitHub project</a></p>
+			<div class="community-box">
+				<h2>Getting involved <br />and contributing</h2>
+				<a href="https://github.com/scrapy/scrapy">
+					<i class="fa fa-github"></i>
+				</a>
+				<hr />
+				<p>
+					If you want to get involved and contribute patches or help documenting, start by reading <a href="http://doc.scrapy.org/en/{{ devel.rtd }}/contributing.html">Contributing to Scrapy</a>.
+					All development happens on the <a href="https://github.com/scrapy/scrapy">Scrapy Github project</a>.
+				</p>
+				<a href="https://github.com/scrapy/scrapy">
+					<button>Contribute now</button>
+				</a>
+			</div>
 
-<h3>Mailing list</h3>
+			<div class="community-box">
+				<h2>Mailing list and <br />IRC Channel</h2>
+				<a href="http://groups.google.com/group/scrapy-users">
+					<i class="fa fa-envelope-o"></i>
+				</a>
+				<hr />
+				<p>
+					Feel free to subscribe to our <a href="http://groups.google.com/group/scrapy-users">mailing list:</a>
+				</p>
+				<form action="http://groups.google.com/group/scrapy-users/boxsubscribe">
+					<input type="text" name="email" placeholder="Your e-mail here">
+					<input type="submit" value="Go">
+				</form>
+				<p>
+					You can also join <span class="highlight">#scrapy IRC Channel at Freenode</span> to chat with other Scrapy users& developers,  via <a href="http://webchat.freenode.net/?channels=scrapy">browser</a> or any <a href="http://en.wikipedia.org/wiki/Comparison_of_Internet_Relay_Chat_clients">IRC client</a>.
+				</p>
+			</div>
 
-<p><a href="http://groups.google.com/group/scrapy-users">scrapy-users</a> is
-the mailing list for Scrapy users, Scrapy development and announcements</p>
+			<div class="community-box">
+				<a href="http://stackoverflow.com/questions/tagged/scrapy">
+					<h2><i class="fa fa-stack-overflow"></i> StackOverflow</h2>  
+				</a>
+				<hr />
+				<p>
+					There is a healthy community providing Scrapy help on Stack Overflow, along with the core developers. The <a href="http://stackoverflow.com/questions/tagged/scrapy">scrapy tag</a> has around 2,7k questions. If Stack Overflow is your preference, <a href="http://stackoverflow.com/questions/ask">ask your question there</a>.
+				</p>
+			</div>
 
-<form action="http://groups.google.com/group/scrapy-users/boxsubscribe">
-<p>Subscribe: <input type="text" size="15" name="email"/> <input
-type="submit" value="Go"/></p> </form>
+			<div class="community-box">
+				<a href="https://github.com/scrapy/scrapy/wiki">
+					<h2><i class="fa fa-file-text-o"></i> The Scrapy Wiki</h2>  
+				</a>
+				<hr />
+				<p>
+					<a href="https://github.com/scrapy/scrapy/wiki">The Scrapy wiki</a> contains a compilation of many community resources such as articles, blog posts, video & text tutorials, slides and talks.
+				</p>
+			</div>
 
-<h3>Stack Overflow</h3>
+			<div class="community-box">
+				<a href="http://snipplr.com/all/tags/scrapy/">
+					<h2><i class="fa fa-code"></i> Code snippets</h2>  
+				</a>
+				<hr />
+				<p>
+					Snipplr is very popular for sharing useful Scrapy code snippets. Check out the <a href="http://snipplr.com/all/tags/scrapy/">scrapy tag on Snipplr</a>.
+				</p>
+			</div>
 
-<p>There is a healthy community providing Scrapy help on Stack
-Overflow, along with the core developers. The <a
-    href="http://stackoverflow.com/questions/tagged/scrapy">scrapy tag</a>
-has around 1,800 questions. If Stack Overflow is your preference, <a
-    href="http://stackoverflow.com/questions/ask">ask your question
-    there</a>.</p>
+			<div class="community-box">
+				<a href="http://twitter.com/ScrapyProject">
+					<h2><i class="fa fa-twitter"></i> Scrapy tweets</h2>  
+				</a>
+				<hr />
+				<p>
+					<a href="http://twitter.com/ScrapyProject">Follow Scrapy on Twitter</a> to be notified of project progress, people using it, blog mentions, job offers, and other Scrapy news.
+				</p>
+			</div>
 
-<h3>IRC</h3>
+		</div>
 
-<p> Join the <b>#scrapy</b> IRC channel at <b>Freenode</b> to chat with other Scrapy
-users &amp; developers. 
-You can <a href="http://webchat.freenode.net/?channels=scrapy">join using
-    the web browser</a> or any <a
-    href="http://en.wikipedia.org/wiki/Comparison_of_Internet_Relay_Chat_clients">IRC
-    client</a>.</p>
-<p>Ask specific questions (don't ask to ask, don't ask if anyone is online, etc). If your question is clear &amp; concise enough, it will probably get answered.</p>
-
-<h3>Wiki</h3>
-
-<p>The <a href="https://github.com/scrapy/scrapy/wiki">Scrapy wiki</a>
-contains a compilation of many community resources such as articles, blog
-posts, video &amp; text tutorials, slides and talks</p>
-
-<h3>Twitter</h3>
-
-<p>Follow <a href="http://twitter.com/ScrapyProject">Scrapy on Twitter</a>
-to be notified of project progress, people using it, blog mentions, job
-offers, and other Scrapy news.</p>
-
-<h3>Code snippets</h3>
-
-<p>Snipplr is very popular for sharing useful Scrapy code snippets. Check
-out the <a href="http://snipplr.com/all/tags/scrapy/">scrapy tag on
-Snipplr</a>.</p>
-
+			<div class='fourth-row'>
+				<div class="container">
+					<div class="block-left">
+						<a href="http://doc.scrapy.org/en/{{ stable.rtd }}/faq.html">
+							<h2 class="float"><span class="regular">Having trouble? We'd love to help!</span> <br />
+							Check the FAQ.</h2>
+						</a>
+						<p>For specific information you can check<br />
+								<a href="http://doc.scrapy.org/en/{{ stable.rtd }}/genindex.html">
+									<i class="fa fa-external-link"></i>
+									<span class="big-font">The Index</span>
+								</a>
+								or
+								<a href="http://doc.scrapy.org/en/{{ stable.rtd }}/py-modindex.html">
+									<i class="fa fa-external-link"></i>
+									<span class="big-font">The Module Index</span>
+								</a>
+						</p>
+					</div>
+					<div class="block-right">
+						<a href="../support/">
+							<h2><span class="regular">Commercial support?</span> <br /> Meet the Scrapy pros</h2>
+						 	<img src="../img/scrapy-pros.png" />
+						</a>
+						<p><span class="big-font">Who is using Scrapy?</span> <br />
+							<a href="../companies/">Find companies and products that use Scrapy</a>.</p>
+					</div>
+				</div>
+			</div>

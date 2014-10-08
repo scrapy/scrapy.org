@@ -4,59 +4,87 @@ title: Download
 permalink: download/
 ---
 {% assign stable = site.data.scrapy.stable %}
+{% assign oldstable = site.data.scrapy.oldstable %}
+{% assign devel = site.data.scrapy.development %}
 
-<h2>Download</h2>
+		<div class="container">
 
-<p>Here you can find links to download the latest Scrapy release, or get
-the latest development version. If this is your first time with Scrapy, we
-recommend you to read <a
-  href="http://doc.scrapy.org/en/{{ stable.rtd }}/intro/overview.html">Scrapy at a glance</a> and
-then the the <a href="http://doc.scrapy.org/en/{{ stable.rtd }}/intro/tutorial.html">Scrapy
-  Tutorial</a>.
+			<div class="first-row2">
 
-<h3>Requirements</h3>
+				<div class="block-left">
+					<h1>Get Scrapy</h1>
+					<p>Need help setting it up? Check the <a href="http://doc.scrapy.org/en/{{ stable.rtd }}/intro/install.html">Scrapy installation guide</a> for the <a href="http://doc.scrapy.org/en/{{ stable.rtd }}/intro/install.html#pre-requisites">requirements</a> and info on how to install in several platforms (Linux, Windows, Mac OS X, etc).
+					</p>
+				</div>
 
-<p>The list of requirements can be found in the <a
-  href="http://doc.scrapy.org/en/{{ stable.rtd }}/intro/install.html#pre-requisites">Requirements</a>
-section, in the <a href="http://doc.scrapy.org/en/{{ stable.rtd }}/intro/install.html">Scrapy
-  installation guide</a>. See that guide for more information on how to
-install them in several platforms (Linux, Windows, Mac OS X, etc).</p>
+				<div class="block-right">
+					<div class="big-button">
+						<h2>Download latest version:</h2>
+						<p> <i class="fa fa-download"> </i> Scrapy {{ stable.version }} </p>
+						<a href="http://pypi.python.org/pypi/Scrapy"><button>PyPI</button></a>
+						<a href="http://doc.scrapy.org/en/{{ stable.rtd }}/topics/ubuntu.html"><button>Ubuntu Package</button></a>
+						<a href="https://github.com/scrapy/scrapy/tarball/{{ stable.rtd }}"><button>Tarball</button></a>
+						<a href="https://github.com/scrapy/scrapy/zipball/{{ stable.rtd }}"><button>Zip</button></a>
+					</div>
+					<div class="developer-branch">
+						<i class="fa fa-code-fork"></i>
+						<p>You can also download <br /><span class="highlight">the development branch</span></p>
+						<a href="https://github.com/scrapy/scrapy/tarball/{{ devel.rtd }}"><button>Tarball</button></a>
+						<a href="https://github.com/scrapy/scrapy/zipball/{{ devel.rtd }}"><button>Zip</button></a>
+					</div>
+				</div>
 
-<h3>Scrapy Release notes</h3>
+			</div>
+		</div>
 
-<ul>
-  <li>See <a href="http://doc.scrapy.org/en/{{ stable.rtd }}/news.html">Release Notes</a> section in the documentation.</li>
-</ul>
+		<div class="third-row-down">
+			<div class="container">
+				<div class="block-left">
+					<a href="https://github.com/scrapy/scrapy/archive/{{ oldstable.rtd }}.zip">
+						<h2 class="float">Looking for an old release? <br /> Download Scrapy {{ oldstable.rtd }}</h2>
+						<i class="fa fa-archive fa-3x"></i>
+					</a>
+					<p>Or you can find even older releases and changes here:</p>
+					<ul>
+						<li><a href="https://github.com/scrapy/scrapy/tree/0.20">Scrapy 0.20</a></li>
+						<li><a href="https://github.com/scrapy/scrapy/tree/0.18">Scrapy 0.18</a></li>
+						<li><a href="https://github.com/scrapy/scrapy/tree/0.16">Scrapy 0.16</a></li>
+						<li><a href="https://github.com/scrapy/scrapy/tree/0.14">Scrapy 0.14</a></li>
+						<li><a href="https://github.com/scrapy/scrapy/tree/0.12">Scrapy 0.12</a></li>
+					</ul>
+				</div>
 
-<h3>Download stable release - Scrapy {{ stable.version }}</h3>
+				<div class="block-right">
+					<h2>Want to contribute <br /> to Scrapy?</h2>
+					<p>Don't forget to check the <a href="http://doc.scrapy.org/en/{{ devel.rtd }}/contributing.html">Contributing Guidelines and the <a href="http://doc.scrapy.org/en/{{ devel.rtd }}/">Development Documentation online</a>.
+						<a href="http://doc.scrapy.org/en/{{ devel.rtd }}/"><button>Doc</button></a>
+						<a href="http://doc.scrapy.org/en/{{ devel.rtd }}/contributing.html"><button>Guidelines</button></a>
+				</div>
+			</div>
+		</div>
 
-<p>You can get the latest stable release (including bugfixes) from the
-following sources:</p>
+			<div class='fourth-row'>
+				<div class="container">
+					<div class="block-left">
+						<a href="http://doc.scrapy.org/en/{{ stable.rtd }}/intro/overview.html">
+							<h2 class="float"><span class="regular">First time using Scrapy?</span> <br /> Get Scrapy at a glance</h2>
+						 	<i class="fa fa-file-text-o fa-3x"></i>
+						</a>
+						<p>You can also find very useful info at<br />
+							<a href="http://doc.scrapy.org/en/{{ stable.rtd }}/intro/tutorial.html">
+								<i class="fa fa-external-link"></i>
+								<span class="big-font">The Scrapy Tutorial</span>
+							</a>
+						</p>
+					</div>
+					<div class="block-right">
+						<a href="https://github.com/scrapy/scrapy">
+							<h2><span class="regular">Get the Source Code:</span> <br /> Scrapy on Github</h2>
+						 	<i class="fa fa-github fa-3x"></i>
+						</a>
+						<p><span class="big-font">What's new:</span> <br /> Read the <a href="http://doc.scrapy.org/en/{{ stable.rtd }}/news.html">release notes</a> for latest changes.</p>
+					</div>
+				</div>
+			</div>
 
-<ul>
-  <li><a href="http://pypi.python.org/pypi/Scrapy">Scrapy on PyPI</a>
-  <ul><li>install with: <code>easy_install -U Scrapy</code> or <code>pip install Scrapy</code></li></ul></li>
-  <li><a href="http://doc.scrapy.org/en/{{ stable.rtd}}/topics/ubuntu.html">Scrapy packages for Ubuntu</a> (official APT repo)
-  <ul><li>The official APT repo is updated periodically to include latest
-    bug fixes</li></ul></li>
-  <li>A
-  <a href="https://github.com/scrapy/scrapy/tarball/{{ stable.version }}">tarball</a> or
-  <a href="https://github.com/scrapy/scrapy/zipball/{{ stable.version }}">zip file</a>
-  of the latest stable code, directly from <a href="https://github.com/scrapy/scrapy/tree/{{ stable.version }}">Github repo</a>.</li>
-</ul>
 
-<h3>Download development branch</h3>
-
-<ul>
-  <li>
-  <a href="https://github.com/scrapy/scrapy/tarball/master">Tarball</a> or
-  <a href="https://github.com/scrapy/scrapy/zipball/master">zip file</a>
-  of latest development code</li>
-</ul>
-
-
-<h3>Get the source code</h3>
-
-<ul>
-  <li>Go to <a href="https://github.com/scrapy/scrapy">Scrapy project on Github</a></li>
-</ul>

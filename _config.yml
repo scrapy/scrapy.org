@@ -1,3 +1,20 @@
-name: Scrapy
-markdown: redcarpet
+# Site settings
+title: Scrapy - A Fast and Powerful Scraping and Web Crawling Framework
+url: "http://scrapy.org" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
 highlighter: pygments
+encoding: utf-8
+
+navigation:
+- text: Download
+  url: download/
+- text: Documentation
+  url: doc/
+- text: Community
+  url: community/
+- text: Companies
+  url: companies/
+- text: Commercial Support
+  url: support/

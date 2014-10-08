@@ -3,203 +3,460 @@ layout: default
 title: Companies using Scrapy
 permalink: companies/
 ---
+{% assign stable = site.data.scrapy.stable %}
+{% assign oldstable = site.data.scrapy.oldstable %}
+{% assign devel = site.data.scrapy.development %}
 
-<h2>Companies using Scrapy</h2>
+		<div class="container">
 
-<table class="companieslist">
-    <tr>
-        <th><a href="http://parsely.com/">Parsely</a></th>
-        <td>uses Scrapy to scrape articles from a hundred of news sites. His CTO talks about Scrapy in <a href="https://speakerdeck.com/amontalenti/web-crawling-and-metadata-extraction-in-python">this talk</a></td>
-    </tr>
-    <tr>
-        <th><a href="http://directemployersfoundation.org/">Direct Employers Foundation</a></th>
-        <td>uses Scrapy to scrape job postings from many websites, which are published on the <a href="http://my.jobs/">My.jobs site</a>.</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.weotta.com/">Weotta</a></th>
-        <td>uses Scrapy to crawl data for post-processing (<a href="http://twitter.com/japerk/status/79304855486865408">tweet</a>)</td>
-    </tr>
-    <tr>
-        <th><a href="http://mydeco.com">Mydeco</a></th>
-        <td>uses Scrapy to scrape more than 4000 furniture retailer sites daily</td>
-    </tr>
-    <tr>
-        <th><a href="http://medialab.sciences-po.fr/">Médialab Sciences Po</a></th>
-        <td>in Paris is using Scrapy to develop a web mining tool for Social Sciences researchers (<a href="https://groups.google.com/d/topic/scrapy-users/ApfTGGokSKo/discussion">announcement here</a>)</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.bitehunter.com">BiteHunter</a></th>
-        <td>uses Scrapy to crawl deal sites and restaurant directory sites, to provide real time aggregator and search engine for dining</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.innerballoons.com/">Inner Balloons</a></th>
-        <td>uses Scrapy to scrape data for products including local search content generation, reputation management, web presence management and marketing analytics.</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.flax.co.uk/">Flax</a></th>
-        <td>is a search consulting company based in Cambridge (UK) that uses Scrapy to power the crawling needs of their solutions (<a href="http://www.flax.co.uk/blog/2013/02/22/cambridge-search-meetup-a-night-of-crawling-and-scraping/">blog post</a>).</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.jetrank.com">JetRank</a></th>
-        <td>uses Scrapy to crawl websites for detecting SEO issues</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.lyst.com">Lyst</a></th>
-        <td>uses Scrapy to crawl and scrape the fashion websites they index</td>
-    </tr>
-    <tr>
-        <th><a href="https://scraperwiki.com/">ScraperWiki</a></th>
-        <td>is a data services company based in Liverpool providing bespoke solutions for data scraping and aggregation using Scrapy as a core technology (<a href="http://blog.scraperwiki.com/2013/03/14/tools-of-the-trade/">blog post</a>).</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.data.gov.uk/">World Government Data</a></th>
-        <td>- UK government data aggregation site (<a href="http://twitter.com/bfirsh/status/8025368963">tweet</a>)</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.oposicionesaldia.com/">Oposicionesaldia</a></th>
-        <td>uses Scrapy to collect data from jobs postings, scholarships and online free courses in Spain.</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.iberstudios.com">Iberestudios</a></th>
-        <td>uses Scrapy to collect data from masters degrees, doctorates and postgradute degrees in Spain. </td>
-    </tr>
-    <tr>
-        <th><a href="http://www.usedaywatch.com/">DayWatch</a></th>
-        <td>is an Internet Market Intelligence tool that uses Scrapy to empower real-time business information retrieval from Daily Deal sites.</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.marketmaters.com/">MarketMate RS</a></th>
-        <td>uses Scrapy to scrape job offers from many sites</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.pricewiki.com/">Pricewiki.com</a></th>
-        <td>uses Scrapy to scrape various websites for cost of living information</td>
-    </tr>
-    <tr>
-        <th><a href="http://dealshelve.com/">Dealshelve</a></th>
-        <td>uses Scrapy to scrape daily deals from many sites</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.zinmoo.es/">Zinmoo</a></th>
-        <td>uses Scrapy to scrape thousands of real state properties a per day (<a href="http://blog.sophilabs.com/2011/02/introducing-zinmoo-spain-real-state-searcher/">blog post</a>)</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.careerbuilder.com/">CareerBuilder.com</a></th>
-        <td>uses Scrapy to scrape job offers from many sites</td>
-    </tr>
-    <tr>
-        <th><a href="http://grablab.org/">GrabLab</a></th>
-        <td>is a Russian company which specializes in web scraping, data collection and web automation tasks.</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.simplespot.it">SimpleSpot</a></th>
-        <td>uses Scrapy to build their geolocalized information service</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.monetate.com">Monetate</a></th>
-        <td>uses Scrapy daily to collect catalog information from their clients</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.clanslots.com">ClanSlots</a></th>
-        <td>uses Scrapy daily to collect levels and plugins for games they host</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.alisverisrobotu.com/">Alışveriş Robotu</a></th>
-        <td>is a Turkish price comparison site that uses Scrapy to collect data from hundreds of retailers everyday</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.tothego.com/">ToTheGo</a></th>
-        <td>is an aggregator of ads related to homes, jobs and cars trading. They use Scrapy to scrape everyday announces from the biggest portals and organize them inside their database.</td>
-    </tr>
-    <tr>
-        <th><a href="http://jobmistral.com/">JobMistral</a></th>
-        <td>is an aggregator of jobs classified ads. The use Scrapy to scrape job ads hourly from many sites</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.tuvalabs.com/">TuvaLabs</a></th>
-        <td>uses Scrapy to scrape RSS feeds of major newspapers from all over the world. They scrape the web to find the most interesting articles of significant news stories taking place around the world and transforming them into interactive math learning units.</td></tr>
-    <tr>
-        <th><a href="http://www.alistek.com/">Alistek</a></th>
-        <td>uses Scrapy for updating partner related information in their OpenERP based back-office system, by scraping various data sources, both on the web and off-line.</a></td>
-</tr>
-    <tr>
-        <th><a href="http://www.zhitongba.com">Zhitongba</a></th>
-        <td>is a company trying to help people better commute within big cities in China. They use Scrapy to scrape ride-sharing information from multiple sources.</td></tr>
-    <tr>
-        <th><a href="http://www.offertazo.com/">Offertazo</a></th>
-        <td>uses Scrapy to scrape offers from many Spanish websites.</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.lionseek.com/">LionSeek</a></th>
-        <td>is a search engine that uses Scrapy to find items for sale in forums.</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.stilivo.com/">Stilivo</a></th>
-        <td>is a discovery shopping site that uses Scrapy to collect product information from e-commerce sites.</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.mapado.com/">Mapado</a></th>
-        <td>uses Scrapy to find local activities on the web</td>
-    </tr>
-    <tr>
-        <th><a href="http://oony.com/">Oony</a></th>
-        <td>is a deal aggregator in more than 16 countries. They currently have more than 500 Scrapy spiders running to gather their information.</td>
-    </tr>
-    <tr>
-        <th><a href="http://woppu.my/">Woppu</a></th>
-        <td>is using Scrapy to collect product information from online shopping malls in Malaysia and Singapore.
-    </tr>
-    <tr>
-        <th><a href="http://jobuzu.co.uk/">Jobuzu</a></th>
-        <td>uses Scrapy to scrape over 100,000 jobs daily from UK job boards</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.reviews42.com/">Reviews42</a></th>
-        <td>uses Scrapy to crawl hundreds of ecommerce portals for classifying the products sold online</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.coenterprise.com/solutions/applications/bookradar">BookRadar</a> (from CoEnterprise)</th>
-        <td>uses Scrapy to scrape information form many book retailers</td>
-    </tr>
-    <tr>
-        <th><a href="http://pazar.org/">Pazar</a></th>
-        <td>is a price comparison website that uses Scrapy daily to collect data from many websites</td>
-    </tr>
-    <tr>
-        <th><a href="http://wp-rocket.me/">WP Rocket</a></th>
-        <td>uses Scrapy to preload the cache of all customer sites</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.cavucador.com.br/">Cavucador - Ache seu Imóvel</a></th>
-        <td>uses Scrapy to collect real estate data from many different websites in Brazil. They scrape more than 100,000 real estates daily and generate a search engine and statistics database</td>
-    </tr>
-    <tr>
-        <th><a href="http://competera.net/">Competera</a></th>
-        <td>is a price intelligence service that uses Scrapy to collect price, availability and promo data from over the million product pages every day</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.tarlabs.com/">Tarlabs - Automation & Research</a></th>
-        <td>uses Scrapy for information and text processing and automated testing</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.jobijoba.com/">Jobijoba</a></th>
-        <td>uses Scrapy to scrape job offers daily from many job boards.
-        <a href="http://www.jobijoba.com/">Jobijoba</a> is a job search engine with a semantic twist
-        that understands searches and matches them to the most relevant jobs.
-        They operate in France, several European countries as well as in Russia, Mexico and Australia.</td>
-    </tr>
-    <tr>
-        <th><a href="http://dataquarry.co.uk/">Data Quarry</a></th>
-        <td>Data Quarry designs data scrapers specifically to address the needs of e-commerce users and offers custom scrapy devlopment</td>
-    </tr>    
-    <tr>
-        <th><a href="http://utero.pe/">El Útero de Marita</a></th>
-        <td>Peruvian leading news blog uses Scrapy to download public documents from governmental institutions in Peru for data journalism.</td>
-    </tr>
-    <tr>
-        <th><a href="http://www.shimply.com/">Shimply</a></th>
-        <td>Building world's largest online marketplace connecting sellers and buyers. Parsing over 500 large and small sites daily.(<a href="https://twitter.com/rajatgarg79/status/508132805440581632">tweet</a>)</td>
-    </tr>
-</table>
+			<h1>Companies that are using Scrapy</h1>
+			<p>Check who is using Scrapy to do business and make an impact on the world. <span class="highlight">Should you be on this list?</a></p>
 
-<p class="note">If you use Scrapy, we'd like to include you on the list. Email <a href="mailto:info@scrapinghub.com">info@scrapinghub.com</a> and request to be included, or just fork <a href="https://github.com/scrapy/scrapy.github.io">this GitHub repo</a>, add yourself, and send a pull request.</p>
+			<div class="companies-container">
+
+				<div class="company-box">
+					<a href="http://parsely.com/">
+						<img src="../img/01-parsely-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Parsely:</span>
+					Uses Scrapy to scrape articles from a hundred of news sites. His CTO talks about Scrapy in <a href="https://speakerdeck.com/amontalenti/web-crawling-and-metadata-extraction-in-python">this talk.</a> </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://directemployersfoundation.org/">
+						<img src="../img/02-direct-employers-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">DirectEmployers Foundation:</span>
+					Uses Scrapy to scrape job postings from many websites, which are published on the <a href="http://www.my.jobs/">My.jobs</a> site. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.weotta.com/">
+						<img src="../img/03-weotta-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Weotta:</span>
+					Uses Scrapy to crawl data for post-processing <a href="http://twitter.com/japerk/status/79304855486865408">(tweet)</a>. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.bitehunter.com/">
+						<img src="../img/04-bite-hunter-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">BiteHunter:</span>
+					Uses Scrapy to crawl deal sites and restaurant directory sites, to provide real time aggregator and search engine for dining. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.innerballoons.com/">
+						<img src="../img/05-inner-balloons-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">InnerBalloons:</span>
+					Uses Scrapy to scrape data for products including local search content generation, reputation management, web presence management and marketing analytics. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.flax.co.uk/">
+						<img src="../img/06-flax-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Flax:</span>
+					Is a search consulting company based in Cambridge (UK) that uses Scrapy to power the crawling needs of their solutions <a href="http://www.flax.co.uk/blog/2013/02/22/cambridge-search-meetup-a-night-of-crawling-and-scraping/">(blog post)</a>. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://medialab.sciences-po.fr/">
+						<img src="../img/07-media-sciences-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Médialab Sciences Po:</span>
+					In Paris is using Scrapy to develop a web mining tool for Social Sciences researchers <a href="https://groups.google.com/d/topic/scrapy-users/ApfTGGokSKo/discussion">(announcement here)</a>. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.lyst.com/">
+						<img src="../img/08-lyst-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Lyst:</span>
+					Uses Scrapy to crawl and scrape the fashion websites they index. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="https://scraperwiki.com/">
+						<img src="../img/09-scraper-wiki-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">ScraperWiki:</span>
+					Is a data services company based in Liverpool providing bespoke solutions for data scraping and aggregation using Scrapy as a core technology <a href="http://blog.scraperwiki.com/2013/03/14/tools-of-the-trade/">(blog post)</a>. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.data.gov.uk/">
+						<img src="../img/10-datagovuk-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Data.Gov.Uk:</span>
+					UK government data aggregation site <a href="http://twitter.com/bfirsh/status/8025368963">(tweet)</a>. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.oposicionesaldia.com/">
+						<img src="../img/11-oposiciones-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Oposicionesaldia:</span>
+					Uses Scrapy to collect data from jobs postings, scholarships and online free courses in Spain. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.iberstudios.com/">
+						<img src="../img/12-iberestudios-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Iberestudios:</span>
+					Uses Scrapy to collect data from masters degrees, doctorates and postgradute degrees in Spain. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.usedaywatch.com/">
+						<img src="../img/13-daywatch-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">DayWatch:</span>
+					Is an Internet Market Intelligence tool that uses Scrapy to empower real-time business information retrieval from Daily Deal sites. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.pricewiki.com/">
+						<img src="../img/14-pricewiki-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">PriceWiki:</span>
+					Uses Scrapy to scrape various websites for cost of living information. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://dealshelve.com/">
+						<img src="../img/15-dealshelve-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Dealshelve:</span>
+					Uses Scrapy to scrape daily deals from many sites. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.careerbuilder.com/">
+						<img src="../img/16-careerbuilder-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">CareerBuilder:</span>
+					Uses Scrapy to scrape job offers from many sites. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://grablab.org/">
+						<img src="../img/17-grablab-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">GrabLab:</span>
+					Is a Russian company which specializes in web scraping, data collection and web automation tasks. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.simplespot.it/">
+						<img src="../img/18-simplespot-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">SimpleSpot:</span>
+					Uses Scrapy to build their geolocalized information service. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.monetate.com/">
+						<img src="../img/19-monetate-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Monetate:</span>
+					Uses Scrapy daily to collect catalog information from their clients. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.clanslots.com/">
+						<img src="../img/20-clanslots-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">ClanSlots:</span>
+					Uses Scrapy daily to collect levels and plugins for games they host. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.alisverisrobotu.com/">
+						<img src="../img/21-alisveris-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Alışveriş Robotu:</span>
+					Is a Turkish price comparison site that uses Scrapy to collect data from hundreds of retailers everyday. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.tuvalabs.com/">
+						<img src="../img/22-tuvalabs-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Tuvalabs:</span>
+					Uses Scrapy to scrape the web and find the most interesting articles of significant news stories taking place around the world and transforming them into interactive math learning units. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.alistek.com/">
+						<img src="../img/23-alistek-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Alistek:</span>
+					Uses Scrapy for updating partner related information in their OpenERP based back-office system, by scraping various data sources, both on the web and off-line. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.zhitongba.com/">
+						<img src="../img/24-Zhitongba-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Zhitongba:</span>
+					Is a company trying to help people better commute within big cities in China. They use Scrapy to scrape ride-sharing information from multiple sources. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.offertazo.com/">
+						<img src="../img/25-offertazo-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Offertazo:</span>
+					Uses Scrapy to scrape offers from many Spanish websites. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.lionseek.com/">
+						<img src="../img/26-lionseek-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Lionseek:</span>
+					Is a search engine that uses Scrapy to find items for sale in forums. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.stilivo.com/">
+						<img src="../img/27-stilivo-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Stilivo:</span>
+					Is a discovery shopping site that uses Scrapy to collect product information from e-commerce sites. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.mapado.com/">
+						<img src="../img/28-mapado-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Mapado:</span>
+					Uses Scrapy to find local activities on the web. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://oony.com/">
+						<img src="../img/29-oony-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Oony:</span>
+					Is a deal aggregator in more than 16 countries. They currently have more than 500 Scrapy spiders running to gather their information. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://woppu.my/">
+						<img src="../img/30-woppu-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Woppu:</span>
+					Is using Scrapy to collect product information from online shopping malls in Malaysia and Singapore. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://jobuzu.co.uk/">
+						<img src="../img/31-jobuzu-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Jobuzu:</span>
+					Uses Scrapy to scrape over 100,000 jobs daily from UK job boards. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.zopper.com/">
+						<img src="../img/32-zopper-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Zopper:</span>
+					Uses Scrapy to crawl hundreds of ecommerce portals for classifying the products sold online. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.coenterprise.com/solutions/applications/bookradar">
+						<img src="../img/33-bookradar-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">BookRadar:</span>
+					Uses Scrapy to scrape information form many book retailers. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://wp-rocket.me/">
+						<img src="../img/34-wprocket-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">WP Rocket:</span>
+					Uses Scrapy to preload the cache of all customer sites. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.cavucador.com.br/">
+						<img src="../img/35-cavucador-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Cavucador:</span>
+					Uses Scrapy to collect real estate data from many different websites in Brazil. They scrape more than 100,000 real estates daily and generate a search engine and statistics database. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://competera.net/">
+						<img src="../img/36-competera-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Competera:</span>
+					Is a price intelligence service that uses Scrapy to collect price, availability and promo data from over the million product pages every day. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.tarlabs.com/">
+						<img src="../img/37-tarlabs-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Tarlabs:</span>
+					Uses Scrapy for information and text processing and automated testing. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.jobijoba.com/">
+						<img src="../img/38-jobijoba-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Jobijoba:</span>
+					Uses Scrapy to scrape job offers daily from many job boards. Operate in France, several European countries,Russia, Mexico and Australia. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://dataquarry.co.uk/">
+						<img src="../img/39-dataquarry-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Data Quarry:</span>
+					Designs data scrapers specifically to address the needs of e-commerce users and offers custom scrapy devlopment. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://utero.pe/">
+						<img src="../img/40-utero-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">El Útero de Marita:</span>
+					Peruvian leading news blog uses Scrapy to download public documents from governmental institutions in Peru for data journalism. </p>
+				</div>
+
+				<div class="company-box">
+					<a href="http://www.shimply.com/">
+						<img src="../img/41-shimply-logo.png" />
+					</a>
+					<hr />
+					<p>
+					<span class="highlight">Shimply:</span>
+					Building world's largest online marketplace connecting sellers and buyers. Parsing over 500 large and small sites daily.(tweet). </p>
+				</div>
+
+			</div>
+
+
+		</div>
+
+			<div class='fourth-row'>
+				<div class="container">
+					<div class="block-left">
+						<h2><span class="regular">Want to be part of this list?</span> <br /></h2>
+						<div class="icon-box">
+							<a href="mailto:info@scrapinghub.com">
+								<i class="fa fa-envelope-o"></i><p>Email</p>
+							</a>
+						</div>
+							<span class="float">or</span>
+						<div class="icon-box">
+							<a href="https://github.com/scrapy/scrapy">
+								<i class="fa fa-github"></i><p>Github</p>
+							</a>
+						</div>
+						<div class="explain-text"><p>Fork this <a href="https://github.com/scrapy/scrapy">Github repo</a>, add yourself, and then send a pull request.</p></div>
+					</div>
+
+					<div class="block-right">
+						<a href="../support/">
+							<h2><span class="regular">Commercial support?</span> <br /> Meet the Scrapy pros</h2>
+						 	<img src="../img/scrapy-pros.png" />
+						</a>
+						<p><span class="big-font">Be a part of the Community</span> <br />
+							<a href="../community/">Join our channels and collaborate!</a>.</p>
+					</div>
+				</div>
+			</div>
+
+
+
