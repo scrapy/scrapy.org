@@ -1,75 +1,101 @@
 ---
 layout: default
-title: An open source web scraping framework for Python
+title: A Fast and Powerful Scraping and Web Crawling Framework
 ---
-<h2>Welcome to Scrapy</h2>
+{% assign stable = site.data.scrapy.stable %}
+{% assign oldstable = site.data.scrapy.oldstable %}
+{% assign devel = site.data.scrapy.development %}
 
-<h3>What is Scrapy?</h3>
+<div class="container">
 
-<p>Scrapy is a fast high-level screen scraping and web crawling
-framework, used to crawl websites and extract structured data from their
-pages. It can be used for a wide range of purposes, from data mining to
-monitoring and automated testing.</p>
+  <div class="first-row">
 
-<h3>Features</h3>
+    <div class="block-left">
+      <h1>Meet Scrapy</h1>
+      <p>An <span class="highlight">open source</span> and collaborative framework for <span class="highlight">extracting the data you need</span> from websites. In a fast, simple, yet extensible way.
+      </p>
+    </div>
 
-<dl>
+    <div class="block-right">
+      <div class="big-button">
+        <h2>Download latest version:</h2>
+        <p> <i class="fa fa-download"> </i> Scrapy {{ stable.version }} </p>
+        <a href="http://pypi.python.org/pypi/Scrapy"><button>PyPI</button></a>
+        <a href="http://doc.scrapy.org/en/{{ stable.version }}/topics/ubuntu.html"><button>Ubuntu Package</button></a>
+        <a href="https://github.com/scrapy/scrapy/tarball/{{ stable.version }}"><button>Tarball</button></a>
+        <a href="https://github.com/scrapy/scrapy/zipball/{{ stable.version }}"><button>Zip</button></a>
+      </div>
+    </div>
 
-  <dt>Simple<dt>
-  <dd>Scrapy was designed with simplicity in mind, by providing the features
-  you need without getting in your way</dd>
+  </div>
+</div>
 
-  <dt>Productive</dt>
-  <dd>Just write the rules to extract the data from web pages and let Scrapy
-  crawl the entire web site for you</dd>
+<div class="second-row">
+  <div class="container">
+    <div class="logo-big"></div>
 
-  <dt>Fast</dt>
-  <dd>Scrapy is used in production crawlers to completely scrape more than
-  500 retailer sites daily, all in one server</dd>
+    <div class="code-box">
+      <div class="box-header">
+        <p>Sample Scrapy Code</p>
+      </div>
+      <div class="box-code">
+        <p>$ pip install scrapy <br />
+        $ cat > myspider.py &lt;&lt;EOF <br />
+        from scrapy import Spider, Item, Field <br />
+        class Post(Item): <br />
+            title = Field() <br />
+        class BlogSpider(Spider): <br />
+            name, start_urls = 'blogspider', ['http://blog.scrapinghub.com'] <br />
+            def parse(self, response): <br />
+                return [Post(title=e.extract()) for e in response.css("h2 a::text")] <br />
+        EOF <br />
+        $ scrapy runspider myspider.py</p>
+      </div>
+    </div>
 
-  <dt>Extensible</dt>
-  <dd>Scrapy was designed with extensibility in mind and so it provides
-  several mechanisms to plug new code without having to touch the framework
-  core</li>
+    <div class="code-subs"><p>Build your <span class="highlight">own webcrawlers</span></p></div>
 
-  <dt>Portable, open-source, 100% Python</dt>
-  <dd>Scrapy is completely written in Python and runs on Linux, Windows, Mac and BSD</dd>
+  </div>
+</div>
 
-  <dt>Batteries included</dt>
-  <dd>Scrapy comes with lots of functionality built in. Check <a
-    href="http://doc.scrapy.org/en/latest/intro/overview.html#what-else">this
-    section</a> of the documentation for a list of them.</dd>
+<div class="container">
 
-  <dt>Well-documented &amp; well-tested</dt>
-  <dd>Scrapy is <a href="/doc/">extensively documented</a> and has an comprehensive test suite
-  with <a href="http://static.scrapy.org/coverage-report/">very good code
-    coverage</a></dd>
+  <div class="third-row">
+    <div class="block-01">
+      <i class="fa fa-flash fa-4x"> </i>
+      <h3>Fast and powerful</h3>
+      <p>write the rules to extract the data and let Scrapy do the rest</p>
+    </div>
+    <div class="block-02">
+      <i class="fa fa-puzzle-piece fa-4x"> </i>
+      <h3>Easily extensible</h3>
+      <p>extensible by design, plug new functionality easily without having to touch the core</p>
+    </div>
+    <div class="block-03">
+      <i class="fa fa-cubes fa-4x"> </i>
+      <h3>Portable, Python</h3>
+      <p>written in Python and runs on Linux, Windows, Mac and BSD</p>
+    </div>
+  </div>
+</div>
 
-  <dt><a href="/community">Healthy community</a></dt>
-  <dd>
-  5,000 stars, 1,300 forks, 400 watchers on Github (<a href="https://github.com/scrapy/scrapy">link</a>)<br>
-  1,300 followers on Twitter (<a href="https://twitter.com/ScrapyProject">link</a>)<br>
-  1,900 questions on StackOverflow (<a href="http://stackoverflow.com/tags/scrapy/info">link</a>)<br>
-  1,800 members, 150 messages per month on mailing list (<a href="https://groups.google.com/forum/?fromgroups#!aboutgroup/scrapy-users">link</a>)<br>
-  40-50 users always connected to IRC channel (<a href="http://webchat.freenode.net/?channels=scrapy">link</a>)
-  </dd>
-
-  <dt><a href="/support">Commercial support</a></dt>
-  <dd>A few companies provide Scrapy consulting and support</dd>
-
-  <p>Still not sure if Scrapy is what you're looking for?. Check out <a
-    href="http://doc.scrapy.org/en/latest/intro/overview.html">Scrapy at a
-    glance</a>.
-
-  <h3>Companies using Scrapy</h3>
-
-  <p>Scrapy is being used in large production environments, to crawl
-  thousands of sites daily. Here is a list of <a href="/companies/">Companies
-    using Scrapy</a>.</p>
-
-  <h3>Where to start?</h3>
-
-  <p>Start by reading <a
-    href="http://doc.scrapy.org/en/latest/intro/overview.html">Scrapy at a glance</a>,
-  then <a href="/download/">download Scrapy</a> and follow the <a
-    href="http://doc.scrapy.org/en/latest/intro/tutorial.html">Tutorial</a>.
+<div class='fourth-row'>
+  <div class="container">
+    <div class="block-left">
+      <h2>Healthy community:</h2>
+      <ul>
+        <li>- 5,8k stars, 1,6k forks and 550 watchers on <a href="https://github.com/scrapy/scrapy">GitHub</a></li>
+        <li>- 1,5k followers on <a href="https://twitter.com/ScrapyProject">Twitter</a></li>
+        <li>- 2,7k questions on <a href="http://stackoverflow.com/tags/scrapy/info">StackOverflow</a></li>
+        <li>- 2k members on <a href="https://groups.google.com/forum/?fromgroups#!aboutgroup/scrapy-users">mailing list</a></li>
+      </ul>
+    </div>
+    <div class="block-right">
+      <a href="http://doc.scrapy.org/en/{{ stable.version }}/intro/overview.html">
+        <h2><span class="regular">Want to know more?</span> <br /> Scrapy at a glance</h2>
+        <i class="fa fa-file-text-o fa-3x"></i>
+      </a>
+      <p>Wondering what Scrapy can do? <br /> <a href="../companies/">Meet the companies using Scrapy</a></p>
+    </div>
+  </div>
+</div>

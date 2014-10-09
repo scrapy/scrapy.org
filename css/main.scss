@@ -1,0 +1,824 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+// General Variables //
+
+	$default-font: Bitter, Museo, serif;
+	$scrapy-font: Qlassik, sans-serif;
+
+	$default-brown: #a97c50;
+	$dark-brown: #754c24;
+
+	$default-green: #60a839;
+	$dark-green: #006838;
+
+	$grey: #666666;
+
+	$border-bot: 3px solid;
+	$big-border-bot: 6px solid;
+
+	$radius:6px;
+	$shadow:0px 4px 6px 0px #666;
+
+	@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+	}
+
+	@mixin box-shadow($shadow) {
+		box-shadow: $shadow;
+		-moz-box-shadow: $shadow;
+		-webkit-box-shadow: $shadow;
+	}
+
+	@font-face {
+	  font-family: Qlassik;
+	  src: url('fonts/Qlassik_TB.ttf');
+	}
+
+
+// General Styles //
+
+	body {
+		font-family: $default-font;
+		color: $grey;
+		line-height:1.2;
+		width:100%;
+		min-width:980px;
+		background:url('../img/bg.png');
+	}
+
+	h1 {
+		font-family: $scrapy-font;
+		color: $default-green;
+		font-size:72px;
+		padding-bottom:7px;
+		border-bottom: 2px solid $default-green;
+		margin-bottom:15px;
+	}
+
+	h2 {
+		font-size:28px;
+	}
+
+	h3 {
+		font-size:21px;
+		font-weight:bold;
+	}
+
+	.highlight {
+		color: $default-green;
+		font-weight:bold;
+	}
+
+	a {
+		text-decoration:none;
+		font-weight:bold;
+	}
+
+	.float {
+		float:left;
+	}
+
+	p span.big-font {
+		font-size:24px;
+	}
+
+	ul {
+		list-style-type:none;
+	}
+
+
+
+// Grid and Structure //
+
+	.container {
+		width:960px;
+		margin:auto;
+	}
+
+	.first-row {
+		height:240px;
+		width:100%;
+		clear:both;
+		background:url('../img/first-row-bg.png');
+	}
+
+	.first-row2 {
+		width:100%;
+		clear:both;
+		background:url('../img/first-row2-bg.png');
+		height:260px;
+		margin-bottom:10px;
+	}
+
+	.first-row3 {
+		width:100%;
+		clear:both;
+		background:url('../img/first-row3-bg.png');
+		height:260px;
+		margin-bottom:10px;
+	}
+
+	.block-left {
+		width:500px;
+		float:left;
+	}
+
+	.block-right {
+		width:460px;
+		float:left;
+	}
+
+	.second-row {
+		width:100%;
+		clear:both;
+		height:335px;
+		background-color:#f2f2f2;
+		background-image:url('../img/second-row-bg.png');
+		background-repeat:no-repeat;
+		background-position:center;
+	}
+
+	.third-row {
+		height:300px;
+		width:100%;
+		background-image:url('../img/third-row-bg.png');
+	}
+
+	.block-01, .block-02, .block-03 {
+		width:320px;
+		float:left;
+		text-align:center;
+		padding-top:35px;
+	}
+
+	.fourth-row {
+		width:100%;
+		height:180px;
+		background-color:$default-green;
+		padding-top:35px;
+		padding-bottom:15px;
+		clear:both;
+	}
+
+// Header //
+
+	.header {
+		width:100%;
+		height:45px;
+		background-color: $default-brown;
+		border-bottom: $border-bot $dark-brown;
+		margin-bottom:35px;
+	}
+
+	.logo {
+		width:120px;
+		height:45px;
+		background:url('../img/scrapy-logo-large.png');
+		float:left;
+	}
+
+	.header ul {
+		width:630px;
+	}
+
+	.header ul, .github-fork {
+		float:right;
+	}
+
+	.header ul li {
+		float:left;
+		padding:5px 5px;
+		text-decoration:none;
+		color: $default-green;
+		background-color:#fff;
+		@include border-radius($radius);
+		border-bottom: $border-bot $dark-brown;
+		margin-left:5px;
+		margin-right:5px;
+		margin-top:10px;
+		font-size:14px;
+		font-weight:normal;
+	}
+
+	.header ul li:hover, .header ul li.current {
+		color:#fff;
+		background-color: $default-green;
+	}
+
+	.github-fork {
+		color:#fff;
+		margin-top:14px;
+		margin-left:25px;
+		font-weight:normal;
+	}
+
+// Intro Header and Text //
+
+	.block-left h1, .block-left p {
+		width:85%;
+	}
+
+	.block-left a {
+		color: $default-green;
+	}
+
+
+// Big Button //
+
+	.big-button {
+		color:#fff;
+		padding:18px 25px;
+		background-color: $default-green;
+		border-bottom: $big-border-bot $dark-green;
+		@include border-radius($radius);
+		float:right;
+	}
+
+	.big-button p {
+		font-size:48px;
+		margin-top:7px;
+	}
+
+	.big-button button {
+		background-color:#fff;
+		border:0px;
+		border-bottom: $border-bot $dark-green;
+		@include border-radius($radius);
+		padding:5px 8px;
+		font-family: $default-font;
+		color: $default-green;
+		margin-top:15px;
+		margin-right:10px;
+		cursor:pointer;
+	}
+
+
+	.big-button button:active, .big-button button:focus {
+		outline:none;
+	}
+
+	.block-left {
+		.developer-branch{
+		float:left;
+		margin-top:48px;
+		padding-bottom:10px;
+		width:280px;
+		background:url('../img/dev-branch-bg2.png');
+		}
+
+		.developer-branch i {
+			padding:10px 11px;
+		}
+
+		.developer-branch p {
+			width:200px;
+		}
+	}
+
+	.developer-branch {
+		float:right;
+		margin-top:12px;
+		padding-bottom:10px;
+		width:358px;
+		background:url('../img/dev-branch-bg.png');
+	}
+
+	.developer-branch i, .developer-branch p {
+		float:left;
+		margin-right:12px;
+	}
+
+	.developer-branch i {
+		background-color:$default-green;
+		color:#fff;
+		border-bottom:$border-bot $dark-green;
+		font-size:24px;
+		padding:6px 12px;
+		@include border-radius(40px);
+		margin-top:2px;
+	}
+
+	.developer-branch p {
+		font-size:14px;
+		padding-top:7px;
+	}
+
+	.developer-branch button {
+		background-color:$default-green;;
+		border:0px;
+		border-bottom: $border-bot $dark-green;
+		@include border-radius($radius);
+		padding:5px 8px;
+		font-family: $default-font;
+		color:#fff;
+		margin-top:7px;
+		margin-right:5px;
+		cursor:pointer;
+	}
+
+// Second Row //
+
+	.logo-big {
+		width:200px;
+		height:255px;
+		background:url('../img/scrapy-big-logo.png');
+		margin-top:30px;
+		float:left;
+	}
+
+	.code-subs {
+		float: right;
+		margin-top: 16px;
+		width: 140px;
+		text-align: right;
+		padding: 25px 25px;
+		font-size: 14px;
+		background:url('../img/subs-line.png');
+		background-position-y: -18px;
+		background-position-x: 30px;
+		background-repeat: no-repeat;
+	}
+
+	.code-box {
+		width:570px;
+		height:260px;
+		background-color: $grey;
+		float:right;
+		margin-top:30px;
+		@include border-radius($radius);
+		@include box-shadow($shadow);
+		overflow:hidden;
+	}
+
+	.box-header {
+		background: #e6e6e6; /* Old browsers */
+		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U2ZTZlNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjY2NjY2MiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: -moz-linear-gradient(top,  #e6e6e6 0%, #cccccc 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e6e6e6), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #e6e6e6 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #e6e6e6 0%,#cccccc 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #e6e6e6 0%,#cccccc 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #e6e6e6 0%,#cccccc 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', endColorstr='#cccccc',GradientType=0 ); /* IE6-8 */
+		text-align:center;
+		padding:15px 15px;
+		text-shadow: 0px -1px 3px rgba(255, 255, 255, 1);
+	}
+
+	.box-code {
+		padding:15px 15px;
+		color:#ffed79;
+		line-height:1.4;
+		font-size:12px;
+		font-family:Courier, 'Ubuntu Mono', $default-font, sans-serif;
+	}
+
+// Third Row //
+
+	.block-01, .block-02, .block-03 {
+		i {
+			color:$default-green;
+			width:120px;
+			text-align:center;
+			border-radius:90px;
+			-webkit-border-radius:90px;
+			-moz-border-radius:90px;
+			border:9px solid $default-green;
+			padding-top:30px;
+			padding-bottom:30px;
+			font-size:54px;
+		}
+
+		h3 {
+			padding-top:15px;
+			padding-bottom:7px;
+		}
+
+		p {
+			font-size:14px;
+			padding-left:20px;
+			padding-right:20px;
+		}
+	}
+
+// Fourth Row //
+
+	.fourth-row {
+		h2, p, ul {
+			color:#fff;
+		}
+
+		h2 {
+			padding-bottom:10px;
+			font-weight:600;
+		}
+
+		h2 span.regular {
+			font-weight:400;
+		}
+
+		.block-right {
+			h2 {
+			float:left;
+			line-height:1;
+			}
+
+			p {
+			clear:both;
+			padding-top:25px;
+			padding-bottom:15px;
+			}
+
+			i {
+				width:70px;
+				background-color:#fff;
+				@include border-radius(90px);
+				text-align:center;
+				padding-top:14px;
+				padding-bottom:14px;
+				font-size:40px;
+				border-bottom: $border-bot $dark-green;
+				color:$default-green;
+				margin-left:15px;
+			}
+
+			border-left:1px solid white;
+			width:399px;
+			padding-left:60px;
+		}
+
+		.block-left {
+			i {
+				width:70px;
+				background-color:#fff;
+				@include border-radius(90px);
+				text-align:center;
+				padding-top:14px;
+				padding-bottom:14px;
+				font-size:40px;
+				border-bottom: $border-bot $dark-green;
+				color:$default-green;
+				margin-left:15px;
+			}
+
+			p {
+				clear:both;
+				padding-top:25px;
+				padding-bottom:15px;
+			}
+
+			p a i {
+				width:auto;
+				background:transparent;
+				@include border-radius(0px);
+				padding:5px 5px;
+				font-size:21px;
+				border-bottom:0px;
+				color:#fff;
+				margin-left:0px;
+			}
+		}
+
+		a {
+			font-weight:bold;
+			color:#fff;
+			text-decoration:none;
+		}
+	}
+
+// Download Page //
+	.third-row-down {
+		@extend .third-row;
+		background-color:#f2f2f2;
+		padding-top:25px;
+		height:240px;
+
+		h2 {
+			margin-bottom:25px;
+			color: $default-green;
+			font-weight:bold;
+		}
+
+		a {
+			color: $default-green;
+		}
+
+		i {
+			width:70px;
+			background-color:#fff;
+			@include border-radius(90px);
+			text-align:center;
+			padding-top:14px;
+			padding-bottom:14px;
+			font-size:40px;
+			border-bottom: $border-bot $dark-green;
+			color:$default-green;
+			margin-left:15px;
+		}
+
+		p {
+			clear:both;
+		}
+
+		ul {
+			list-style-type:circle;
+			margin-left:21px;
+			margin-top:7px;
+			font-size:18px;
+		}
+
+		li {
+			float:left;
+			width:50%;
+		}
+
+		.block-right {
+			padding-left:60px;
+			width:399px;
+			border-left:1px solid $default-green;
+			height:200px;
+		}
+
+		button {
+			background-color:$default-green;;
+			border:0px;
+			border-bottom: $border-bot $dark-green;
+			@include border-radius($radius);
+			padding:5px 8px;
+			font-family: $default-font;
+			color:#fff;
+			margin-top:21px;
+			margin-right:5px;
+			cursor:pointer;
+			float:right;
+		}
+
+	}
+
+
+// Companies Page //
+
+	.companies-container {
+		margin-top:25px;
+		margin-bottom:25px;
+		clear:both;
+		width:960px;
+	}
+
+	.company-box {
+		width:193px;
+		height:160px;
+		margin-right:20px;
+		border:1px solid $default-green;
+		border-bottom: $border-bot $default-green;
+		background-color:#fff;
+		text-align:center;
+		@include border-radius($radius);
+		font-size:11px;
+		padding-left:15px;
+		padding-right:15px;
+		float:left;
+		margin-bottom:20px;
+	}
+
+	.company-box:nth-of-type(4n) {
+		margin-right:0px;
+	}
+
+	.company-box img {
+		height:30px;
+		margin-top:15px;
+	}
+
+	.icon-box {
+
+		i {
+			margin-left:0px !important;
+		}
+
+		h2 {
+			clear:both;
+		}
+
+		p {
+			float:left;
+			width:100%;
+			margin:0px;
+			padding-top:0px !important;
+			padding-bottom:0px !important;
+			text-align:center;
+			margin-top:5px;
+		}
+
+		width:71px;
+		text-align:center;
+		float:left;
+		
+	}
+
+	.block-left {
+		span.float {
+			color:#fff;
+			padding:20px 20px;
+		}
+	}
+
+	.explain-text {
+		float:left;
+		margin-left:25px;
+
+		p {
+			width:240px;
+			float:left;
+			padding-top:10px !important;
+		}
+	}
+
+	.fourth-row .block-right img {
+		margin-left:25px;
+	}
+
+// Commercial Support Page //
+
+	.company-longbox {
+		height:160px;
+		border:1px solid $default-green;
+		border-bottom: $border-bot $default-green;
+		background-color:#fff;
+		text-align:center;
+		@include border-radius($radius);
+		font-size:11px;
+		float:left;
+		margin-bottom:20px;
+		width:930px;
+	}
+
+	.company-longbox {
+		img {
+			height:100px;
+			margin:auto;
+			padding-top:20px;
+		}
+
+		a {
+			color: $default-green;
+		}
+
+		p {
+			text-align:left;
+			margin-top:25px;
+			padding-left:30px;
+			padding-top: 10px;
+			padding-bottom:10px;
+			font-size:16px;
+			border-left: 1px solid $default-green;
+			float:left;
+			width:540px;
+		}
+
+		.logo-wrap {
+			float:left;
+			width:309px;
+			text-align:center;
+		}
+	}
+
+	p.top-margin {
+		margin-top:50px;
+		}
+
+// Community Page //
+
+	.community-box {
+		padding:25px 35px;
+		background-color:#f2f2f2;
+		@include border-radius($radius);
+		border-bottom: $border-bot #666;
+		width:390px;
+		float:left;
+		margin-right:40px;
+		margin-top:25px;
+		min-height:156px;
+	}
+
+	.community-box:nth-of-type(2n) {
+		margin-right:0px;
+	}
+
+	.community-box:last-of-type {
+		margin-bottom:25px;
+	}
+
+	.community-box {
+		h2, a {
+		color: $default-green;
+		font-weight:bold;
+		}
+
+		h2 {
+			float:left;
+		}
+
+		i {
+			width:70px;
+			background-color:#fff;
+			@include border-radius(90px);
+			text-align:center;
+			padding-top:14px;
+			padding-bottom:14px;
+			font-size:40px;
+			border-bottom: $border-bot $dark-green;
+			color:$default-green;
+			margin-left:35px;
+		}
+
+		p {
+			font-size:14px;
+			padding-right:25px;
+			padding-top:5px;
+			padding-bottom:5px;
+		}
+
+		button, input[type=submit] {
+			background-color:$default-green;;
+			border:0px;
+			border-bottom: $border-bot $dark-green;
+			@include border-radius($radius);
+			padding:5px 8px;
+			font-family: $default-font;
+			color:#fff;
+			margin-top:7px;
+			margin-right:5px;
+			cursor:pointer;
+		}
+
+		button {
+			float:right;
+			margin-top:17px;
+		}
+
+		input[type=text] {
+			padding:7px 7px;
+			@include border-radius($radius);
+			border:1px solid $default-green;
+			font-family: $default-font;
+			width:300px;
+		}
+
+		hr {
+			clear:both;
+			border-color:$default-green;
+			margin-top:10px;
+			margin-bottom:10px;
+		}
+	}
+
+	.community-box h2 i {
+		margin:0px;
+		padding:0px;
+		background:transparent;
+		width:auto;
+		height:auto;
+		color:auto;
+		border:0px;
+		margin-right:25px;
+		margin-bottom:10px;
+	}
+
+// Footer //
+
+	.footer {
+		width:100%;
+		text-align:center;
+		color:#fff;
+		background-color: $default-brown;
+		border-top:3px solid $dark-brown;
+	}
+
+	.footer {
+		p {
+		padding:15px 15px;
+		}
+		a {
+			font-weight:bold;
+			color:#fff;
+			text-decoration:none;
+		}
+	}

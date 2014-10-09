@@ -7,54 +7,90 @@ permalink: doc/
 {% assign oldstable = site.data.scrapy.oldstable %}
 {% assign devel = site.data.scrapy.development %}
 
+<div class="container">
 
-<h2>Documentation</h2>
+<div class="first-row3">
 
-<h3>Latest stable release - Scrapy {{ stable.version }}</h3>
-<ul>
-  <li style="font-size: larger; font-weight: bold;"><a href="http://doc.scrapy.org/en/{{ stable.rtd }}">Read stable documentation online</a></li>
-  <li> Documentation can be downloaded in
-    <a href="https://media.readthedocs.org/pdf/scrapy/{{ stable.rtd }}/scrapy.pdf">PDF</a>,
-    <a href="https://media.readthedocs.org/htmlzip/scrapy/{{ stable.rtd }}/scrapy.zip">zipped HTML</a>
-    and <a href="https://media.readthedocs.org/epub/scrapy/{{ stable.rtd }}/scrapy.epub">epub</a>
-    formats
-  </li>
-</ul>
+	<div class="block-left">
+		<h1>Documentation</h1>
+		<p>You can also find a lot of useful information at <a href="https://github.com/scrapy/scrapy/wiki">Scrapy Wiki</a> or looking for the <a href="http://snipplr.com/all/tags/scrapy/">Scrapy Snipplr tag</a>. 
+		</p>
+	</div>
 
-<h3>Previous stable release - Scrapy {{ oldstable.version }}</h3>
+	<div class="block-right">
+		<div class="big-button">
+			<h2>Read latest version:</h2>
+			<p> <i class="fa fa-copy"> </i> Scrapy {{ stable.version }}</p>
+			<a href="http://doc.scrapy.org/en/{{ stable.version }}"><button>Online</button></a>
+			<a href="https://media.readthedocs.org/pdf/scrapy/{{ stable.version }}/scrapy.pdf"><button>PDF</button></a>
+			<a href="https://media.readthedocs.org/htmlzip/scrapy/{{ stable.version }}/scrapy.zip"><button>Zipped HTML</button></a>
+			<a href="https://media.readthedocs.org/epub/scrapy/{{ stable.version }}/scrapy.epub"><button>epub</button></a>
+		</div>
+		<div class="developer-branch">
+			<i class="fa fa-code-fork"></i>
+			<p>Documentation for <br /><span class="highlight">development branch</span></p>
+			<a href="http://doc.scrapy.org/en/{{ devel.rtd }}/"><button>Doc</button></a>
+			<a href="http://doc.scrapy.org/en/{{ devel.rtd }}/contributing.html"><button>Guidelines</button></a>
+		</div>
+	</div>
 
-<ul>
-  <li> <a href="http://doc.scrapy.org/en/{{ oldstable.rtd }}">Read old-stable documentation online</a></li>
-</ul>
+</div>
 
-<h3>Development version - Scrapy {{ devel.version }}</h3>
+</div>
 
-<ul>
-  <li><a href="http://doc.scrapy.org/en/{{ devel.rtd }}/">Read development documentation online</a></li>
-  <li>If you are willing to contribute please read <a href="http://doc.scrapy.org/en/{{ devel.rtd }}/contributing.html">contributing guidelines</a></li>
-</ul>
+<div class="third-row-down">
+<div class="container">
+	<div class="block-left">
+		<a href="http://doc.scrapy.org/en/{{ oldstable.version }}">
+			<h2 class="float">Looking for an old release? <br /> Scrapy {{ oldstable.version }} Documentation</h2>
+			<i class="fa fa-archive fa-3x"></i>
+		</a>
+		<p>Or you can find even older releases and docs here:</p>
+		<ul>
+			<li><a href="http://doc.scrapy.org/en/0.20/">Scrapy 0.20</a></li>
+			<li><a href="http://doc.scrapy.org/en/0.18/">Scrapy 0.18</a></li>
+			<li><a href="http://doc.scrapy.org/en/0.16/">Scrapy 0.16</a></li>
+			<li><a href="http://doc.scrapy.org/en/0.14/">Scrapy 0.14</a></li>
+			<li><a href="http://doc.scrapy.org/en/0.12/">Scrapy 0.12</a></li>
+		</ul>
+	</div>
 
-<h3>Wiki, code snippets and other tutorials</h3>
+	<div class="block-right">
+		<h2>Want to contribute <br /> to Scrapy?</h2>
+		<p>Don't forget to check the <a href="http://doc.scrapy.org/en/{{ devel.rtd }}/contributing.html">Contributing Guidelines and the <a href="http://doc.scrapy.org/en/{{ devel.rtd }}/">Development Documentation online</a>.
+			<a href="http://doc.scrapy.org/en/{{ devel.rtd }}/"><button>Doc</button></a>
+			<a href="http://doc.scrapy.org/en/{{ devel.rtd }}/contributing.html"><button>Guidelines</button></a>
+	</div>
+</div>
+</div>
 
-<ul>
-  <li>The <a href="https://github.com/scrapy/scrapy/wiki">Scrapy wiki</a> contains a compilation of many community resources such as articles, blog posts, video &amp; text tutorials, slides and talks</li>
-  <li><a href="http://snipplr.com/all/tags/scrapy/">Scrapy tag on Snipplr</a> contains many useful code snippets, classified by topic and scrapy version. You are encouraged to upload yours!</li>
-</ul>
-
-<h3>Getting help</h3>
-
-<p>Having trouble? We'd like to help!</p>
-
-<ul>
-  <li>Check the <a href="http://doc.scrapy.org/en/{{ stable.rtd }}/faq.html">FAQ</a> - it's got answers to common questions.</li>
-  <li>Looking for specific information? Try the <a href="http://doc.scrapy.org/en/{{ stable.rtd }}/genindex.html">Index</a>
-    or the <a href="http://doc.scrapy.org/en/{{ stable.rtd }}/py-modindex.html">Module Index</a>.
-  </li>
-  <li>Search for information in
-    <a href="http://groups.google.com/group/scrapy-users/">the archives of the scrapy-users mailing list</a>,
-    or <a href="http://groups.google.com/group/scrapy-users/">post a question</a>.
-  </li>
-  <li>Ask a question in the <a href="irc://irc.freenode.net/scrapy">#scrapy  IRC channel</a>.</li>
-  <li>Report <a href="https://github.com/scrapy/scrapy/issues">Scrapy bugs in Github</a>.</li>
-</ul>
+<div class='fourth-row'>
+<div class="container">
+	<div class="block-left">
+		<a href="http://doc.scrapy.org/en/{{ stable.version }}/faq.html">
+		<h2 class="float"><span class="regular">Having trouble? We'd love to help!</span> <br />
+		Check the FAQ.</h2>
+		</a>
+		<p>For specific information you can check<br />
+		<a href="http://doc.scrapy.org/en/{{ stable.version }}/genindex.html">
+		<i class="fa fa-external-link"></i>
+		<span class="big-font">The Index</span>
+		</a>
+		or
+		<a href="http://doc.scrapy.org/en/{{ stable.version }}/py-modindex.html">
+		<i class="fa fa-external-link"></i>
+		<span class="big-font">The Module Index</span>
+		</a>
+		</p>
+	</div>
+	<div class="block-right">
+		<a href="https://github.com/scrapy/scrapy/issues">
+		<h2><span class="regular">Report Scrapy bugs</span> <br /> on Github project</h2>
+	 	<i class="fa fa-github fa-3x"></i>
+		</a>
+		<p><span class="big-font">Community support:</span> <br />
+		Via <a href="irc://irc.freenode.net/scrapy">IRC Channel</a>, <a href="http://stackoverflow.com/questions/ask"> StackOverflow</a> or <a href="http://groups.google.com/group/scrapy-users/">mailing list</a>.</p>
+	</div>
+</div>
+</div>
 

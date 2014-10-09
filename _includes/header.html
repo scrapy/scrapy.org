@@ -1,14 +1,33 @@
-<div id="header">
-  <div id="logo">
-    <a href="/"><img src="/images/logo.png" width="244" height="65" alt="Scrapy"/></a>
-  </div>
-  <ul id="navigation">
-    <li><a href="/">Overview</a></li>
-    <li><a href="/download/">Download</a></li>
-    <li><a href="/doc/">Documentation</a></li>
-    <li><a href="/community/">Community</a></li>
-    <li><a href="/companies/">Companies</a></li>
-    <li><a href="/support/">Commercial support</a></li>
-    <li class="last"><a href="/jobs/">Jobs</a></li>
-  </ul>
+<div class="header">
+
+<div class="container">
+
+  <a href="{{ site.url }}"><div class="logo"></div></a>
+
+  <a href="https://github.com/scrapy/scrapy">
+    <div class="github-fork">
+      <p><i class="fa fa-github"></i> Fork on Github </p>
+    </div>
+  </a>
+
+  {% unless page.layout == 'front' %}
+    <ul class="navigation">
+      {% for link in site.navigation %}
+        {% assign current = nil %}
+        {% if page.permalink == link.url %}
+          {% assign current = 'current' %}
+        {% endif %}
+
+        <a class="{{ current }}" href="../{{ link.url }}">
+          <li class="{% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+            {{ link.text }}
+          </li>
+        </a>
+      {% endfor %}
+      <a href="http://doc.scrapy.org/en/latest/faq.html"><li>FAQ</li></a>
+    </ul>
+  {% endunless %}
+
+</div>
+
 </div>
