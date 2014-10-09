@@ -8,94 +8,94 @@ title: A Fast and Powerful Scraping and Web Crawling Framework
 
 <div class="container">
 
-      <div class="first-row">
+  <div class="first-row">
 
-        <div class="block-left">
-          <h1>Meet Scrapy</h1>
-          <p>An <span class="highlight">open source</span> and collaborative framework for <span class="highlight">extracting the data you need</span> from websites. In a fast, simple, yet extensible way.
-          </p>
-        </div>
+    <div class="block-left">
+      <h1>Meet Scrapy</h1>
+      <p>An <span class="highlight">open source</span> and collaborative framework for <span class="highlight">extracting the data you need</span> from websites. In a fast, simple, yet extensible way.
+      </p>
+    </div>
 
-        <div class="block-right">
-          <div class="big-button">
-            <h2>Download latest version:</h2>
-            <p> <i class="fa fa-download"> </i> Scrapy {{ stable.version }} </p>
-            <a href="http://pypi.python.org/pypi/Scrapy"><button>PyPI</button></a>
-            <a href="http://doc.scrapy.org/en/{{ stable.version }}/topics/ubuntu.html"><button>Ubuntu Package</button></a>
-            <a href="https://github.com/scrapy/scrapy/tarball/{{ stable.version }}"><button>Tarball</button></a>
-            <a href="https://github.com/scrapy/scrapy/zipball/{{ stable.version }}"><button>Zip</button></a>
-          </div>
-        </div>
-
+    <div class="block-right">
+      <div class="big-button">
+        <h2>Download latest version:</h2>
+        <p> <i class="fa fa-download"> </i> Scrapy {{ stable.version }} </p>
+        <a href="http://pypi.python.org/pypi/Scrapy"><button>PyPI</button></a>
+        <a href="http://doc.scrapy.org/en/{{ stable.version }}/topics/ubuntu.html"><button>Ubuntu Package</button></a>
+        <a href="https://github.com/scrapy/scrapy/tarball/{{ stable.version }}"><button>Tarball</button></a>
+        <a href="https://github.com/scrapy/scrapy/zipball/{{ stable.version }}"><button>Zip</button></a>
       </div>
     </div>
 
-      <div class="second-row">
-        <div class="container">
-          <div class="logo-big"></div>
+  </div>
+</div>
 
-          <div class="code-box">
-            <div class="box-header">
-              <p>Sample Scrapy Code</p>
-            </div>
-            <div class="box-code">
-              <p>$ pip install scrapy <br />
-              $ cat > myspider.py &lt;&lt;EOF <br />
-              from scrapy import Spider, Item, Field <br />
-              class Post(Item): <br />
-                  title = Field() <br />
-              class BlogSpider(Spider): <br />
-                  name, start_urls = 'blogspider', ['http://blog.scrapinghub.com'] <br />
-                  def parse(self, response): <br />
-                      return [Post(title=e.extract()) for e in response.css("h2 a::text")] <br />
-              EOF <br />
-              $ scrapy runspider myspider.py</p>
-            </div>
-          </div>
+<div class="second-row">
+  <div class="container">
+    <div class="logo-big"></div>
 
-          <div class="code-subs"><p>Build your <span class="highlight">own webcrawlers</span></p></div>
-
-        </div>
+    <div class="code-box">
+      <div class="box-header">
+        <p>Sample Scrapy Code</p>
       </div>
-
-    <div class="container">
-
-      <div class="third-row">
-        <div class="block-01">
-          <i class="fa fa-flash fa-4x"> </i>
-          <h3>Fast and powerful</h3>
-          <p>write the rules to extract the data and let Scrapy do the rest</p>
-        </div>
-        <div class="block-02">
-          <i class="fa fa-puzzle-piece fa-4x"> </i>
-          <h3>Easily extensible</h3>
-          <p>extensible by design, plug new functionality easily without having to touch the core</p>
-        </div>
-        <div class="block-03">
-          <i class="fa fa-cubes fa-4x"> </i>
-          <h3>Portable, Python</h3>
-          <p>written in Python and runs on Linux, Windows, Mac and BSD</p>
-        </div>
+      <div class="box-code">
+        <p>$ pip install scrapy <br />
+        $ cat > myspider.py &lt;&lt;EOF <br />
+        from scrapy import Spider, Item, Field <br />
+        class Post(Item): <br />
+            title = Field() <br />
+        class BlogSpider(Spider): <br />
+            name, start_urls = 'blogspider', ['http://blog.scrapinghub.com'] <br />
+            def parse(self, response): <br />
+                return [Post(title=e.extract()) for e in response.css("h2 a::text")] <br />
+        EOF <br />
+        $ scrapy runspider myspider.py</p>
       </div>
     </div>
 
-      <div class='fourth-row'>
-        <div class="container">
-          <div class="block-left">
-            <h2>Healthy community:</h2>
-            <ul>
-              <li>- 5,8k stars, 1,6k forks and 550 watchers on <a href="https://github.com/scrapy/scrapy">GitHub</a></li>
-              <li>- 1,5k followers on <a href="https://twitter.com/ScrapyProject">Twitter</a></li>
-              <li>- 2,7k questions on <a href="http://stackoverflow.com/tags/scrapy/info">StackOverflow</a></li>
-              <li>- 2k members on <a href="https://groups.google.com/forum/?fromgroups#!aboutgroup/scrapy-users">mailing list</a></li>
-            </ul>
-          </div>
-          <div class="block-right">
-            <a href="http://doc.scrapy.org/en/{{ stable.version }}/intro/overview.html">
-              <h2><span class="regular">Want to know more?</span> <br /> Scrapy at a glance</h2>
-              <i class="fa fa-file-text-o fa-3x"></i>
-            </a>
-            <p>Wondering what Scrapy can do? <br /> <a href="../companies/">Meet the companies using Scrapy</a></p>
-          </div>
-        </div>
-      </div>
+    <div class="code-subs"><p>Build your <span class="highlight">own webcrawlers</span></p></div>
+
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="third-row">
+    <div class="block-01">
+      <i class="fa fa-flash fa-4x"> </i>
+      <h3>Fast and powerful</h3>
+      <p>write the rules to extract the data and let Scrapy do the rest</p>
+    </div>
+    <div class="block-02">
+      <i class="fa fa-puzzle-piece fa-4x"> </i>
+      <h3>Easily extensible</h3>
+      <p>extensible by design, plug new functionality easily without having to touch the core</p>
+    </div>
+    <div class="block-03">
+      <i class="fa fa-cubes fa-4x"> </i>
+      <h3>Portable, Python</h3>
+      <p>written in Python and runs on Linux, Windows, Mac and BSD</p>
+    </div>
+  </div>
+</div>
+
+<div class='fourth-row'>
+  <div class="container">
+    <div class="block-left">
+      <h2>Healthy community:</h2>
+      <ul>
+        <li>- 5,8k stars, 1,6k forks and 550 watchers on <a href="https://github.com/scrapy/scrapy">GitHub</a></li>
+        <li>- 1,5k followers on <a href="https://twitter.com/ScrapyProject">Twitter</a></li>
+        <li>- 2,7k questions on <a href="http://stackoverflow.com/tags/scrapy/info">StackOverflow</a></li>
+        <li>- 2k members on <a href="https://groups.google.com/forum/?fromgroups#!aboutgroup/scrapy-users">mailing list</a></li>
+      </ul>
+    </div>
+    <div class="block-right">
+      <a href="http://doc.scrapy.org/en/{{ stable.version }}/intro/overview.html">
+        <h2><span class="regular">Want to know more?</span> <br /> Scrapy at a glance</h2>
+        <i class="fa fa-file-text-o fa-3x"></i>
+      </a>
+      <p>Wondering what Scrapy can do? <br /> <a href="../companies/">Meet the companies using Scrapy</a></p>
+    </div>
+  </div>
+</div>

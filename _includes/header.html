@@ -1,33 +1,33 @@
 <div class="header">
 
-  <div class="container">
+<div class="container">
 
-    <a href="{{ site.url }}"><div class="logo"></div></a>
+  <a href="{{ site.url }}"><div class="logo"></div></a>
 
-    <a href="https://github.com/scrapy/scrapy">
-      <div class="github-fork">
-        <p><i class="fa fa-github"></i> Fork on Github </p>
-      </div>
-    </a>
+  <a href="https://github.com/scrapy/scrapy">
+    <div class="github-fork">
+      <p><i class="fa fa-github"></i> Fork on Github </p>
+    </div>
+  </a>
 
-    {% unless page.layout == 'front' %}
-      <ul class="navigation">
-        {% for link in site.navigation %}
-          {% assign current = nil %}
-          {% if page.permalink == link.url %}
-            {% assign current = 'current' %}
-          {% endif %}
+  {% unless page.layout == 'front' %}
+    <ul class="navigation">
+      {% for link in site.navigation %}
+        {% assign current = nil %}
+        {% if page.permalink == link.url %}
+          {% assign current = 'current' %}
+        {% endif %}
 
-          <a class="{{ current }}" href="../{{ link.url }}">
-            <li class="{% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
-              {{ link.text }}
-            </li>
-          </a>
-        {% endfor %}
-        <a href="http://doc.scrapy.org/en/latest/faq.html"><li>FAQ</li></a>
-      </ul>
-    {% endunless %}
+        <a class="{{ current }}" href="../{{ link.url }}">
+          <li class="{% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+            {{ link.text }}
+          </li>
+        </a>
+      {% endfor %}
+      <a href="http://doc.scrapy.org/en/latest/faq.html"><li>FAQ</li></a>
+    </ul>
+  {% endunless %}
 
-  </div>
+</div>
 
 </div>
