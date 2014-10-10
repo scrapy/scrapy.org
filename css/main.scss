@@ -81,12 +81,12 @@ dl, dd, ol, ul, figure {
 	}
 
 	.highlight {
-		color: $default-green;
+		color: $default-brown;
 		font-weight:bold;
 	}
 
 	a {
-		text-decoration:none;
+		text-decoration:underline;
 		font-weight:bold;
 	}
 
@@ -100,6 +100,33 @@ dl, dd, ol, ul, figure {
 
 	ul {
 		list-style-type:none;
+	}
+
+	.prompt {
+	color:#FF8080;
+	-webkit-user-select: none; /* Chrome/Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+	}
+
+	.green {
+		color:#A4DB85;
+	}
+
+	.blue {
+		color:#87ceeb;
+	}
+
+	.bold {
+		font-weight:bold;
+	}
+
+	.tab {
+		margin-left:20px;
+	}
+
+	.tab2x {
+		margin-left:40px;
 	}
 
 
@@ -157,7 +184,6 @@ dl, dd, ol, ul, figure {
 	.third-row {
 		height:300px;
 		width:100%;
-		background-image:url('../img/third-row-bg.png');
 	}
 
 	.block-01, .block-02, .block-03 {
@@ -243,34 +269,52 @@ dl, dd, ol, ul, figure {
 
 	.big-button {
 		color:#fff;
-		padding:18px 25px;
+		padding:13px 27px;
 		background-color: $default-green;
 		border-bottom: $big-border-bot $dark-green;
 		@include border-radius($radius);
 		float:right;
-	}
 
-	.big-button p {
-		font-size:48px;
-		margin-top:7px;
-	}
+		 p {
+			font-size:48px;
+			margin-top:7px;
+			}
 
-	.big-button button {
-		background-color:#fff;
-		border:0px;
-		border-bottom: $border-bot $dark-green;
-		@include border-radius($radius);
-		padding:5px 8px;
-		font-family: $default-font;
-		color: $default-green;
-		margin-top:15px;
-		margin-right:10px;
-		cursor:pointer;
-	}
+		.install-code {
+			width:100%;
+			padding-top:5px;
+			padding-bottom:7px;
+			margin-top:10px;
+			text-align:center;
+			background-color:$grey;
+			@include border-radius($radius);
+			border-bottom:$border-bot $dark-green;
+			color:#ffed79;
+		}
 
+		button {
+			background-color:#fff;
+			border:0px;
+			border-bottom: $border-bot $dark-green;
+			@include border-radius($radius);
+			padding:5px 8px;
+			font-family: $default-font;
+			color: $default-green;
+			margin-top:15px;
+			cursor:pointer;
+			}
 
-	.big-button button:active, .big-button button:focus {
-		outline:none;
+		a {
+			margin-right:20px;
+		}
+
+		a:last-of-type {
+			margin-right:0px;
+		}
+
+		button:active, button:focus {
+			outline:none;
+			}
 	}
 
 	.block-left {
@@ -347,7 +391,7 @@ dl, dd, ol, ul, figure {
 		margin-top: 16px;
 		width: 140px;
 		text-align: right;
-		padding: 25px 25px;
+		padding: 25px 15px;
 		font-size: 14px;
 		background:url('../img/subs-line.png');
 		background-position-y: -18px;
@@ -356,8 +400,8 @@ dl, dd, ol, ul, figure {
 	}
 
 	.code-box {
-		width:570px;
-		height:260px;
+		width:588px;
+		height:305px;
 		background-color: $grey;
 		float:right;
 		margin-top:30px;
@@ -378,12 +422,14 @@ dl, dd, ol, ul, figure {
 		background: linear-gradient(to bottom,  #e6e6e6 0%,#cccccc 100%); /* W3C */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', endColorstr='#cccccc',GradientType=0 ); /* IE6-8 */
 		text-align:center;
-		padding:15px 15px;
+		padding-top:5px;
+		padding-bottom:5px;
 		text-shadow: 0px -1px 3px rgba(255, 255, 255, 1);
+		font-size:14px;
 	}
 
 	.box-code {
-		padding:15px 15px;
+		padding:10px 20px;
 		color:#ffed79;
 		line-height:1.4;
 		font-size:12px;
@@ -499,7 +545,6 @@ dl, dd, ol, ul, figure {
 		a {
 			font-weight:bold;
 			color:#fff;
-			text-decoration:none;
 		}
 	}
 
@@ -815,10 +860,22 @@ dl, dd, ol, ul, figure {
 	.footer {
 		p {
 		padding:15px 15px;
+		background-color:$dark-brown;
 		}
 		a {
 			font-weight:bold;
 			color:#fff;
 			text-decoration:none;
+		}
+
+		iframe {
+			margin-top:15px;
+			margin-bottom:15px;
+		}
+
+		hr {
+			width:960px;
+			border:1px solid $dark-brown;
+			margin:auto;
 		}
 	}
