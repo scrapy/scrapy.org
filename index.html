@@ -18,8 +18,9 @@ title: A Fast and Powerful Scraping and Web Crawling Framework
 
     <div class="block-right">
       <div class="big-button">
-        <h2>Download latest version:</h2>
+        <h2>Install latest version:</h2>
         <p> <i class="fa fa-download"> </i> Scrapy {{ stable.version }} </p>
+        <div class="install-code"><span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> pip install scrapy</div>
         <a href="http://pypi.python.org/pypi/Scrapy"><button>PyPI</button></a>
         <a href="http://doc.scrapy.org/en/{{ stable.version }}/topics/ubuntu.html"><button>Ubuntu Package</button></a>
         <a href="https://github.com/scrapy/scrapy/tarball/{{ stable.version }}"><button>Tarball</button></a>
@@ -39,17 +40,21 @@ title: A Fast and Powerful Scraping and Web Crawling Framework
         <p>Sample Scrapy Code</p>
       </div>
       <div class="box-code">
-        <p>$ pip install scrapy <br />
-        $ cat > myspider.py &lt;&lt;EOF <br />
-        from scrapy import Spider, Item, Field <br />
-        class Post(Item): <br />
-            title = Field() <br />
-        class BlogSpider(Spider): <br />
-            name, start_urls = 'blogspider', ['http://blog.scrapinghub.com'] <br />
-            def parse(self, response): <br />
-                return [Post(title=e.extract()) for e in response.css("h2 a::text")] <br />
-        EOF <br />
-        $ scrapy runspider myspider.py</p>
+        <p><span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> pip install scrapy<br />
+        <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> cat > myspider.py &lt;&lt;EOF<br /><br />
+        <span class="green bold">from</span> <span class="blue bold">scrapy</span> <span class="green bold">import</span> Spider, Item, Field<br />
+        <br />
+        <span class="green bold">class</span> <span class="blue bold">Post</span>(Item):<br />
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;title = Field()</span><br />
+        <br />
+        <span class="green bold">class</span> <span class="blue bold">BlogSpider</span>(Spider):<br />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;name, start_urls = '<span class="blue">blogspider</span>', ['<span class="blue">http://blog.scrapinghub.com</span>']</span><br />
+        <br />
+        <span class="green bold">&nbsp;&nbsp;&nbsp;&nbsp;def</span> <span class="blue">parse</span>(<span class="green">self</span>, response):<br />
+        <span class="green bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return</span> [Post(title=e.extract()) <span class="green bold">for</span> e <span class="green bold">in</span> response.css(<span class="blue">"h2 a::text"</span>)]<br />
+        <br />
+        EOF<br />
+        <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> scrapy runspider myspider.py</p>
       </div>
     </div>
 
