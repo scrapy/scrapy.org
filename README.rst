@@ -26,4 +26,4 @@ yourself to ``companies.html`` and send a pull request!
 Are you a company providing Scrapy consulting or spider development?. Add
 yourself to ``support.html`` and send a pull request!
 
-.. _Jekyll: gem install jekyll
+.. _Jekyll: http://jekyllrb.com/
