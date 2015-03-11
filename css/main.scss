@@ -879,3 +879,35 @@ dl, dd, ol, ul, figure {
 			margin:auto;
 		}
 	}
+
+
+// Google Summer of Code Link //
+
+.gsoc-scrapy {
+	  background-color: #60a839;
+	  position: absolute;
+	  top: 270px;
+	  padding: 4px 8px;
+	  padding-bottom: 6px;
+	  border-bottom: 3px solid #006838;
+	  border-radius: 12px;
+
+	  a {
+	  	color: white;
+	  	font-size: 13px;
+	  	text-decoration: none;
+	  	font-weight: 500;
+	  }
+	  
+	}
+
+.gsoc-link {
+	background-color: #60a839;
+	color: #ffffff;
+	padding: 8px 12px;
+	border-bottom: 3px solid #006838;
+	border-radius: 12px;
+	text-decoration: none;
+	margin-top: 10px;
+	display: inline-block;
+}
