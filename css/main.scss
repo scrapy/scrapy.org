@@ -286,7 +286,7 @@ dl, dd, ol, ul, figure {
 			padding-bottom:7px;
 			margin-top:10px;
 			text-align:center;
-			background-color:$grey;
+			background-color:darken($grey, 18%);
 			@include border-radius($radius);
 			border-bottom:$border-bot $dark-green;
 			color:#ffed79;
@@ -402,7 +402,7 @@ dl, dd, ol, ul, figure {
 	.code-box {
 		width:588px;
 		height:305px;
-		background-color: $grey;
+		background-color: darken($grey, 18%);
 		float:right;
 		margin-top:30px;
 		@include border-radius($radius);
