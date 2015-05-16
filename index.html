@@ -41,18 +41,19 @@ title: A Fast and Powerful Scraping and Web Crawling Framework
       </div>
       <div class="box-code">
         <p><span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> pip install scrapy<br />
-        <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> cat > myspider.py &lt;&lt;EOF<br /><br />
-        <span class="green bold">from</span> <span class="blue bold">scrapy</span> <span class="green bold">import</span> Spider, Item, Field<br />
+        <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> cat > myspider.py &lt;&lt;EOF<br />
+        <span class="green bold">import</span> scrapy<br />
         <br />
-        <span class="green bold">class</span> <span class="blue bold">Post</span>(Item):<br />
-            <span>&nbsp;&nbsp;&nbsp;&nbsp;title = Field()</span><br />
-        <br />
-        <span class="green bold">class</span> <span class="blue bold">BlogSpider</span>(Spider):<br />
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;name, start_urls = '<span class="blue">blogspider</span>', ['<span class="blue">http://blog.scrapinghub.com</span>']</span><br />
+        <span class="green bold">class</span> <span class="blue bold">BlogSpider</span>(scrapy.Spider):<br />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;name = <span class="blue">'blogspider'</span></span><br />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;start_urls = [<span class="blue">'http://blog.scrapinghub.com'</span>]</span><br />
         <br />
         <span class="green bold">&nbsp;&nbsp;&nbsp;&nbsp;def</span> <span class="blue">parse</span>(<span class="green">self</span>, response):<br />
-        <span class="green bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return</span> [Post(title=e.extract()) <span class="green bold">for</span> e <span class="green bold">in</span> response.css(<span class="blue">"h2 a::text"</span>)]<br />
-        <br />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green bold">for</span> post <span class="green bold">in</span> response.css(<span class="blue">'div.type-post'</span>):<br />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yield {<br />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="blue">'title'</span>: post.css(<span class="blue">'h2 a::text'</span>)[<span class="blue">0</span>].extract(),<br />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="blue">'post'</span>: post.xpath(<span class="blue">'string(.)'</span>)[<span class="blue">0</span>].extract(),<br />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
         EOF<br />
         <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> scrapy runspider myspider.py</p>
       </div>
