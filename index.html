@@ -51,8 +51,8 @@ title: A Fast and Powerful Scraping and Web Crawling Framework
         <span class="green bold">&nbsp;&nbsp;&nbsp;&nbsp;def</span> <span class="blue">parse</span>(<span class="green">self</span>, response):<br />
         <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green bold">for</span> post <span class="green bold">in</span> response.css(<span class="blue">'div.type-post'</span>):<br />
         <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yield {<br />
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="blue">'title'</span>: post.css(<span class="blue">'h2 a::text'</span>)[<span class="blue">0</span>].extract(),<br />
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="blue">'post'</span>: post.xpath(<span class="blue">'string(.)'</span>)[<span class="blue">0</span>].extract(),<br />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="blue">'title'</span>: post.css(<span class="blue">'h2 a::text'</span>).extract_first(),<br />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="blue">'post'</span>: post.xpath(<span class="blue">'string(.)'</span>).extract_first(),<br />
         <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
         EOF<br />
         <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> scrapy runspider myspider.py</p>
