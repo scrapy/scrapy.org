@@ -10,6 +10,10 @@ This website is made with `Jekyll`_. The most universal way to install it is::
 
     gem install jekyll
 
+To highlight the snippet you also need `Pygments`_, you can install it with::
+
+    pip install pygments
+
 Usage
 =====
 
@@ -27,3 +31,4 @@ Are you a company providing Scrapy consulting or spider development?. Add
 yourself to ``support.html`` and send a pull request!
 
 .. _Jekyll: http://jekyllrb.com/
+.. _Pygments: http://pygments.org/

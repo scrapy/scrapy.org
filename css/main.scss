@@ -24,6 +24,8 @@ dl, dd, ol, ul, figure {
 	$default-green: #60a839;
 	$dark-green: #006838;
 
+    $code-yellow: #ffed79;
+
 	$grey: #666666;
 
 	$border-bot: 3px solid;
@@ -121,6 +123,37 @@ dl, dd, ol, ul, figure {
 		font-weight:bold;
 	}
 
+/**
+* Pygments' tokens for snippet highlight
+
+* .nc Name.Class
+* .nf Name.Function
+* .ns Name.Namespace
+* .kn Keyword.Namespace
+* .k  Keyword
+* .s  String
+*/
+    $blue: #87ceeb;
+    $green: #A4DB85;
+    .ns, .k {
+        color: $green;
+        font-weight: bold;
+    }
+
+    .nc, .nn, .nf, .s {
+		color: $blue;
+    }
+
+    .nc, .nn {
+        font-weight: bold;
+    }
+
+    /* XXX: this is specific for pygments output markup, overrides main style */
+    div.highlight pre code {
+        color: $code-yellow;
+        font-weight: normal;
+    }
+
 	.tab {
 		margin-left:20px;
 	}
@@ -174,7 +207,7 @@ dl, dd, ol, ul, figure {
 	.second-row {
 		width:100%;
 		clear:both;
-		height:335px;
+		height:340px;
 		background-color:#f2f2f2;
 		background-image:url('../img/second-row-bg.png');
 		background-repeat:no-repeat;
@@ -289,7 +322,7 @@ dl, dd, ol, ul, figure {
 			background-color:darken($grey, 18%);
 			@include border-radius($radius);
 			border-bottom:$border-bot $dark-green;
-			color:#ffed79;
+			color: $code-yellow;
 		}
 
 		button {
@@ -389,19 +422,19 @@ dl, dd, ol, ul, figure {
 	.code-subs {
 		float: right;
 		margin-top: 16px;
-		width: 140px;
+		width: 100px;
 		text-align: right;
-		padding: 25px 15px;
+		padding: 15px 10px;
 		font-size: 14px;
 		background:url('../img/subs-line.png');
-		background-position-y: -18px;
-		background-position-x: 30px;
+		background-position-y: -22px;
+		background-position-x: -6px;
 		background-repeat: no-repeat;
 	}
 
 	.code-box {
-		width:588px;
-		height:305px;
+		width:628px;
+		height:310px;
 		background-color: darken($grey, 18%);
 		float:right;
 		margin-top:30px;
