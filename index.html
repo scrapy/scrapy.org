@@ -37,9 +37,13 @@ title: A Fast and Powerful Scraping and Web Crawling Framework
 
     <div class="code-box">
       <div class="box-header">
-        <p>Sample Scrapy Code</p>
+        <p>Sample Codes:</p>
+        <ul class="simple-tabs" id="code-tabs">
+          <li class="scrapy-024 active">Scrapy 0.24</li>
+          <li class="scrapy-10">Scrapy 1.0 (coming soon)</li>
+        </ul>
       </div>
-      <div class="box-code">
+      <div class="box-code tab-page active-page" id="scrapy-024">
         <pre>
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> pip install scrapy
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> cat > myspider.py &lt;&lt;EOF
@@ -56,13 +60,38 @@ class BlogSpider(Spider):
         return [Post(title=e.extract()) for e in response.css("h2 a::text")]
 {% endhighlight %}
 EOF
-<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> scrapy runspider myspider.py</pre>
+<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> scrapy runspider myspider.py
+        </pre>
+      </div>
+      <div class="box-code tab-page" id="scrapy-10">
+        <pre>
+<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> pip install scrapy
+<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> cat > myspider.py &lt;&lt;EOF
+{% highlight python %}
+import scrapy
+
+class BlogSpider(scrapy.Spider):
+    name = 'blogspider'
+    start_urls = ['http://blog.scrapinghub.com']
+
+    def parse(self, response):
+        for url in response.css('ul li a::attr("href")').re(r'.*/\d\d\d\d/\d\d/$'):
+            yield scrapy.Request(response.urljoin(url), self.parse_titles)
+
+    def parse_titles(self, response):
+        for post_title in response.css('div.entries > ul > li a::text').extract():
+            yield {'title': post_title}
+{% endhighlight %}
+EOF
+<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> scrapy runspider myspider.py
+</pre>
       </div>
     </div>
 
     <div class="code-subs"><p>Build your <span class="highlight">own webcrawlers</span></p></div>
 
   </div>
+
 </div>
 
 <div class="container">
@@ -106,3 +135,11 @@ EOF
     </div>
   </div>
 </div>
+
+<script src="{{ "/js/simple-tabs-pure-js.js" | prepend: site.baseurl }}"></script>
+
+<script>       
+window.onload = function() {
+var codeTabs = new SimpleTabs(document.getElementById('code-tabs'));
+};
+</script>
