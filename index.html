@@ -44,19 +44,16 @@ title: A Fast and Powerful Scraping and Web Crawling Framework
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> pip install scrapy
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> cat > myspider.py &lt;&lt;EOF
 {% highlight python %}
-import scrapy
+from scrapy import Spider, Item, Field
 
-class BlogSpider(scrapy.Spider):
-    name = 'blogspider'
-    start_urls = ['http://blog.scrapinghub.com']
+class Post(Item):
+    title = Field()
+
+class BlogSpider(Spider):
+    name, start_urls = 'blogspider', ['http://blog.scrapinghub.com']
 
     def parse(self, response):
-        for url in response.css('ul li a::attr("href")').re(r'.*/\d\d\d\d/\d\d/$'):
-            yield scrapy.Request(response.urljoin(url), self.parse_titles)
-
-    def parse_titles(self, response):
-        for post_title in response.css('div.entries > ul > li a::text').extract():
-            yield {'title': post_title}
+        return [Post(title=e.extract()) for e in response.css("h2 a::text")]
 {% endhighlight %}
 EOF
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> scrapy runspider myspider.py</pre>
