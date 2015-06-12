@@ -10,10 +10,6 @@ This website is made with `Jekyll`_. The most universal way to install it is::
 
     gem install jekyll
 
-To highlight the snippet you also need `Pygments`_, you can install it with::
-
-    pip install pygments
-
 Usage
 =====
 
