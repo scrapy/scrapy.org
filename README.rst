@@ -27,4 +27,3 @@ Are you a company providing Scrapy consulting or spider development?. Add
 yourself to ``support.html`` and send a pull request!
 
 .. _Jekyll: http://jekyllrb.com/
-.. _Pygments: http://pygments.org/
