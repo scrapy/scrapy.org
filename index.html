@@ -43,26 +43,6 @@ title: A Fast and Powerful Scraping and Web Crawling Framework
           <li class="scrapy-024">Scrapy 0.24 (old stable)</li>
         </ul>
       </div>
-      <div class="box-code tab-page active-page" id="scrapy-024">
-        <pre>
-<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> pip install scrapy
-<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> cat > myspider.py &lt;&lt;EOF
-{% highlight python %}
-from scrapy import Spider, Item, Field
-
-class Post(Item):
-    title = Field()
-
-class BlogSpider(Spider):
-    name, start_urls = 'blogspider', ['http://blog.scrapinghub.com']
-
-    def parse(self, response):
-        return [Post(title=e.extract()) for e in response.css("h2 a::text")]
-{% endhighlight %}
-EOF
-<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> scrapy runspider myspider.py
-        </pre>
-      </div>
       <div class="box-code tab-page" id="scrapy-10">
         <pre>
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> pip install scrapy
@@ -85,6 +65,26 @@ class BlogSpider(scrapy.Spider):
 EOF
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> scrapy runspider myspider.py
 </pre>
+      </div>
+      <div class="box-code tab-page active-page" id="scrapy-024">
+        <pre>
+<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> pip install scrapy
+<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> cat > myspider.py &lt;&lt;EOF
+{% highlight python %}
+from scrapy import Spider, Item, Field
+
+class Post(Item):
+    title = Field()
+
+class BlogSpider(Spider):
+    name, start_urls = 'blogspider', ['http://blog.scrapinghub.com']
+
+    def parse(self, response):
+        return [Post(title=e.extract()) for e in response.css("h2 a::text")]
+{% endhighlight %}
+EOF
+<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> scrapy runspider myspider.py
+        </pre>
       </div>
     </div>
 
