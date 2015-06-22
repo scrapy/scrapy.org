@@ -1,10 +1,10 @@
 stable:
-  version: 0.24
+  version: 1.0
   rtd: latest
 oldstable:
-  version: 0.22
-  rtd: 0.22
+  version: 0.24
+  rtd: 0.24
 development:
-  version: 0.25
+  version: 1.1
   rtd: master
 
