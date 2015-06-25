@@ -61,8 +61,7 @@ class BlogSpider(scrapy.Spider):
     def parse_titles(self, response):
         for post_title in response.css('div.entries > ul > li a::text').extract():
             yield {'title': post_title}
-{% endhighlight %}
-EOF
+{% endhighlight %}EOF
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> scrapy runspider myspider.py
 </pre>
       </div>
@@ -84,8 +83,7 @@ class BlogSpider(scrapy.Spider):
     def parse_titles(self, response):
         for post_title in response.css('div.entries > ul > li a::text').extract():
             yield Post(title=post_title)
-{% endhighlight %}
-EOF
+{% endhighlight %}EOF
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> scrapy runspider myspider.py
         </pre>
       </div>
