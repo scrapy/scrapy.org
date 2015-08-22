@@ -307,6 +307,7 @@ dl, dd, ol, ul, figure {
 		border-bottom: $big-border-bot $dark-green;
 		@include border-radius($radius);
 		float:right;
+		min-width: 310px;
 
 		 p {
 			font-size:48px;
@@ -408,6 +409,17 @@ dl, dd, ol, ul, figure {
 		margin-right:5px;
 		cursor:pointer;
 	}
+
+// Badges Bar //
+
+div.badges-bar {
+	float: left;
+	margin-top: -25px;
+
+	a {
+		text-decoration: none;
+	}
+}
 
 // Second Row //
 
