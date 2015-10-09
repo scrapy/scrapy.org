@@ -40,12 +40,8 @@ title: A Fast and Powerful Scraping and Web Crawling Framework
     <div class="code-box">
       <div class="box-header">
         <p>Sample Codes:</p>
-        <ul class="simple-tabs" id="code-tabs">
-          <li class="scrapy-10 active">Scrapy 1.0</li>
-          <li class="scrapy-024">Scrapy 0.24 (old stable)</li>
-        </ul>
       </div>
-      <div class="box-code tab-page active-page" id="scrapy-10">
+      <div class="box-code tab-page active-page">
         <pre>
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> pip install scrapy
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> cat > myspider.py &lt;&lt;EOF
@@ -66,28 +62,6 @@ class BlogSpider(scrapy.Spider):
 {% endhighlight %}EOF
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> scrapy runspider myspider.py
 </pre>
-      </div>
-      <div class="box-code tab-page" id="scrapy-024">
-        <pre>
-<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> pip install scrapy
-<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> cat > myspider.py &lt;&lt;EOF
-{% highlight python %}
-import scrapy
-from urlparse import urljoin
-
-class Post(scrapy.Item):
-    title = scrapy.Field()
-class BlogSpider(scrapy.Spider):
-    name, start_urls = 'blogspider', ['http://blog.scrapinghub.com']
-    def parse(self, response):
-        for url in response.css('ul li a::attr("href")').re(r'.*/\d\d\d\d/\d\d/$'):
-            yield scrapy.Request(urljoin(response.url, url), self.parse_titles)
-    def parse_titles(self, response):
-        for post_title in response.css('div.entries > ul > li a::text').extract():
-            yield Post(title=post_title)
-{% endhighlight %}EOF
-<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> scrapy runspider myspider.py
-        </pre>
       </div>
     </div>
 
