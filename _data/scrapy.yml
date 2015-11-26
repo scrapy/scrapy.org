@@ -5,6 +5,6 @@ oldstable:
   version: 0.24
   rtd: 0.24
 development:
-  version: 1.1
+  version: master
   rtd: master
 
