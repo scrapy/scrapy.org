@@ -15,7 +15,7 @@ dl, dd, ol, ul, figure {
 
 // General Variables //
 
-	$default-font: Bitter, Museo, serif;
+	$default-font: Ubuntu, sans-serif;
 	$scrapy-font: Qlassik, sans-serif;
 
 	$default-brown: #a97c50;
@@ -239,52 +239,41 @@ dl, dd, ol, ul, figure {
 
 	.header {
 		width:100%;
-		height:45px;
-		background-color: $default-brown;
-		border-bottom: $border-bot $dark-brown;
-		margin-bottom:35px;
+		height:48px;
+		background-color: $default-green;
+		margin-bottom:20px;
 	}
 
 	.logo {
 		width:120px;
-		height:45px;
-		background:url('../img/scrapy-logo-large.png');
+		height:48px;
+		margin-top: 10px;
+		background:url('../img/scrapy-smalllogo.png') no-repeat;
 		float:left;
 	}
 
 	.header ul {
-		width:630px;
-	}
-
-	.header ul, .github-fork {
 		float:right;
 	}
 
 	.header ul li {
 		float:left;
-		padding:5px 5px;
+		padding:5px 15px;
 		text-decoration:none;
-		color: $default-green;
-		background-color:#fff;
-		@include border-radius($radius);
-		border-bottom: $border-bot $dark-brown;
-		margin-left:5px;
-		margin-right:5px;
+		color: #fff;
 		margin-top:10px;
 		font-size:14px;
 		font-weight:normal;
+		border-left: solid 2px #51952C;
 	}
 
-	.header ul li:hover, .header ul li.current {
-		color:#fff;
-		background-color: $default-green;
+	.header ul a:first-child li {
+		border: 0px;
 	}
 
-	.github-fork {
-		color:#fff;
-		margin-top:14px;
-		margin-left:25px;
-		font-weight:normal;
+	.header ul a:last-child li {
+		padding-right: 0px;
+		font-weight: bolder;
 	}
 
 // Intro Header and Text //
