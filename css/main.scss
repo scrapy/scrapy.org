@@ -17,12 +17,14 @@ dl, dd, ol, ul, figure {
 
 	$default-font: Ubuntu, sans-serif;
 	$scrapy-font: Qlassik, sans-serif;
+	$font-serif: Bitter, serif;
+	$font-mono:"Ubuntu Mono", monospace;
 
 	$default-brown: #a97c50;
 	$dark-brown: #754c24;
 
 	$default-green: #60a839;
-	$dark-green: #006838;
+	$dark-green: #51952c;
 
     $code-yellow: #ffed79;
 
@@ -175,7 +177,6 @@ dl, dd, ol, ul, figure {
 		height:240px;
 		width:100%;
 		clear:both;
-		background:url('../img/first-row-bg.png');
 	}
 
 	.first-row2 {
@@ -202,6 +203,12 @@ dl, dd, ol, ul, figure {
 	.block-right {
 		width:460px;
 		float:left;
+	}
+
+	#scrapy-logo {
+		height:100px;
+		background:url('../img/scrapylogo.png') no-repeat;
+		margin-bottom: 20px;
 	}
 
 	.second-row {
@@ -264,7 +271,7 @@ dl, dd, ol, ul, figure {
 		margin-top:10px;
 		font-size:14px;
 		font-weight:normal;
-		border-left: solid 2px #51952C;
+		border-left: solid 2px $dark-green;
 	}
 
 	.header ul a:first-child li {
@@ -291,53 +298,76 @@ dl, dd, ol, ul, figure {
 
 	.big-button {
 		color:#fff;
-		padding:13px 27px;
 		background-color: $default-green;
-		border-bottom: $big-border-bot $dark-green;
 		@include border-radius($radius);
 		float:right;
 		min-width: 310px;
+		font-family: $font-serif;
+		text-align: center;
+		padding-bottom: 16px;
+		margin-bottom: 74px;
 
-		 p {
+		p {
 			font-size:48px;
 			margin-top:7px;
-			}
+		}
 
 		.install-code {
-			width:100%;
 			padding-top:5px;
 			padding-bottom:7px;
 			margin-top:10px;
-			text-align:center;
+			margin-left:54px;
+			margin-right:54px;
+			font-family: $font-mono;
 			background-color:darken($grey, 18%);
 			@include border-radius($radius);
-			border-bottom:$border-bot $dark-green;
 			color: $code-yellow;
 		}
 
 		button {
-			background-color:#fff;
+			background-color:#CBEABA;
+			color:#006838;
 			border:0px;
-			border-bottom: $border-bot $dark-green;
 			@include border-radius($radius);
-			padding:5px 8px;
-			font-family: $default-font;
-			color: $default-green;
+			padding:3px 8px;
+			font-family: $font-serif;
 			margin-top:15px;
 			cursor:pointer;
-			}
+		}
 
 		a {
 			margin-right:20px;
+
 		}
 
 		a:last-of-type {
 			margin-right:0px;
 		}
 
-		button:active, button:focus {
-			outline:none;
+		.box-title {
+			color: #CBEABA;
+			font-size: 20px;
+			text-decoration: none;
+			font-weight: normal;
+			margin: 13px 27px;
+		}
+
+		.download-stripe {
+			background-color: $dark-green;
+			width: 100%;
+		    line-height: 54px;
+
+			p {
+				font-size: 30px;
+				font-weight: bold;
 			}
+		}
+
+		.download-alternatives {
+			margin-left:54px;
+			margin-right:54px;
+		}
+
 	}
 
 	.block-left {
@@ -403,8 +433,7 @@ dl, dd, ol, ul, figure {
 
 div.badges-bar {
 	float: left;
-	margin-top: -25px;
-
+	margin-top: 38px;
 	a {
 		text-decoration: none;
 	}

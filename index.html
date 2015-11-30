@@ -11,24 +11,29 @@ title: A Fast and Powerful Scraping and Web Crawling Framework
   <div class="first-row">
 
     <div class="block-left">
-      <h1>Meet Scrapy</h1>
-      <p>An <span class="highlight">open source</span> and collaborative framework for <span class="highlight">extracting the data you need</span> from websites. In a fast, simple, yet extensible way.
+      <div id="scrapy-logo"></div>
+      <p>An open source and collaborative framework for extracting the data you need from websites.
       </p>
+      <p>In a fast, simple, yet extensible way.</p>
+
+    {% include badges-bar.html %}
     </div>
 
     <div class="block-right">
       <div class="big-button">
-        <h2>Install latest version:</h2>
-        <p> <i class="fa fa-download"> </i> Scrapy {{ stable.version }} </p>
-        <div class="install-code"><span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> pip install scrapy</div>
-        <a href="http://pypi.python.org/pypi/Scrapy"><button>PyPI</button></a>
-        <a href="http://doc.scrapy.org/en/{{ stable.rtd }}/topics/ubuntu.html"><button>Ubuntu Package</button></a>
-        <a href="https://github.com/scrapy/scrapy/archive/{{ stable.version }}.tar.gz"><button>Tarball</button></a>
-        <a href="https://github.com/scrapy/scrapy/archive/{{ stable.version }}.zip"><button>Zip</button></a>
+        <div class="box-title">Install the latest version of Scrapy</div>
+        <div class="download-stripe">
+          <p> <i class="fa fa-cloud-download "></i> Scrapy {{ stable.version }} </p>
+        </div>
+        <div class="install-code"><span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> <span class="command">pip install scrapy</span></div>
+        <div class="download-alternatives">
+          <a href="http://pypi.python.org/pypi/Scrapy"><button>PyPI</button></a>
+          <a href="https://anaconda.org/scrapinghub/scrapy"><button>Conda</button></a>
+          <a href="http://doc.scrapy.org/en/{{ stable.rtd }}/topics/ubuntu.html"><button>APT</button></a>
+          <a href="https://github.com/scrapy/scrapy/archive/{{ stable.version }}.zip"><button>Source</button></a>
+        </div>
       </div>
     </div>
-
-    {% include badges-bar.html %}
 
   </div>
 </div>
