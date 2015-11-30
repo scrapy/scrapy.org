@@ -29,6 +29,7 @@ dl, dd, ol, ul, figure {
     $code-yellow: #ffed79;
 
 	$grey: #666666;
+	$grey-bg: #F2F2F2;
 
 	$border-bot: 3px solid;
 	$big-border-bot: 6px solid;
@@ -934,18 +935,18 @@ div.badges-bar {
 		width:100%;
 		text-align:center;
 		color:#fff;
-		background-color: $default-brown;
-		border-top:3px solid $dark-brown;
+		background-color: $dark-green;
 	}
 
 	.footer {
 		p {
 		padding:15px 15px;
-		background-color:$dark-brown;
+		background-color: $grey-bg;
+		color:$grey;
 		}
 		a {
 			font-weight:bold;
-			color:#fff;
+			color:$grey;
 			text-decoration:none;
 		}
 

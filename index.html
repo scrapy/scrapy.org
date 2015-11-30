@@ -81,16 +81,16 @@ class BlogSpider(scrapy.Spider):
         <pre>
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> pip install shub
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> shub login
-Insert your Scrapinghub API Key : <API_KEY>
+Insert your Scrapinghub API Key : &lt;API_KEY&gt;
 
-<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> shub deploy -p <PROJECT_ID>
+<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> shub deploy -p &lt;PROJECT_ID&gt;
 
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> # Schedule a spider for execution
-<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> curl -u <API_KEY>: https://dash.scrapinghub.com/api/schedule.json \
-  -d project=<PROJECT_ID> -d spider=<SPIDER_NAME>
+<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> curl -u &lt;API_KEY&gt;: https://dash.scrapinghub.com/api/schedule.json \
+  -d project=&lt;PROJECT_ID&gt; -d spider=&lt;SPIDER_NAME&gt;
 
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> # Export the collected data
-<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> curl -u <API_KEY> https://storage.scrapinghub.com/items/<PROJECT_ID> > data.jl
+<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> curl -u <API_KEY> https://storage.scrapinghub.com/items/&lt;PROJECT_ID&gt; > data.jl
 </pre>
       </div>
     </div>
