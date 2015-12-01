@@ -535,6 +535,14 @@ div.badges-bar {
 		font-family:Courier, 'Ubuntu Mono', $default-font, sans-serif;
 	}
 
+	.close-btn {
+		float: right;
+		font-size: 30px;
+		color: #fff;
+		margin-top: -10px;
+		margin-right: 4px;
+	}
+
 // Third Row //
 
 	.block-01, .block-02, .block-03 {
