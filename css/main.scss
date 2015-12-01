@@ -152,7 +152,7 @@ dl, dd, ol, ul, figure {
     }
 
     /* XXX: this is specific for pygments output markup, overrides main style */
-    div.highlight pre code {
+    pre code {
         color: $code-yellow;
         font-weight: normal;
     }
@@ -165,6 +165,13 @@ dl, dd, ol, ul, figure {
 		margin-left:40px;
 	}
 
+	pre .comments {
+		color: #A7A9AC;
+	}
+
+	pre .placeholder {
+		color: $blue;
+	}
 
 
 // Grid and Structure //

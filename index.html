@@ -75,22 +75,23 @@ class BlogSpider(scrapy.Spider):
   <div class="container code-box-line">
     <div class="code-box">
       <div class="box-header">
-        <p>Sample code</p>
+        <p>Terminal</p>
       </div>
       <div class="box-code tab-page active-page">
         <pre>
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> pip install shub
+
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> shub login
-Insert your Scrapinghub API Key : &lt;API_KEY&gt;
+<span class="comments">Insert your Scrapinghub API Key : <span class="placeholder">&lt;API_KEY&gt;</span></span>
 
-<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> shub deploy -p &lt;PROJECT_ID&gt;
+<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> shub deploy -p <span class="placeholder">&lt;PROJECT_ID&gt;</span>
 
-<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> # Schedule a spider for execution
-<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> curl -u &lt;API_KEY&gt;: https://dash.scrapinghub.com/api/schedule.json \
-  -d project=&lt;PROJECT_ID&gt; -d spider=&lt;SPIDER_NAME&gt;
+<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> <span class="comments"># Schedule a spider for execution</span>
+<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> curl -u <span class="placeholder">&lt;API_KEY&gt;</span>: https://dash.scrapinghub.com/api/schedule.json \
+  -d project=<span class="placeholder">&lt;PROJECT_ID&gt;</span> -d spider=<span class="placeholder">&lt;SPIDER_NAME&gt;</span>
 
-<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> # Export the collected data
-<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> curl -u <API_KEY> https://storage.scrapinghub.com/items/&lt;PROJECT_ID&gt; > data.jl
+<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> <span class="comments"># Export the collected data</span>
+<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> curl -u <span class="placeholder">&lt;API_KEY&gt;</span> https://storage.scrapinghub.com/items/<span class="placeholder">&lt;PROJECT_ID&gt;</span> > data.jl
 </pre>
       </div>
     </div>
