@@ -15,16 +15,22 @@ permalink: doc/
 		<h1>Documentation</h1>
 		<p>You can also find a lot of useful information at <a href="https://github.com/scrapy/scrapy/wiki">Scrapy Wiki</a> or looking for the <a href="http://snipplr.com/all/tags/scrapy/">Scrapy Snipplr tag</a>. 
 		</p>
+
+	{% include badges-bar.html %}
 	</div>
 
 	<div class="block-right">
 		<div class="big-button">
-			<h2>Read latest version:</h2>
-			<p> <i class="fa fa-copy"> </i> Scrapy {{ stable.version }}</p>
+			<div class="box-title">Read latest version</div>
+			<div class="download-stripe">
+			<p> <i class="fa fa-copy "></i> Scrapy {{ stable.version }} </p>
+			</div>
+			<div class="download-alternatives">
 			<a href="http://doc.scrapy.org/en/{{ stable.version }}"><button>Online</button></a>
 			<a href="https://media.readthedocs.org/pdf/scrapy/{{ stable.version }}/scrapy.pdf"><button>PDF</button></a>
 			<a href="https://media.readthedocs.org/htmlzip/scrapy/{{ stable.version }}/scrapy.zip"><button>Zipped HTML</button></a>
 			<a href="https://media.readthedocs.org/epub/scrapy/{{ stable.version }}/scrapy.epub"><button>epub</button></a>
+			</div>
 		</div>
 		<div class="developer-branch">
 			<i class="fa fa-code-fork"></i>
@@ -33,9 +39,6 @@ permalink: doc/
 			<a href="http://doc.scrapy.org/en/{{ devel.rtd }}/contributing.html"><button>Guidelines</button></a>
 		</div>
 	</div>
-
-	{% include badges-bar.html %}
-
 </div>
 
 </div>
@@ -59,9 +62,9 @@ permalink: doc/
 
 	<div class="block-right">
 		<h2>Want to contribute <br /> to Scrapy?</h2>
-		<p>Don't forget to check the <a href="http://doc.scrapy.org/en/{{ devel.rtd }}/contributing.html">Contributing Guidelines and the <a href="http://doc.scrapy.org/en/{{ devel.rtd }}/">Development Documentation online</a>.
-			<a href="http://doc.scrapy.org/en/{{ devel.rtd }}/"><button>Doc</button></a>
-			<a href="http://doc.scrapy.org/en/{{ devel.rtd }}/contributing.html"><button>Guidelines</button></a>
+		<p>Don't forget to check the <a href="http://doc.scrapy.org/en/{{ devel.rtd }}/contributing.html">Contributing Guidelines</a> and the <a href="http://doc.scrapy.org/en/{{ devel.rtd }}/">Development Documentation online</a>.</p>
+		<a href="http://doc.scrapy.org/en/{{ devel.rtd }}/"><button>Doc</button></a>
+		<a href="http://doc.scrapy.org/en/{{ devel.rtd }}/contributing.html"><button>Guidelines</button></a>
 	</div>
 </div>
 </div>
@@ -76,18 +79,18 @@ permalink: doc/
 		<p>For specific information you can check<br />
 		<a href="http://doc.scrapy.org/en/{{ stable.version }}/genindex.html">
 		<i class="fa fa-external-link"></i>
-		<span class="big-font">The Index</span>
+		<span class="">The Index</span>
 		</a>
 		or
 		<a href="http://doc.scrapy.org/en/{{ stable.version }}/py-modindex.html">
 		<i class="fa fa-external-link"></i>
-		<span class="big-font">The Module Index</span>
+		<span class="">The Module Index</span>
 		</a>
 		</p>
 	</div>
 	<div class="block-right">
 		<a href="https://github.com/scrapy/scrapy/issues">
-		<h2><span class="regular">Report Scrapy bugs</span> <br /> on Github project</h2>
+		<h2 class="float"><span class="regular">Report Scrapy bugs</span> <br /> on Github project</h2>
 	 	<i class="fa fa-github fa-3x"></i>
 		</a>
 		<p><span class="big-font">Community support:</span> <br />
