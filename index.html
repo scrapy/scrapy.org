@@ -56,7 +56,7 @@ class BlogSpider(scrapy.Spider):
       </div>
     </div>
 
-    <div class="code-subs"><p>Build your own <span class="highlight">webcrawlers</span></p></div>
+    <div class="code-subs"><p>Build your own<br /><span class="highlight">web spiders</span></p></div>
 
   </div>
 
@@ -75,16 +75,14 @@ class BlogSpider(scrapy.Spider):
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> shub deploy -p <span class="placeholder">&lt;PROJECT_ID&gt;</span>
 
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> <span class="comments"># Schedule a spider for execution</span>
-<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> curl -u <span class="placeholder">&lt;API_KEY&gt;</span>: https://dash.scrapinghub.com/api/schedule.json \
-  -d project=<span class="placeholder">&lt;PROJECT_ID&gt;</span> -d spider=<span class="placeholder">&lt;SPIDER_NAME&gt;</span>
+<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> shub schedule <span class="placeholder">&lt;SPIDER_NAME&gt;</span> -p <span class="placeholder">&lt;PROJECT_ID&gt;</span>
 
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> <span class="comments"># Export the collected data</span>
-<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> curl -u <span class="placeholder">&lt;API_KEY&gt;</span> https://storage.scrapinghub.com/items/<span class="placeholder">&lt;PROJECT_ID&gt;</span> > data.jl
-</pre>
+<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> shub items <span class="placeholder">&lt;JOB_ID&gt;</span> > data.jl</pre>
       </div>
     </div>
 
-    <div class="code-subs"><p>Deploy your spiders in <a href="http://scrapinghub.com/scrapy-cloud/" title=""><span class="highlight">Scrapy Cloud</span></a></p>
+    <div class="code-subs"><p>Deploy them to<br /><a href="http://scrapinghub.com/scrapy-cloud/" title=""><span class="highlight">Scrapy Cloud</span></a></p>
     <p class="sub-sub">or use <a href="https://github.com/scrapy/scrapyd" title="Scrapyd"><span class="highlight">Scrapyd</span></a> and host the spiders yourself</p></div>
     
   </div>
