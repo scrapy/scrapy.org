@@ -11,35 +11,26 @@ title: A Fast and Powerful Scraping and Web Crawling Framework
   <div class="first-row">
 
     <div class="block-left">
-      <h1>Meet Scrapy</h1>
-      <p>An <span class="highlight">open source</span> and collaborative framework for <span class="highlight">extracting the data you need</span> from websites. In a fast, simple, yet extensible way.
+      <div id="scrapy-logo"></div>
+      <p>An open source and collaborative framework for extracting the data you need from websites.
       </p>
+      <p>In a fast, simple, yet extensible way.</p>
+
+    {% include badges-bar.html %}
     </div>
 
     <div class="block-right">
-      <div class="big-button">
-        <h2>Install latest version:</h2>
-        <p> <i class="fa fa-download"> </i> Scrapy {{ stable.version }} </p>
-        <div class="install-code"><span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> pip install scrapy</div>
-        <a href="http://pypi.python.org/pypi/Scrapy"><button>PyPI</button></a>
-        <a href="http://doc.scrapy.org/en/{{ stable.rtd }}/topics/ubuntu.html"><button>Ubuntu Package</button></a>
-        <a href="https://github.com/scrapy/scrapy/archive/{{ stable.version }}.tar.gz"><button>Tarball</button></a>
-        <a href="https://github.com/scrapy/scrapy/archive/{{ stable.version }}.zip"><button>Zip</button></a>
-      </div>
+      {% include download-button.html %}
     </div>
-
-    {% include badges-bar.html %}
 
   </div>
 </div>
 
 <div class="second-row">
-  <div class="container">
-    <div class="logo-big"></div>
-
+  <div class="container code-box-line">
     <div class="code-box">
       <div class="box-header">
-        <p>Sample Code:</p>
+        <p>Sample code<span class="close-btn">&bull;</span></p>
       </div>
       <div class="box-code tab-page active-page">
         <pre>
@@ -65,8 +56,35 @@ class BlogSpider(scrapy.Spider):
       </div>
     </div>
 
-    <div class="code-subs"><p>Build your <span class="highlight">own webcrawlers</span></p></div>
+    <div class="code-subs"><p>Build your own<br /><span class="highlight">web spiders</span></p></div>
 
+  </div>
+
+  <div class="container code-box-line">
+    <div class="code-box">
+      <div class="box-header">
+        <p>Terminal<span class="close-btn">&bull;</span></p>
+      </div>
+      <div class="box-code tab-page active-page">
+        <pre>
+<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> pip install shub
+
+<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> shub login
+<span class="comments">Insert your Scrapinghub API Key : <span class="placeholder">&lt;API_KEY&gt;</span></span>
+
+<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> shub deploy -p <span class="placeholder">&lt;PROJECT_ID&gt;</span>
+
+<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> <span class="comments"># Schedule a spider for execution</span>
+<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> shub schedule <span class="placeholder">&lt;SPIDER_NAME&gt;</span> -p <span class="placeholder">&lt;PROJECT_ID&gt;</span>
+
+<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> <span class="comments"># Export the collected data</span>
+<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> shub items <span class="placeholder">&lt;JOB_ID&gt;</span> > data.jl</pre>
+      </div>
+    </div>
+
+    <div class="code-subs"><p>Deploy them to<br /><a href="http://scrapinghub.com/scrapy-cloud/" title=""><span class="highlight">Scrapy Cloud</span></a></p>
+    <p class="sub-sub">or use <a href="https://github.com/scrapy/scrapyd" title="Scrapyd"><span class="highlight">Scrapyd</span></a> and host the spiders yourself</p></div>
+    
   </div>
 
 </div>
@@ -95,20 +113,21 @@ class BlogSpider(scrapy.Spider):
 <div class='fourth-row'>
   <div class="container">
     <div class="block-left">
-      <h2>Healthy community:</h2>
+      <h2>Healthy community</h2>
       <ul>
-        <li>- 10k stars, 2.8k forks and 900 watchers on <a href="https://github.com/scrapy/scrapy">GitHub</a></li>
+        <li>- 11k stars, 2.8k forks and 900 watchers on <a href="https://github.com/scrapy/scrapy">GitHub</a></li>
         <li>- 2.2k followers on <a href="https://twitter.com/ScrapyProject">Twitter</a></li>
-        <li>- 4.1k questions on <a href="http://stackoverflow.com/tags/scrapy/info">StackOverflow</a></li>
+        <li>- 4.5k questions on <a href="http://stackoverflow.com/tags/scrapy/info">StackOverflow</a></li>
         <li>- 2.5k members on <a href="https://groups.google.com/forum/?fromgroups#!aboutgroup/scrapy-users">mailing list</a></li>
       </ul>
     </div>
     <div class="block-right">
-      <a href="http://doc.scrapy.org/en/{{ stable.version }}/intro/overview.html">
-        <h2><span class="regular">Want to know more?</span> <br /> Scrapy at a glance</h2>
-        <i class="fa fa-file-text-o fa-3x"></i>
-      </a>
-      <p>Wondering what Scrapy can do? <br /> <a href="../companies/">Meet the companies using Scrapy</a></p>
+      <h2>Want to know more?</h2>
+      <ul>
+        <li><a href="http://doc.scrapy.org/en/{{ stable.version }}/intro/overview.html">- Discover Scrapy at a glance</a></li>
+        <li><a href="../companies/">- Meet the companies using Scrapy</a></li>
+      </ul>
+
     </div>
   </div>
 </div>

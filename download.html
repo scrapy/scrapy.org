@@ -15,17 +15,11 @@ permalink: download/
 		<h1>Get Scrapy</h1>
 		<p>Need help setting it up? Check the <a href="http://doc.scrapy.org/en/{{ stable.rtd }}/intro/install.html">Scrapy installation guide</a> for the <a href="http://doc.scrapy.org/en/{{ stable.rtd }}/intro/install.html#pre-requisites">requirements</a> and info on how to install in several platforms (Linux, Windows, Mac OS X, etc).
 		</p>
+		{% include badges-bar.html %}
 	</div>
 
 	<div class="block-right">
-		<div class="big-button">
-			<h2>Download latest version:</h2>
-			<p> <i class="fa fa-download"> </i> Scrapy {{ stable.version }} </p>
-			<a href="http://pypi.python.org/pypi/Scrapy"><button>PyPI</button></a>
-			<a href="http://doc.scrapy.org/en/{{ stable.rtd }}/topics/ubuntu.html"><button>Ubuntu Package</button></a>
-			<a href="https://github.com/scrapy/scrapy/archive/{{ stable.version }}.tar.gz"><button>Tarball</button></a>
-			<a href="https://github.com/scrapy/scrapy/archive/{{ stable.version }}.zip"><button>Zip</button></a>
-		</div>
+		{% include download-button.html %}
 		<div class="developer-branch">
 			<i class="fa fa-code-fork"></i>
 			<p>You can also download <br /><span class="highlight">the development branch</span></p>
@@ -34,7 +28,6 @@ permalink: download/
 		</div>
 	</div>
 
-	{% include badges-bar.html %}
 
 </div>
 	
@@ -83,7 +76,7 @@ permalink: download/
 	</div>
 	<div class="block-right">
 		<a href="https://github.com/scrapy/scrapy">
-		<h2><span class="regular">Get the Source Code:</span> <br /> Scrapy on Github</h2>
+		<h2 class="float"><span class="regular">Get the Source Code:</span> <br /> Scrapy on Github</h2>
 	 	<i class="fa fa-github fa-3x"></i>
 		</a>
 		<p><span class="big-font">What's new:</span> <br /> Read the <a href="http://doc.scrapy.org/en/{{ stable.rtd }}/news.html">release notes</a> for latest changes.</p>
