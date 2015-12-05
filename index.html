@@ -30,7 +30,7 @@ title: A Fast and Powerful Scraping and Web Crawling Framework
   <div class="container code-box-line">
     <div class="code-box">
       <div class="box-header">
-        <p>Sample code<span class="close-btn">&bull;</span></p>
+        <p>Terminal<span class="close-btn">&bull;</span></p>
       </div>
       <div class="box-code tab-page active-page">
         <pre>
@@ -56,35 +56,40 @@ class BlogSpider(scrapy.Spider):
       </div>
     </div>
 
-    <div class="code-subs"><p>Build your own<br /><span class="highlight">web spiders</span></p></div>
+    <div class="code-subs"><p>Build and run your <br /><span class="highlight">web spiders</span></p></div>
 
   </div>
 
   <div class="container code-box-line">
     <div class="code-box">
       <div class="box-header">
-        <p>Terminal<span class="close-btn">&bull;</span></p>
+        <p>Terminal session to illustrate (assumes you have signed up to Scrapinghub)<span class="close-btn">&bull;</span></p>
       </div>
       <div class="box-code tab-page active-page">
         <pre>
-<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> pip install shub
-
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> shub login
-<span class="comments">Insert your Scrapinghub API Key : <span class="placeholder">&lt;API_KEY&gt;</span></span>
+<span class="comments">Insert your Scrapinghub API Key: <span class="placeholder">&lt;API_KEY&gt;</span></span>
 
-<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> shub deploy -p <span class="placeholder">&lt;PROJECT_ID&gt;</span>
+<span class="comments"># Deploy the spider to Scrapy Cloud</span>
+<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> shub deploy</span>
 
-<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> <span class="comments"># Schedule a spider for execution</span>
-<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> shub schedule <span class="placeholder">&lt;SPIDER_NAME&gt;</span> -p <span class="placeholder">&lt;PROJECT_ID&gt;</span>
+<span class="comments"># Schedule the spider for execution</span>
+<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> shub schedule blogspider <span class="comments">
+Spider bestbuy scheduled, watch it running here:
+https://dash.scrapinghub.com/p/26731/job/1/18</span>
 
-<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> <span class="comments"># Export the collected data</span>
-<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> shub items <span class="placeholder">&lt;JOB_ID&gt;</span> > data.jl</pre>
+<span class="comments"># Retrieve the scraped data</span>
+<span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> shub items 26731/1/8
+{% highlight python %}
+{"title": "Black Friday, Cyber Monday: Are They Worth It?"}
+{"title": "Tips for Creating a Cohesive Company Culture Remotely"}
+...
+{% endhighlight %}</pre>
       </div>
     </div>
 
     <div class="code-subs"><p>Deploy them to<br /><a href="http://scrapinghub.com/scrapy-cloud/" title=""><span class="highlight">Scrapy Cloud</span></a></p>
-    <p class="sub-sub">or use <a href="https://github.com/scrapy/scrapyd" title="Scrapyd"><span class="highlight">Scrapyd</span></a> and host the spiders yourself</p></div>
-    
+    <p class="sub-sub">or use <a href="https://github.com/scrapy/scrapyd" title="Scrapyd"><span class="highlight">Scrapyd</span></a> to host the spiders in your own server</p></div>
   </div>
 
 </div>
