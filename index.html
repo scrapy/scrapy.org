@@ -53,7 +53,7 @@ class BlogSpider(scrapy.Spider):
     start_urls = ['http://blog.scrapinghub.com']
 
     def parse(self, response):
-        for url in response.css('ul li a::attr("href")').re(r'.*/\d\d\d\d/\d\d/$'):
+        for url in response.css('ul li a::attr("href")').re('.*/category/.*'):
             yield scrapy.Request(response.urljoin(url), self.parse_titles)
 
     def parse_titles(self, response):
