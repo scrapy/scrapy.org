@@ -509,26 +509,6 @@ div.badges-bar {
 			text-align: center;
 			color: black;
 		}
-
-		.simple-tabs {
-			display: inline-block;
-
-			li {
-				float: left;
-				margin: 0px 5px;
-				margin-top: 3px;
-				padding: 3px 5px;
-				text-align: center;
-				cursor: pointer;
-				background-color: #f2f2f2;
-				border-radius: 6px;
-
-				&.active {
-					background-color: $grey;
-					color: #f2f2f2;
-				}
-			}
-		}
 	}
 
 	.box-code {
