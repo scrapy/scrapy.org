@@ -1,0 +1,24 @@
+language: ruby
+
+rvm:
+  - 2.1
+
+script:
+  - bundle exec jekyll build
+  - bundle exec htmlproofer ./_site
+
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of htmlproofer
+
+deploy:
+  provider: s3
+  access_key_id:
+    secure: VHk/UcmWw4/OJPPEPKfRpOmSSku8dkDCHU68pHadR1EZI8cWqBu/+BXhhSJrcRzKEc9vEaKZh3ny3bSPI6dI7MJUIWaVqAG3AjjtJing8tiKaoMRlKksgkBJY4YrhkNmgu4hmi1xL6pv3OvOro5booSOngpO4MsF6zs1Z09CV1g=
+  secret_access_key:
+    secure: JciEdM3k7dNwRzFzlI2AtnEBCpSOumx16ttSNJC/AGDFx+w0NrSKUOuYG3+f2zV1psIf098FeFU6nvW4TXnWml6HmfyeIFz3F+qjId2wjMly7ekA8+Kq+6cYFi6+uHP5KP8+cEhDu9kBKdiWnj1XhKOkOTOeRnvY+jXBPjEWpfE=
+  bucket: website-scrapy-org
+  skip_cleanup: true
+  local_dir: _site
+  on:
+    branch: gh-pages
