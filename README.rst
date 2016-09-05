@@ -17,6 +17,10 @@ To start the web server locally auto-reloading when files change use::
 
     jekyll serve --watch
 
+The website is updated via the `Travis build`_ when merging to the gh-pages branch.
+
+.. _Travis build: https://travis-ci.org/scrapy/scrapy.org
+
 Pull requests
 =============
 
