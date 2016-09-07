@@ -24,5 +24,4 @@ deploy:
     branch: master
 
 after_deploy:
-  script:
   - aws cloudfront create-invalidation --distribution-id $DISTID --paths '/*'
