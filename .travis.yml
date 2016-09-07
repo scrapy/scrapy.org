@@ -6,6 +6,10 @@ rvm:
 script:
   - bundle exec jekyll build
 
+env:
+  global:
+    secure: St2cyWhtXulgKcrpxfOMWPo7ZXkH/Fk6MjDOUiUC5DmcgrUIjHU6vax66GS/EyuL9kYmAipNeRQ9DP6ohMjdcrqNGX3uhwOhvtqa0TYVJ5nAPvbXirB6y3TKA1pwNz4T3He6u7eyjYVipH2gHX9YXmTVGtEiotxplMWjAY3CoA4=
+
 deploy:
   provider: s3
   access_key_id:
@@ -18,3 +22,7 @@ deploy:
   acl: public_read
   on:
     branch: master
+
+after_deploy:
+  script:
+  - aws cloudfront create-invalidation --distribution-id $DISTID --paths '/*'
