@@ -1,7 +1,7 @@
 Scrapy website
 ==============
 
-This is the website that runs on http://scrapy.org.
+This is the website that runs on https://scrapy.org.
 
 Requirements
 ============
