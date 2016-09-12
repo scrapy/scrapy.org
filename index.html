@@ -44,12 +44,12 @@ class BlogSpider(scrapy.Spider):
     start_urls = ['https://blog.scrapinghub.com']
 
     def parse(self, response):
-        for url in response.css('ul li a::attr("href")').re('.*/category/.*'):
-            yield scrapy.Request(response.urljoin(url), self.parse_titles)
+        for title in response.css('h2.entry-title'):
+            yield {'title': title.css('a ::text').extract_first()}
 
-    def parse_titles(self, response):
-        for post_title in response.css('div.entries > ul > li a::text').extract():
-            yield {'title': post_title}
+        next_page = response.css('div.prev-post > a ::attr(href)').extract_first()
+        if next_page:
+            yield scrapy.Request(response.urljoin(next_page), callback=self.parse)
 {% endhighlight %}EOF
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> scrapy runspider myspider.py
 </pre>
@@ -81,8 +81,8 @@ https://app.scrapinghub.com/p/26731/job/1/8</span>
 <span class="comments"># Retrieve the scraped data</span>
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> shub items 26731/1/8
 {% highlight python %}
-{"title": "Black Friday, Cyber Monday: Are They Worth It?"}
-{"title": "Tips for Creating a Cohesive Company Culture Remotely"}
+{"title": "Improved Frontera: Web Crawling at Scale with Python 3 Support"}
+{"title": "How to Crawl the Web Politely with Scrapy"}
 ...
 {% endhighlight %}</pre>
       </div>
