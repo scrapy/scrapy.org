@@ -16,5 +16,6 @@ navigation:
   url: community/
 - text: Companies
   url: companies/
-- text: Commercial Support
-  url: support/
+
+gems:
+  - jekyll-redirect-from
