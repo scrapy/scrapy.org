@@ -9,27 +9,40 @@ permalink: resources/
 
 <div class="container">
 
-<div class="second-row">
-
   <h1>Curated Resources</h1>
 
-  <h2>Articles and Blog posts</h2>
-  <p>
-    <ul class="resources">
-{% for article in articles %}
-      <li class="resource">
-        {% if article.url %}
-        <a href="{{ article.url }}">{{ article.title }}</a>
-        {% elsif article.parts %}
-          <span class="title">{{ article.title }}</span>
-          ( {% for part in article.parts %}<a href="{{ part.url }}">{{ part.title }}</a> {% endfor %})
-        {% endif %}{% if article.author %}, by {{ article.author }}{% endif %}
-        {% if article.date %}({{ article.date }}){% endif %}
-        {% if article.comments %}<br/>{{ article.comments | markdownify }}{% endif %}
-      </li>
-{% endfor %}
-    </ul>
-  </p>
-</div>
+  <div class="resources-section">
+    <h2>Articles and Blog posts</h2>
+    <div class="resources">
+      {% for article in articles %}
+      <div class="resource">
+        <div class="title">
+          {% if article.url %}
+            <a href="{{ article.url }}">{{ article.title }}</a>
+          {% endif %}
+          {% if article.parts %}
+            {% for part in article.parts %}
+              {% if forloop.first %}
+                <a href="{{ part.url }}">{{ article.title }} [{{ part.title }}]</a>
+              {% else %}
+                -- <a href="{{ part.url }}">[{{ part.title }}]</a>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        </div>
 
+        <div class="resource-metadata">
+          {% if article.author %}by <span class="author">{{ article.author }}</span>{% endif %}
+          {% if article.date %}({{ article.date }}){% endif %}
+        </div>
+
+        <div class="comments">
+          {% if article.comments %}{{ article.comments | markdownify }}{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <h2>Books</h2>
+
+  </div>
 </div>
