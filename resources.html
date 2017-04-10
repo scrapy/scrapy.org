@@ -1,0 +1,35 @@
+---
+layout: default
+title: Resources
+permalink: resources/
+---
+{% assign articles = site.data.resources.articles %}
+{% assign oldstable = site.data.scrapy.oldstable %}
+{% assign devel = site.data.scrapy.development %}
+
+<div class="container">
+
+<div class="second-row">
+
+  <h1>Curated Resources</h1>
+
+  <h2>Articles and Blog posts</h2>
+  <p>
+    <ul class="resources">
+{% for article in articles %}
+      <li class="resource">
+        {% if article.url %}
+        <a href="{{ article.url }}">{{ article.title }}</a>
+        {% elsif article.parts %}
+          <span class="title">{{ article.title }}</span>
+          ( {% for part in article.parts %}<a href="{{ part.url }}">{{ part.title }}</a> {% endfor %})
+        {% endif %}{% if article.author %}, by {{ article.author }}{% endif %}
+        {% if article.date %}({{ article.date }}){% endif %}
+        {% if article.comments %}<br/>{{ article.comments | markdownify }}{% endif %}
+      </li>
+{% endfor %}
+    </ul>
+  </p>
+</div>
+
+</div>

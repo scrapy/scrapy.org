@@ -52,7 +52,7 @@ dl, dd, ol, ul, figure {
 
 	@font-face {
 	  font-family: Qlassik;
-	  src: url('fonts/Qlassik_TB.ttf');
+	  src: url('../fonts/Qlassik_TB.ttf');
 	}
 
 
@@ -111,9 +111,18 @@ dl, dd, ol, ul, figure {
 		list-style-type:none;
 	}
 
+	li.resource {
+		list-style-type:disc;
+		margin-bottom:15px;
+	}
+
+	li.resource span.title {
+		font-weight:bold;
+	}
+
 	.prompt {
 	color:#FF8080;
-	-webkit-user-select: none; /* Chrome/Safari */        
+	-webkit-user-select: none; /* Chrome/Safari */
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* IE10+ */
 	}
@@ -603,7 +612,7 @@ div.badges-bar {
 		.block-left {
 			border-right:1px solid $dark-green;
 
-			
+
 
 			p {
 				clear:both;
@@ -756,7 +765,7 @@ div.badges-bar {
 		width:71px;
 		text-align:center;
 		float:left;
-		
+
 	}
 
 	.block-left {
