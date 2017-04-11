@@ -4,6 +4,7 @@ title: Resources
 permalink: resources/
 ---
 {% assign articles = site.data.resources.articles %}
+{% assign books = site.data.resources.books %}
 
 <div class="container">
 
@@ -40,7 +41,29 @@ permalink: resources/
       </div>
       {% endfor %}
     </div>
+
     <h2>Books</h2>
+
+    <div class="resources">
+      {% for book in books %}
+      <div class="resource">
+        <div class="title">
+          {% if book.url %}
+            <a href="{{ book.url }}">{{ book.title }}</a>
+          {% endif %}
+        </div>
+
+        <div class="resource-metadata">
+          {% if book.author %}by <span class="author">{{ book.author }}</span>{% endif %}
+          {% if book.date %}({{ book.publisher }}, {{ book.date }}){% endif %}
+        </div>
+
+        <div class="comments">
+          {% if book.comments %}{{ book.comments | markdownify }}{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
 
   </div>
 </div>
