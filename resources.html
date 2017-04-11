@@ -5,12 +5,14 @@ permalink: resources/
 ---
 {% assign articles = site.data.resources.articles %}
 {% assign books = site.data.resources.books %}
+{% assign courses = site.data.resources.courses %}
 
 <div class="container">
 
   <h1>Curated Resources</h1>
 
   <div class="resources-section">
+
     <h2>Articles and Blog posts</h2>
     <div class="resources">
       {% for article in articles %}
@@ -60,6 +62,29 @@ permalink: resources/
 
         <div class="comments">
           {% if book.comments %}{{ book.comments | markdownify }}{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <h2>Courses</h2>
+
+    <div class="resources">
+      {% for course in courses %}
+      <div class="resource">
+        <div class="title">
+          {% if course.url %}
+            <a href="{{ book.url }}">{{ course.title }}</a>
+          {% endif %}
+        </div>
+
+        <div class="resource-metadata">
+          {% if course.author %}by <span class="author">{{ course.author }}</span>{% endif %}
+          {% if course.platform %}(on {{ course.platform }}, {{ course.length }})</span>{% endif %}
+        </div>
+
+        <div class="comments">
+          {% if course.description %}{{ course.description | markdownify }}{% endif %}
         </div>
       </div>
       {% endfor %}

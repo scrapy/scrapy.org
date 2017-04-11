@@ -1,0 +1,16 @@
+- title:  "Scrapy: Powerful Web Scraping & Crawling with Python"
+  url:    https://www.udemy.com/scrapy-tutorial-web-scraping-with-python/
+  author: GoTrained Academy
+  platform:     Udemy
+  length:       4 hours
+  description: |
+    _Python Scrapy Tutorial - Learn how to scrape websites and build a
+    powerful web crawler using Scrapy and Python._
+
+- title:  "Python Scrapy: Scrape Web Data Using Python"
+  url:    https://www.udemy.com/python-scrapy/
+  author: Stone River eLearning
+  platform:     Udemy
+  length:       1 hour
+  description: |
+    _Free and open source web crawling framework, written in Python._
