@@ -12,6 +12,8 @@ navigation:
   url: download/
 - text: Documentation
   url: doc/
+- text: Resources
+  url: resources/
 - text: Community
   url: community/
 - text: Companies

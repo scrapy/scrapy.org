@@ -1,0 +1,32 @@
+- title:  Learning Scrapy
+  url:    https://www.packtpub.com/big-data-and-business-intelligence/learning-scrapy
+  date:   January 2016
+  publisher:  Packt
+  author: Dimitrios Kouzis-Loukas
+  comments: |
+    Very in-depth book on Scrapy. It shows Scrapy 1.0.x, and is Python 2 only.
+
+    It explains practically every component and setting to get you started with Scrapy,
+    and dive deeper if needed.
+    There's [a very cool example of asynchronous sending of items](https://github.com/scalingexcellence/scrapy-apperyio/blob/master/scrapyapperyio.py),
+    using `engine.download` and `inlineCallback`.
+    It also shows how to deploy a Scrapy project to Scrapinghub's platform.
+    The book even includes a quite intense introduction to Twisted
+    and nonblocking I/O programming (a very good one).
+
+    The book has a [companion website](http://scrapybook.com/)
+    which has videos for some chapters.
+
+- title:    "Data Visualization with Python and JavaScript: Scrape, Clean, Explore & Transform Your Data"
+  url:      http://shop.oreilly.com/product/0636920037057.do
+  author:   Kyran Dale
+  date:     June 2016
+  publisher:    O'Reilly Media
+  comments: |
+    This book is not only about Scrapy but it has a whole chapter on Scrapy,
+    “Chapter 6. Heavyweight Scraping with Scrapy”.
+
+    It suggests using Anaconda, but make sure to use conda-forge channel instead.
+    There's a nice introduction to XPath and how to use scrapy shell to test selectors.
+    It also introduces `ImagesPipeline` to grab Nobel Prize winners pics,
+    which is pretty cool, right?
