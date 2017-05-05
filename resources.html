@@ -7,6 +7,7 @@ permalink: resources/
 {% assign books = site.data.resources.books %}
 {% assign courses = site.data.resources.courses %}
 {% assign videos = site.data.resources.videos %}
+{% assign slides = site.data.resources.slides %}
 
 <div class="container">
 
@@ -109,6 +110,29 @@ permalink: resources/
 
         <div class="comments">
           {% if video.description %}{{ video.description | markdownify }}{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <h2>Slides</h2>
+
+    <div class="resources">
+      {% for deck in slides %}
+      <div class="resource">
+        <div class="title">
+          {% if deck.url %}
+            <a href="{{ deck.url }}">{{ deck.title }}</a>
+          {% endif %}
+        </div>
+
+        <div class="resource-metadata">
+          {% if deck.author %}by <span class="author">{{ deck.author }}</span>{% endif %}
+          {% if deck.context %}({{ deck.context }}){% endif %}
+        </div>
+
+        <div class="comments">
+          {% if deck.description %}{{ deck.description | markdownify }}{% endif %}
         </div>
       </div>
       {% endfor %}
