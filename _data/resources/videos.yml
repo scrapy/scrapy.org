@@ -1,0 +1,63 @@
+- title: "Learn Scrapy"
+  url: https://www.youtube.com/playlist?list=PLZyvi_9gamL-EE3zQJbU5N3nzJcfNeFHU
+  author: Scrapinghub
+  description: |
+    Learn how to scrape the web using the Scrapy framework with this series of short videos.
+    [Companion code](https://github.com/scrapinghub/learn-scrapy).
+
+- title: "Scrapy Workshop"
+  url: https://www.youtube.com/watch?v=eD8XVXLlUTE
+  author: Karthik Ananth
+  context: PyData NYC 2015, in English
+  description: |
+    _This workshop will provide an overview of Scrapy, starting from the
+    fundamentals and working through each new topic with hands-on examples.
+    Participants will come away with a good understanding of Scrapy,
+    the principles behind its design, and how to apply the best practices
+    encouraged by Scrapy to any scraping task._
+
+- title: "Dive into Scrapy"
+  url: http://pyvideo.org/europython-2015/dive-into-scrapy.html
+  context: EuroPython 2015, in English
+  author: Juan Riaza
+  description: |
+    _Understand why its necessary to Scrapy-ify early on,
+    Anatomy of a Scrapy Spider,
+    Using the interactive shell,
+    What are items and how to use item loaders,
+    Examples of pipelines and middlewares,
+    Techniques to avoid getting banned,
+    How to deploy Scrapy projects._
+
+- title: "Scrapy - Overview and Demo (web crawling and scraping)"
+  url: https://www.youtube.com/watch?v=CsaqVQ4NIEU
+  author: Melvin L
+  context: 2016
+  description: |
+    Scrapy tutorial video provides  covers the following:
+    What is Scrapy,
+    Why use Scrapy - alternatives to Scrapy,
+    Architecture, components & performance,
+    Quick demo.
+
+- title:  "Scrapy: it GETs the web"
+  url:    http://pyvideo.org/pycon-us-2013/scrapy-it-gets-the-web.html
+  author: Asheesh Laroia
+  context: PyCon US 2013, in English
+  description: |
+    _Scrapy lets you straightforwardly pull data out of the web.
+    It helps you retry if the site is down, extract content from pages
+    using CSS selectors (or XPath), and cover your code with tests.
+    It downloads asynchronously with high performance.
+    You program to a simple model, and it's good for web APIs, too._
+
+- title:  "Python Scrapy: Scrape Web Data Using Python"
+  url:    https://www.youtube.com/watch?v=eD8XVXLlUTE
+  author: Dave McLain
+  context: PyTexas 2013, in English
+  description: |
+    _Python has great tools like Django and Flask for taking your database
+    and turning it into html pages, but what if you want to take somebody
+    else's html pages and build a database from them? Scrapy is a library
+    for building web spiders that will simplify your web scraping tasks immensely.
+    Friends don't let friends use raw urllib2._
