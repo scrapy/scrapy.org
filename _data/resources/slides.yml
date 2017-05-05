@@ -1,0 +1,61 @@
+- title: "Web Crawling & Metadata Extraction in Python"
+  url: https://speakerdeck.com/amontalenti/web-crawling-and-metadata-extraction-in-python
+  author: Andrew Montalenti
+  context: in English, October 2012
+  description: |
+    This talk presents two key technologies that can be used:
+    Scrapy, an open source & scalable web crawling framework,
+    and Mr. Schemato, a new, open source semantic web validator and distiller.
+
+- title: "Crawling the web for fun and profit"
+  url: http://www.slideshare.net/federicof/crawling-the-web-for-fun-and-profit
+  author: Federico Feroldi
+  context: in English, May 2010
+  description: |
+    Crawling technology are the basis for search engines but they also
+    have many applications for business and for fun.
+
+- title: "Scrapy for dummies"
+  url: http://www.slideshare.net/previa/scrapyfordummies-15277988
+  author: Chandler Huang
+  context: in English, May 2010
+
+- title: "Web scraping 1 2-3 with python + scrapy (Summer BarCampHK 2012 version)"
+  url: http://www.slideshare.net/sammyfung/web-scraping-1-23-with-python-scrapy-summer-barcamphk-2012-version
+  author: Sammy Fung
+  context: in English, July 2012
+
+- title: "When big data meet python"
+  url: http://www.slideshare.net/jimmy_lai/when-big-data-meet-python
+  author: Jimmy Lai
+  context: in English, COSCUP 2011
+  description: |
+    In this slides, the author shares how to solve Big Data
+    issues using Python open source tools.
+
+- title: "How to scrape any website's content using Scrapy"
+  url: http://scribd.com/doc/153755386/How-to-Scrap-Any-Website-s-content-using-Scrapy
+  author: Anton Rifco
+  context: in English, July 2013
+  description: |
+    Tutorial of How to scrape (crawling) website's content using Scrapy Python
+
+- title: "Scrapy workshop"
+  url: http://www.slideshare.net/dbertinat1/scrapy
+  author: Daniel Bertinat
+  context: in Spanish, November 2012
+
+- title: "Scrapy - an agile framework for web spider development"
+  url: https://docs.google.com/presentation/d/1oNCZPxXQTmWFbtaMGRwrnNd20MIB5ecRwNrRISJjRk4/edit?usp=sharing
+  author: Pablo Hoffman
+  context: in Spanish, 2011
+
+- title: "Scrapy+WebKit+MySQL+Redis integration"
+  url: http://www.slideshare.net/zenyuhao/ss-7188268
+  author: zenyuhao
+  context: in Chinese, March 2011
+
+- title: "Scrapy in five minutes"
+  url: http://slides.com/tiagogoncalves/scrapy-portuguese
+  author: Tiago de Assis Gonçalves
+  context: in Portuguese, October 2013
