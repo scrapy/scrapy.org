@@ -1,3 +1,23 @@
+- title: "Scrapy Tutorial: Web Scraping Craigslist"
+  url: http://python.gotrained.com/scrapy-tutorial-web-scraping-craigslist/
+  author: GoTrained
+  date: May 2017
+
+- title: 'Internet Archaeology: Scraping time series data from Archive.org'
+  url: http://sangaline.com/post/wayback-machine-scraper/
+  author: Evan Sangaline
+  date: April 2017
+  comments: |
+      Explains downloader middlewares through a pretty interesting use case.
+
+- title: 'Advanced Web Scraping: Bypassing "403 Forbidden", captchas, and more'
+  url: http://sangaline.com/post/advanced-web-scraping-tutorial/
+  author: Evan Sangaline
+  date: March 2017
+  comments: |
+      Comprehensive article on how to bypass the most common anti-bot mechanisms.
+      Demonstrates good practices by implementing reusable components, such as middlewares.
+
 - title:  Web Scraping With Scrapy and MongoDB
   parts:
       - url: https://realpython.com/blog/python/web-scraping-with-scrapy-and-mongodb/
@@ -10,6 +30,28 @@
       Written for Scrapy 1.0.x, does not use modern idioms (e.g. `extract()[0]`)
       but shows an example custom MongoDB item pipeline.
 
+- title: How To Crawl A Web Page with Scrapy and Python 3
+  url: https://www.digitalocean.com/community/tutorials/how-to-crawl-a-web-page-with-scrapy-and-python-3
+  author: Justin Duke
+  date: September 2016
+
+- title: Building a Web Crawler with Scrapy
+  url: https://blog.siliconstraits.vn/building-web-crawler-scrapy/
+  author: Hoài Thương
+  date: August 2016
+
+- title: How to Debug your Scrapy Spiders
+  url: https://blog.scrapinghub.com/2016/05/18/scrapy-tips-from-the-pros-may-2016-edition/
+  author: Valdir Stumm Jr
+  date: May 2016
+
+- title: Extracting data from websites using Scrapy
+  url: https://medium.com/@kaismh/extracting-data-from-websites-using-scrapy-e1e1e357651a
+  author: Kais Hassan
+  date: April 2016
+  comments: |
+    Uses Scrapy 1.0 and Python 2, but still relevant.
+
 - title:  How to Run Scrapy Spiders on Cloud Using Heroku and Redis
   url:    http://www.seckintozlu.com/1148-how-to-run-scrapy-spiders-on-the-cloud-using-heroku-and-redis.html
   author: Seçkin Tozlu
@@ -17,6 +59,13 @@
   comments: |
       Not the prettiest spider, but article shows how to use scrapy-redis,
       scrapy-heroku and scrapyd to run a periodic crawler on Heroku.
+
+- title: 'Web Scraping with Scrapy - first steps'
+  url: https://eliasdorneles.github.io/2014/08/30/web-scraping-with-scrapy---first-steps.html
+  author: Elias Dorneles
+  date: August 2014
+  comments: |
+    Old but good. Uses `[0].extract()`, you should now use `.extract_first()`.
 
 - title: "Scrapy: Run Using TOR and Multiple Agents"
   parts:
@@ -29,47 +78,3 @@
   comments: |
       Old articles but still relevant on how to configure polipo
       as an HTTP proxy to integrate a crawler with Tor network.
-
-- title: Building a Web Crawler with Scrapy
-  url: https://blog.siliconstraits.vn/building-web-crawler-scrapy/
-  author: Hoài Thương
-  date: August 2016
-
-- title: How To Crawl A Web Page with Scrapy and Python 3
-  url: https://www.digitalocean.com/community/tutorials/how-to-crawl-a-web-page-with-scrapy-and-python-3
-  author: Justin Duke
-  date: September 2016
-
-- title: Extracting data from websites using Scrapy
-  url: https://medium.com/@kaismh/extracting-data-from-websites-using-scrapy-e1e1e357651a
-  author: Kais Hassan
-  date: April 2016
-  comments: |
-    Uses Scrapy 1.0 and Python 2, but still relevant.
-
-- title: 'Advanced Web Scraping: Bypassing "403 Forbidden", captchas, and more'
-  url: http://sangaline.com/post/advanced-web-scraping-tutorial/
-  author: Evan Sangaline
-  date: March 2017
-  comments: |
-      Comprehensive article on how to bypass the most common anti-bot mechanisms.
-      Demonstrates good practices by implementing reusable components, such as middlewares.
-
-- title: 'Internet Archaeology: Scraping time series data from Archive.org'
-  url: http://sangaline.com/post/wayback-machine-scraper/
-  author: Evan Sangaline
-  date: April 2017
-  comments: |
-      Explains downloader middlewares through a pretty interesting use case.
-
-- title: 'Web Scraping with Scrapy - first steps'
-  url: https://eliasdorneles.github.io/2014/08/30/web-scraping-with-scrapy---first-steps.html
-  author: Elias Dorneles
-  date: August 2014
-  comments: |
-    Old but good. Uses `[0].extract()`, you should now use `.extract_first()`.
-
-- title: How to Debug your Scrapy Spiders
-  url: https://blog.scrapinghub.com/2016/05/18/scrapy-tips-from-the-pros-may-2016-edition/
-  author: Valdir Stumm Jr
-  date: May 2016
