@@ -4,10 +4,10 @@
 
   <a href="{{ site.url }}"><div class="logo"></div></a>
 
-  
+
 
   {% unless page.layout == 'front' %}
-    <ul class="navigation">
+    <ul class="navigation" id="navigation">
       {% for link in site.navigation %}
         {% assign current = nil %}
         {% if page.permalink == link.url %}
