@@ -2,7 +2,7 @@
 
 <div class="container">
 
-  <a href="{{ site.url }}"><div class="logo"></div></a>
+  <a href="{{ site.url }}" id="link-logo"><div class="logo"></div></a>
 
 
 
@@ -14,14 +14,14 @@
           {% assign current = 'current' %}
         {% endif %}
 
-        <a class="{{ current }}" href="../{{ link.url }}">
+        <a class="{{ current }}" href="../{{ link.url }}" id="link-{{ link.text | downcase | replace: ' ', '-' }}">
           <li class="{% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
             {{ link.text }}
           </li>
         </a>
       {% endfor %}
-      <a href="http://doc.scrapy.org/en/latest/faq.html"><li>FAQ</li></a>
-      <a href="https://github.com/scrapy/scrapy">
+      <a href="http://doc.scrapy.org/en/latest/faq.html" id="link-faq"><li>FAQ</li></a>
+      <a href="https://github.com/scrapy/scrapy" id="link-github">
       <li><i class="fa fa-code-fork fa-lg"></i> <span class="github-text">Fork on Github</span></li>
       </a>
     </ul>
