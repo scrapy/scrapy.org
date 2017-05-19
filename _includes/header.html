@@ -7,7 +7,7 @@
 
 
   {% unless page.layout == 'front' %}
-    <ul class="navigation" id="navigation">
+    <ul class="navigation">
       {% for link in site.navigation %}
         {% assign current = nil %}
         {% if page.permalink == link.url %}
