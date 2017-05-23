@@ -5,7 +5,6 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','gaScrapy');
 
 gaScrapy('create', 'UA-10231918-1', 'auto');
-gaScrapy('require', 'linkid');
 gaScrapy('send', 'pageview');
 </script>
 
@@ -17,7 +16,6 @@ analytics.page();
 
 analytics.ready(function () {
     ga('require', 'linker');
-    ga('require', 'linkid');
     ga('linker:autoLink', ['scrapinghub.com', 'crawlera.com']);
 });
 </script>
