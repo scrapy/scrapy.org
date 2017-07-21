@@ -1,7 +1,7 @@
 company,category,date,link
 Arbisoft,D,2017-07,https://arbisoft.com/blog/large-scale-website-scraping-issues-and-the-tools-to-resolve-them/
 Arbisoft,D,2017-07,https://arbisoft.com/blog/scrapy-and-realtime-crawling-to-do-or-not-to-do/
-Try-o-labs,D,2011-09,https://tryolabs.com/blog/2011/09/27/calling-scrapy-python-script/
+Tryolabs,D,2011-09,https://tryolabs.com/blog/2011/09/27/calling-scrapy-python-script/
 Intoli,D,2017-07,https://blog.scrapinghub.com/2017/07/07/scraping-the-steam-game-store-with-scrapy/
 Scrapinghub,D,2016-08,https://blog.scrapinghub.com/2016/08/25/how-to-crawl-the-web-politely-with-scrapy/
 Scrapinghub,D,2016-07,https://blog.scrapinghub.com/2016/07/28/meet-parsel-the-selector-library-behind-scrapy/

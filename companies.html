@@ -5,10 +5,9 @@ permalink: companies/
 redirect_from:
   - support/
 ---
-{% assign stable = site.data.scrapy.stable %}
-{% assign oldstable = site.data.scrapy.oldstable %}
-{% assign devel = site.data.scrapy.development %}
 
+{% assign companies = site.data.companies.companies %}
+{% assign ranking = site.data.companies.ranking %}
 
 <div class="container">
 
@@ -16,101 +15,17 @@ redirect_from:
   <p>The following companies offer support contracts and consultancy services for Scrapy, and can also develop bespoke crawlers to meet your needs:</p>
 
   <div class="companies-container">
+    {% for r in ranking %}
+      {% assign company = companies[r.company] %}
     <div class="company-longbox">
       <div class="logo-wrap">
-        <a href="https://scrapinghub.com/">
-        <img src="../img/scrapinghub-logo.png" />
+        <a href="{{ company.website }}">
+        <img src="../img/{{ company.logo }}" />
         </a>
       </div>
-      <p>
-      <a href="https://scrapinghub.com/">Scrapinghub</a>
-      is currently the largest company sponsoring Scrapy development. It specializes in web crawling, it was <a href="https://scrapinghub.com/about/">founded by Scrapy creators</a> and employs crawling experts including many Scrapy core developers.</a> </p>
+      {{ company.description | markdownify }}
     </div>
-
-    <div class="company-longbox">
-      <div class="logo-wrap">
-        <a href="https://intoli.com/">
-        <img src="../img/intoli-logo.svg" />
-        </a>
-      </div>
-      <p>
-        <a href="https://intoli.com/">Intoli</a>
-        uses Scrapy to provide customized web scraping solutions, delivering data that is used by clients to power their core products, for lead generation, and for competitor research. They specialize in advanced services such as cross-site data aggregation, user logins, and bypassing captchas.
-        </p>
-    </div>
-
-    <div class="company-longbox">
-      <div class="logo-wrap">
-        <a href="http://sayonetech.com/">
-        <img src="../img/46-sayone-logo.png" />
-        </a>
-      </div>
-      <p>
-        <a href="http://sayonetech.com/">SayOne</a>
-        uses Scrapy to power their web crawling and visualization services. They have a strong team of crawling experts who specialize in crawling, information extraction and application integration. They also offer web &amp; mobile app development. Read more about their data scrping services <a href="http://sayonetech.com/services/data-scraping/">here</a>.
-        </p>
-    </div>
-
-    <div class="company-longbox">
-      <div class="logo-wrap">
-        <a href="http://datahut.co">
-        <img src="../img/datahut-logo.png" />
-        </a>
-      </div>
-      <p>
-        <a href="http://datahut.co">Datahut</a>
-        provides Scrapy consulting services across different business verticals like e-commerce, content discovery, lead generation, opinion mining etc. They provide clean ready to use data in the most common formats.
-      </p>
-    </div>
-
-    <div class="company-longbox">
-      <div class="logo-wrap">
-        <a href="http://www.goscrape.com/">
-        <img src="../img/goscrape-logo.png" />
-        </a>
-      </div>
-      <p>
-        <a href="http://www.goscrape.com/">GoScrape</a>
-        specializes in developing web crawlers via Scrapy for fulfilling information needs. Their core services include scraping, crawling, and parsing data from a variety of sources; interacting with web APIs; and cleansing, analyzing, and presenting data using a variety of methods.
-      </p>
-    </div>
-
-    <div class="company-longbox">
-      <div class="logo-wrap">
-        <a href="http://arbisoft.com/services/">
-        <img src="../img/arbisoft-logo.png" />
-        </a>
-      </div>
-      <p>
-        <a href="http://arbisoft.com/services/">Arbisoft</a>
-        is using Scrapy for a number of aggregation projects for our clients and partners. They have more than 20 trained Scrapy/Python engineers and usually recommend it as the first choice when their partners ask for scraping services.
-      </p>
-    </div>
-
-    <div class="company-longbox">
-      <div class="logo-wrap">
-        <a href="http://www.tryolabs.com/">
-        <img src="../img/tryolabs-logo.png" />
-        </a>
-      </div>
-      <p>
-        <a href="https://tryolabs.com/">Tryolabs</a>
-        is a Boutique dev Shop specialized in building Python apps with Machine Learning components. They embed Scrapy into their customers applications as well as into their own products.
-      </p>
-    </div>
-
-    <div class="company-longbox">
-      <div class="logo-wrap">
-        <a href="http://thalasar.com/custom-application-development/scrapy-custom-development-and-support">
-        <img src="../img/thalasar-logo.jpg" />
-        </a>
-      </div>
-      <p class="top-margin">
-        <a href="http://thalasar.com/custom-application-development/scrapy-custom-development-and-support">Thalasar Ventures</a>
-        offers Scrapy support and development.
-      </p>
-    </div>
-  </div>
+    {% endfor %}
 
   <h1>Companies using Scrapy</h1>
   <p>Check who is using Scrapy to do business and make an impact on the world.

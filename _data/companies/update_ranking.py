@@ -12,9 +12,9 @@ with open('contributions.csv') as f:
     for r in reader:
         points[r['company']] += catpoints[r['category']]
 
-ranking = dict(sorted(points.items(), key=itemgetter(1), reverse=True))
+ranking = sorted(points.items(), key=itemgetter(1), reverse=True)
 
 with open('ranking.csv', 'w') as f:
     writer = DictWriter(f, ['company', 'score'])
     writer.writeheader()
-    writer.writerows({'company': c, 'score': s} for (c, s) in ranking.items())
+    writer.writerows({'company': c, 'score': s} for (c, s) in ranking)
