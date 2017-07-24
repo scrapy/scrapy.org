@@ -2,6 +2,8 @@ from csv import DictReader, DictWriter
 from collections import defaultdict
 from operator import itemgetter
 
+MIN_SCORE = 5
+
 with open('points.csv') as f:
     reader = DictReader(f)
     catpoints = {r['category']: int(r['points']) for r in reader}
@@ -17,4 +19,6 @@ ranking = sorted(points.items(), key=itemgetter(1), reverse=True)
 with open('ranking.csv', 'w') as f:
     writer = DictWriter(f, ['company', 'score'])
     writer.writeheader()
-    writer.writerows({'company': c, 'score': s} for (c, s) in ranking)
+    writer.writerows({'company': c, 'score': s}
+                     for (c, s) in ranking
+                     if s >= MIN_SCORE)
