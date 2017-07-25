@@ -1,0 +1,81 @@
+Scrapinghub:
+  name: Scrapinghub
+  website: https://scrapinghub.com/
+  logo: scrapinghub-logo.png
+  description: |
+    [Scrapinghub](https://scrapinghub.com/) is currently the largest company
+    sponsoring Scrapy development.
+    It specializes in web crawling, it was
+    [founded by Scrapy creators](https://scrapinghub.com/about/)
+    and employs crawling experts including many Scrapy core developers.
+
+Intoli:
+  name: Intoli
+  website: https://intoli.com/
+  logo: intoli-logo.svg
+  description: |
+    [Intoli](https://intoli.com/) uses Scrapy to provide customized web
+    scraping solutions, delivering data that is used by clients to power
+    their core products, for lead generation, and for competitor research.
+    They specialize in advanced services such as cross-site data aggregation,
+    user logins, and bypassing captchas.
+
+SayOne:
+  name: SayOne
+  website: http://sayonetech.com/
+  logo: 46-sayone-logo.png
+  description: |
+    [SayOne](http://sayonetech.com/) uses Scrapy to power their web crawling
+    and visualization services. They have a strong team of crawling experts
+    who specialize in crawling, information extraction and application integration.
+    They also offer web &amp; mobile app development.
+    Read more about their data scraping services [here](http://sayonetech.com/services/data-scraping/).
+
+Datahut:
+  name: Datahut
+  website: http://datahut.co
+  logo: datahut-logo.png
+  description: |
+    [Datahut](http://datahut.co) provides Scrapy consulting services
+    across different business verticals like e-commerce, content discovery,
+    lead generation, opinion mining etc.
+    They provide clean ready to use data in the most common formats.
+
+GoScrape:
+  name: GoScrape
+  website: http://www.goscrape.com/
+  logo: goscrape-logo.png
+  description: |
+    [GoScrape](http://www.goscrape.com/) specializes in developing web crawler
+    via Scrapy for fulfilling information needs.
+    Their core services include scraping, crawling, and parsing data
+    from a variety of sources; interacting with web APIs; and cleansing,
+    analyzing, and presenting data using a variety of methods.
+
+Arbisoft:
+  name: Arbisoft
+  website: http://arbisoft.com/services/
+  logo: arbisoft-logo.png
+  description: |
+    [Arbisoft](http://arbisoft.com/services/) is using Scrapy for a number
+    of aggregation projects for their clients and partners.
+    They have more than 20 trained Scrapy/Python engineers and usually
+    recommend it as the first choice when their partners ask for scraping services.
+
+Tryolabs:
+  name: Tryolabs
+  website: https://tryolabs.com/
+  logo: tryolabs-logo.png
+  description: |
+    [Tryolabs](https://tryolabs.com/) is a Boutique dev Shop specialized
+    in building Python apps with Machine Learning components.
+    They embed Scrapy into their customers applications as well as into their own products.
+
+Thalasar Ventures:
+  name: Thalasar Ventures
+  website: http://thalasar.com/custom-application-development/scrapy-custom-development-and-support
+  logo: thalasar-logo.jpg
+  description_style: top-margin
+  description: |
+    [Thalasar Ventures](http://thalasar.com/custom-application-development/scrapy-custom-development-and-support)
+    offers Scrapy support and development.
