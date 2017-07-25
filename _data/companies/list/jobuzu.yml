@@ -1,5 +1,0 @@
-name: Jobuzu
-logouser: 31-jobuzu-logo.png
-homepage: http://jobuzu.co.uk/
-usage: |
-    **Jobuzu:** Uses Scrapy to scrape over 100,000 jobs daily from UK job boards.

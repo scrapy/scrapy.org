@@ -1,6 +1,0 @@
-name: DayWatch
-logouser: 13-daywatch-logo.png
-homepage: http://www.usedaywatch.com/
-usage: |
-    **DayWatch:** Is an Internet Market Intelligence tool that uses Scrapy to empower
-    real-time business information retrieval from Daily Deal sites.

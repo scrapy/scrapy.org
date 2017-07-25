@@ -1,6 +1,0 @@
-name: Alışveriş Robotu
-logouser: 21-alisveris-logo.png
-homepage: http://www.alisverisrobotu.com/
-usage: |
-    **Alışveriş Robotu:** Is a Turkish price comparison site that uses Scrapy to
-    collect data from hundreds of retailers everyday.
