@@ -2,7 +2,5 @@ name: Stilivo
 logouser: 27-stilivo-logo.png
 homepage: http://www.stilivo.com/
 usage: |
-    Stilivo: Is a discovery shopping site that uses Scrapy to collect product
+    **Stilivo:** Is a discovery shopping site that uses Scrapy to collect product
     information from e-commerce sites.
-    
-    

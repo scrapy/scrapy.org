@@ -2,6 +2,4 @@ name: Mapado
 logouser: 28-mapado-logo.png
 homepage: http://www.mapado.com/
 usage: |
-    Mapado: Uses Scrapy to find local activities on the web.
-    
-    
+    **Mapado:** Uses Scrapy to find local activities on the web.

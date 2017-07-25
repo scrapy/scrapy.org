@@ -2,8 +2,6 @@ name: Parsely
 logouser: 01-parsely-logo.png
 homepage: http://parsely.com/
 usage: |
-    Parsely: Uses Scrapy to scrape articles from hundreds of news sites. Its CTO
+    **Parsely:** Uses Scrapy to scrape articles from hundreds of news sites. Its CTO
     talks about Scrapy in [this talk.](https://speakerdeck.com/amontalenti/web-
     crawling-and-metadata-extraction-in-python)
-    
-    

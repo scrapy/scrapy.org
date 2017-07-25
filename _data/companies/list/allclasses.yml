@@ -2,8 +2,6 @@ name: Allclasses
 logouser: 42-allclasses-logo.png
 homepage: https://allclasses.com/
 usage: |
-    Allclasses: Uses Scrapy to collect over 100,000 online and local classes from
+    **Allclasses:** Uses Scrapy to collect over 100,000 online and local classes from
     recreational through advanced education sites - providing more accessibility
     to education.
-    
-    

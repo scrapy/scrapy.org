@@ -2,6 +2,4 @@ name: WP Rocket
 logouser: 34-wprocket-logo.png
 homepage: http://wp-rocket.me/
 usage: |
-    WP Rocket: Uses Scrapy to preload the cache of all customer sites.
-    
-    
+    **WP Rocket:** Uses Scrapy to preload the cache of all customer sites.

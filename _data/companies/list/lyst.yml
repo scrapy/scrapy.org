@@ -2,6 +2,4 @@ name: Lyst
 logouser: 08-lyst-logo.png
 homepage: http://www.lyst.com/
 usage: |
-    Lyst: Uses Scrapy to crawl and scrape the fashion websites they index.
-    
-    
+    **Lyst:** Uses Scrapy to crawl and scrape the fashion websites they index.

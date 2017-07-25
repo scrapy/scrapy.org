@@ -2,7 +2,5 @@ name: DirectEmployers Foundation
 logouser: 02-direct-employers-logo.png
 homepage: http://directemployersfoundation.org/
 usage: |
-    DirectEmployers Foundation: Uses Scrapy to scrape job postings from many
+    **DirectEmployers Foundation:** Uses Scrapy to scrape job postings from many
     websites, which are published on the [My.jobs](http://www.my.jobs/) site.
-    
-    

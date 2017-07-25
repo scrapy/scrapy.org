@@ -2,8 +2,6 @@ name: Médialab Sciences Po
 logouser: 07-media-sciences-logo.png
 homepage: http://medialab.sciences-po.fr/
 usage: |
-    Médialab Sciences Po: In Paris is using Scrapy to develop a web mining tool
+    **Médialab Sciences Po:** In Paris is using Scrapy to develop a web mining tool
     for Social Sciences researchers [(announcement
     here)](https://groups.google.com/d/topic/scrapy-users/ApfTGGokSKo/discussion).
-    
-    

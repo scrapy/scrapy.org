@@ -2,8 +2,6 @@ name: Zhitongba
 logouser: 24-Zhitongba-logo.png
 homepage: http://www.zhitongba.com/
 usage: |
-    Zhitongba: Is a company trying to help people better commute within big cities
+    **Zhitongba:** Is a company trying to help people better commute within big cities
     in China. They use Scrapy to scrape ride-sharing information from multiple
     sources.
-    
-    

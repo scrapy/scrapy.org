@@ -2,7 +2,5 @@ name: PriceWiki
 logouser: 14-pricewiki-logo.png
 homepage: http://www.pricewiki.com/
 usage: |
-    PriceWiki: Uses Scrapy to scrape various websites for cost of living
+    **PriceWiki:** Uses Scrapy to scrape various websites for cost of living
     information.
-    
-    

@@ -10,7 +10,6 @@ description: |
 logouser: shub-logo.png
 homepage: https://scrapinghub.com/
 usage: |
-    Scrapinghub: From the [creators of Scrapy](https://scrapinghub.com/about/),
+    **Scrapinghub:** From the [creators of Scrapy](https://scrapinghub.com/about/),
     Scrapinghub is a leading technology and professional services company,
     providing successful web crawling and data processing solutions.
-

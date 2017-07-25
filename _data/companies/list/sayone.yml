@@ -10,6 +10,5 @@ description: |
 logouser: 46-sayone-logo.png
 homepage: http://sayonetech.com/
 usage: |
-    SayOne: uses Scrapy to crawl data for their clients and thereby develop more
+    **SayOne:** uses Scrapy to crawl data for their clients and thereby develop more
     customer-centric applications for them.
-

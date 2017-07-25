@@ -2,8 +2,6 @@ name: MonkeyLearn
 logouser: 43-monkeylearn-logo.png
 homepage: http://www.monkeylearn.com/
 usage: |
-    MonkeyLearn: Is a cloud platform that allows any company to extract relevant
+    **MonkeyLearn:** Is a cloud platform that allows any company to extract relevant
     data from unstructured text using machine learning. It uses Scrapy to get data
     to train its algorithms.
-    
-    

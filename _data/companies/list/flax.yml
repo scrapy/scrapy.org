@@ -2,9 +2,7 @@ name: Flax
 logouser: 06-flax-logo.png
 homepage: http://www.flax.co.uk/
 usage: |
-    Flax: Is a search consulting company based in Cambridge (UK) that uses Scrapy
+    **Flax:** Is a search consulting company based in Cambridge (UK) that uses Scrapy
     to power the crawling needs of their solutions [(blog
     post)](http://www.flax.co.uk/2013/02/22/cambridge-search-meetup-a-night-of-
     crawling-and-scraping/).
-    
-    

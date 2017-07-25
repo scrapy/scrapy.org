@@ -2,7 +2,5 @@ name: El Útero de Marita
 logouser: 40-utero-logo.png
 homepage: http://utero.pe/
 usage: |
-    El Útero de Marita: Peruvian leading news blog uses Scrapy to download public
+    **El Útero de Marita:** Peruvian leading news blog uses Scrapy to download public
     documents from governmental institutions in Peru for data journalism.
-    
-    
