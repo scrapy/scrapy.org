@@ -1,0 +1,8 @@
+name: Jobijoba
+logouser: 38-jobijoba-logo.png
+homepage: http://www.jobijoba.com/
+usage: |
+    Jobijoba: Uses Scrapy to scrape job offers daily from many job boards. Operate
+    in France, several European countries, Russia, Mexico and Australia.
+    
+    

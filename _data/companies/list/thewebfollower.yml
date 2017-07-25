@@ -1,0 +1,9 @@
+name: TheWebFollower
+logouser: 51-thewebfollower-logo.png
+homepage: http://www.thewebfollower.com/
+usage: |
+    TheWebFollower: Uses Scrapy to crawl latest Malayalam language blogs, news,
+    articles, stories published in different websites.
+    [(tweet)](https://twitter.com/sajithmohanvk/status/779291146568798208)
+    
+    

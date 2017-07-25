@@ -1,5 +1,5 @@
 name: SayOne
-website: http://sayonetech.com/
+url: http://sayonetech.com/
 logo: 46-sayone-logo.png
 description: |
     [SayOne](http://sayonetech.com/) uses Scrapy to power their web crawling
@@ -7,3 +7,9 @@ description: |
     who specialize in crawling, information extraction and application integration.
     They also offer web &amp; mobile app development.
     Read more about their data scraping services [here](http://sayonetech.com/services/data-scraping/).
+logouser: 46-sayone-logo.png
+homepage: http://sayonetech.com/
+usage: |
+    SayOne: uses Scrapy to crawl data for their clients and thereby develop more
+    customer-centric applications for them.
+

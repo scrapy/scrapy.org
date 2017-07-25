@@ -1,0 +1,8 @@
+name: Lionseek
+logouser: 26-lionseek-logo.png
+homepage: http://www.lionseek.com/
+usage: |
+    Lionseek: Is a search engine that uses Scrapy to find items for sale in
+    forums.
+    
+    

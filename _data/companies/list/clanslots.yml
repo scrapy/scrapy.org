@@ -1,0 +1,8 @@
+name: ClanSlots
+logouser: 20-clanslots-logo.png
+homepage: http://www.clanslots.com/
+usage: |
+    ClanSlots: Uses Scrapy daily to collect levels and plugins for games they
+    host.
+    
+    

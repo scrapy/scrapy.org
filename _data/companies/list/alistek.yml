@@ -1,0 +1,9 @@
+name: Alistek
+logouser: 23-alistek-logo.png
+homepage: http://www.alistek.com/
+usage: |
+    Alistek: Uses Scrapy for updating partner related information in their OpenERP
+    based back-office system, by scraping various data sources, both on the web
+    and off-line.
+    
+    

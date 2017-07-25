@@ -1,0 +1,7 @@
+name: Offertazo
+logouser: 25-offertazo-logo.png
+homepage: http://www.offertazo.com/
+usage: |
+    Offertazo: Uses Scrapy to scrape offers from many Spanish websites.
+    
+    

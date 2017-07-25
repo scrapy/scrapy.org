@@ -1,0 +1,7 @@
+name: SimpleSpot
+logouser: 18-simplespot-logo.png
+homepage: http://www.simplespot.it/
+usage: |
+    SimpleSpot: Uses Scrapy to build their geolocalized information service.
+    
+    

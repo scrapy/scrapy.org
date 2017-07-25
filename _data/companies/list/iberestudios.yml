@@ -1,0 +1,8 @@
+name: Iberestudios
+logouser: 12-iberestudios-logo.png
+homepage: http://www.iberstudios.com/
+usage: |
+    Iberestudios: Uses Scrapy to collect data from masters degrees, doctorates and
+    postgradute degrees in Spain.
+    
+    

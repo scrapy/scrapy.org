@@ -1,0 +1,10 @@
+name: Cocon.Se
+logouser: 52-cocon-semantique.png
+homepage: http://cocon.se/
+usage: |
+    Cocon.Se: A tool that shows your website like a crawler sees it. Uses Scrapy
+    to prototype data gathering algorithms, generate specific datasets for machine
+    learning and datavizualisation. [(blog post)](http://cocon.se/cocon-
+    semantique/devs/scrapy/)
+    
+    

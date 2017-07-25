@@ -1,0 +1,8 @@
+name: Weotta
+logouser: 03-weotta-logo.png
+homepage: http://www.weotta.com/
+usage: |
+    Weotta: Uses Scrapy to crawl data for post-processing
+    [(tweet)](http://twitter.com/japerk/status/79304855486865408).
+    
+    

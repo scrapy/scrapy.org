@@ -1,0 +1,8 @@
+name: Zopper
+logouser: 32-zopper-logo.png
+homepage: http://www.zopper.com/
+usage: |
+    Zopper: Uses Scrapy to crawl hundreds of ecommerce portals for classifying the
+    products sold online.
+    
+    

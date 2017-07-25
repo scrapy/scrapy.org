@@ -1,0 +1,9 @@
+name: Zimigo.com
+logouser: 48-zimigo-logo.png
+homepage: http://zimigo.com/
+usage: |
+    Zimigo.com: Is a vertical search engine for cars, real estate, jobs and
+    products classified ads, in more than 30 countries. Uses Scrapy to crawl and
+    collect ads on partner classified websites.
+    
+    

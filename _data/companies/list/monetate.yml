@@ -1,0 +1,7 @@
+name: Monetate
+logouser: 19-monetate-logo.png
+homepage: http://www.monetate.com/
+usage: |
+    Monetate: Uses Scrapy daily to collect catalog information from their clients.
+    
+    
