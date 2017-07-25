@@ -57,10 +57,12 @@ Arbisoft:
   website: http://arbisoft.com/services/
   logo: arbisoft-logo.png
   description: |
-    [Arbisoft](http://arbisoft.com/services/) is using Scrapy for a number
-    of aggregation projects for their clients and partners.
-    They have more than 20 trained Scrapy/Python engineers and usually
-    recommend it as the first choice when their partners ask for scraping services.
+    [Arbisoft](http://arbisoft.com/services/) scours massive websites
+    several layers deep to collect valuable data powering leading firms
+    around the world.
+    It offers realtime crawling and custom-built fully-managed spiders.
+    Over 6 years of quality service, their Python engineers have come to
+    trust Scrapy as their tool of choice.
 
 Tryolabs:
   name: Tryolabs
