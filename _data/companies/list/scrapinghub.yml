@@ -1,0 +1,9 @@
+name: Scrapinghub
+website: https://scrapinghub.com/
+logo: scrapinghub-logo.png
+description: |
+    [Scrapinghub](https://scrapinghub.com/) is currently the largest company
+    sponsoring Scrapy development.
+    It specializes in web crawling, it was
+    [founded by Scrapy creators](https://scrapinghub.com/about/)
+    and employs crawling experts including many Scrapy core developers.

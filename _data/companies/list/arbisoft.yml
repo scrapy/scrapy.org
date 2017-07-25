@@ -1,0 +1,8 @@
+name: Arbisoft
+website: http://arbisoft.com/services/
+logo: arbisoft-logo.png
+description: |
+    [Arbisoft](http://arbisoft.com/services/) is using Scrapy for a number
+    of aggregation projects for their clients and partners.
+    They have more than 20 trained Scrapy/Python engineers and usually
+    recommend it as the first choice when their partners ask for scraping services.
