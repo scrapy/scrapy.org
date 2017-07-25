@@ -1,0 +1,9 @@
+name: MicroPyramid
+logouser: 53-micropyramid-logo.png
+homepage: https://micropyramid.com/
+usage: |
+    **MicroPyramid:** uses Scrapy to crawl and scrape data for their e-commerce, seo,
+    and cms clients to develop better applications and data analytics to help them
+    to do data analysis. ([blog](https://micropyramid.com/blog/scrape-website-
+    using-scrapy-python/) [posts](https://micropyramid.com/blog/export-data-with-
+    scrapy-python/))

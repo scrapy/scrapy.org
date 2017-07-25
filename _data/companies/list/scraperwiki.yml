@@ -1,0 +1,7 @@
+name: ScraperWiki
+logouser: 09-scraper-wiki-logo.png
+homepage: https://scraperwiki.com/
+usage: |
+    **ScraperWiki:** Is a data services company based in Liverpool providing bespoke
+    solutions for data scraping and aggregation using Scrapy as a core technology
+    [(blog post)](http://blog.scraperwiki.com/2013/03/14/tools-of-the-trade/).

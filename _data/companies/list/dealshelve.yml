@@ -1,0 +1,5 @@
+name: Dealshelve
+logouser: 15-dealshelve-logo.png
+homepage: http://dealshelve.com/
+usage: |
+    **Dealshelve:** Uses Scrapy to scrape daily deals from many sites.

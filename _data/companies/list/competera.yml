@@ -1,0 +1,7 @@
+name: Competera
+logouser: 36-competera-logo.png
+homepage: http://competera.net/
+usage: |
+    **Competera:** Is a price intelligence service that uses Scrapy to collect price,
+    availability and promo data from over the million product pages every day.
+

@@ -1,0 +1,6 @@
+name: LavoWeb
+logouser: 45-lavoweb-logo.png
+homepage: http://lavoweb.net/
+usage: |
+    **LavoWeb:** Uses Scrapy to crawl e-commerce websites, make SEO audit and Magento
+    migration.

@@ -1,0 +1,6 @@
+name: Videdressing.com
+logouser: 47-videdressing-logo.png
+homepage: http://www.videdressing.com/
+usage: |
+    **Videdressing.com:** Uses Scrapy to crawl and collect data on fashion products,
+    clothes and accessories.

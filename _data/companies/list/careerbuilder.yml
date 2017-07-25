@@ -1,0 +1,5 @@
+name: CareerBuilder
+logouser: 16-careerbuilder-logo.png
+homepage: http://www.careerbuilder.com/
+usage: |
+    **CareerBuilder:** Uses Scrapy to scrape job offers from many sites.

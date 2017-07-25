@@ -1,0 +1,6 @@
+name: Oposicionesaldia
+logouser: 11-oposiciones-logo.png
+homepage: http://www.oposicionesaldia.com/
+usage: |
+    **Oposicionesaldia:** Uses Scrapy to collect data from jobs postings, scholarships
+    and online free courses in Spain.

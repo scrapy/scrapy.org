@@ -1,0 +1,8 @@
+name: Allogarage
+logouser: 50-allogarage-logo.png
+homepage: http://www.allogarage.fr/
+usage: |
+    **Allogarage:** Allogarage is the leading company in France to compare auto
+    mechanics. Uses Scrapy to crawl and scrape car manufacturer sites to gather
+    name, address, phone and timetables for car dealers.
+    [(tweet)](https://twitter.com/allogarage/status/740841899880222720)
