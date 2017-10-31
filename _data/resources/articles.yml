@@ -1,3 +1,9 @@
+- title: "Web Scraping in Python using Scrapy (with multiple examples)"
+  url: https://www.analyticsvidhya.com/blog/2017/07/web-scraping-in-python-using-scrapy/
+  author: Mohd Sanad Zaki Rizvi
+  date: July 2017
+  comments: |
+     Explains scrapy from scratch. Also gives examples on scraping Reddit, XML site and an e-commerce website(downloading images along with data) 
 - title: "Scrapy Tutorial: Web Scraping Craigslist"
   url: http://python.gotrained.com/scrapy-tutorial-web-scraping-craigslist/
   author: GoTrained
