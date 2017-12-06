@@ -1,7 +1,0 @@
-name: Tuvalabs
-logouser: 22-tuvalabs-logo.png
-homepage: http://www.tuvalabs.com/
-usage: |
-    **Tuvalabs:** Uses Scrapy to scrape the web and find the most interesting articles
-    of significant news stories taking place around the world and transforming
-    them into interactive math learning units.
