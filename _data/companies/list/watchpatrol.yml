@@ -1,0 +1,6 @@
+name: WatchPatrol
+logouser: 53-watchpatrol-logo.png
+homepage: https://www.watchpatrol.net/
+usage: |
+    **WatchPatrol:** Uses Scrapy for aggregating private sales listings
+    for used and new watches from the web's most popular watch enthusiast forums
