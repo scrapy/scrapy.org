@@ -1,0 +1,5 @@
+name: ScraperAPI
+logouser: scraperapi.png
+homepage: https://www.scraperapi.com/
+usage: |
+    **ScraperAPI:** Uses Scrapy to crawl websites and create large datasets for enterprise customers.
