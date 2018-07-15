@@ -44,10 +44,11 @@ class BlogSpider(scrapy.Spider):
     start_urls = ['https://blog.scrapinghub.com']
 
     def parse(self, response):
-        for title in response.css('h2.entry-title'):
-            yield {'title': title.css('a ::text').extract_first()}
+        for post_header in response.css('div.post-header'):
+            yield {'title': post_header.css('h2 a::text').extract_first()}
 
-        for next_page in response.css('div.prev-post > a'):
+        next_page = response.css('a.next-posts-link::attr("href")').extract_first()
+        if next_page is not None:
             yield response.follow(next_page, self.parse)
 {% endhighlight %}EOF
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> scrapy runspider myspider.py
