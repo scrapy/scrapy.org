@@ -47,7 +47,7 @@ class BlogSpider(scrapy.Spider):
         for title in response.css('.post-header>h2'):
             yield {'title': title.css('a ::text').extract_first()}
 
-        for next_page in response.css('div.prev-post > a'):
+        for next_page in response.css('a.next-posts-link'):
             yield response.follow(next_page, self.parse)
 {% endhighlight %}EOF
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> scrapy runspider myspider.py
