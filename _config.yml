@@ -16,7 +16,7 @@ navigation:
   url: resources/
 - text: Community
   url: community/
-- text: Companies
+- text: Commercial Support
   url: companies/
 
 gems:
