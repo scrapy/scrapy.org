@@ -995,3 +995,10 @@ div.badges-bar {
 		}
 	}
 }
+
+// Media Query
+@media (max-width: 425px) {
+    .company-longbox {
+        display: flex;
+    }
+}
