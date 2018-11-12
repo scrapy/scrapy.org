@@ -784,7 +784,6 @@ div.badges-bar {
 // Commercial Support Page //
 
 	.company-longbox {
-		height:160px;
 		border:1px solid $default-green;
 		border-bottom: $border-bot $default-green;
 		background-color:#fff;
@@ -792,7 +791,8 @@ div.badges-bar {
 		@include border-radius($radius);
 		font-size:11px;
 		float:left;
-		margin-bottom:20px;
+        margin: 20px auto;
+        padding: 30px 0;
 		width:930px;
 	}
 
@@ -800,7 +800,6 @@ div.badges-bar {
 		img {
 			height:100px;
 			margin:auto;
-			padding-top:20px;
 		}
 
 		a {
@@ -809,10 +808,8 @@ div.badges-bar {
 
 		p {
 			text-align:left;
-			margin-top:25px;
+			margin-top:10px;
 			padding-left:30px;
-			padding-top: 10px;
-			padding-bottom:10px;
 			font-size:16px;
 			border-left: 1px solid $default-green;
 			float:left;
@@ -994,11 +991,4 @@ div.badges-bar {
 			font-weight: bold;
 		}
 	}
-}
-
-// Media Query
-@media (max-width: 425px) {
-    .company-longbox {
-        display: flex;
-    }
 }
