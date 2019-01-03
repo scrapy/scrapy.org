@@ -1,0 +1,7 @@
+name: ProxyCrawl
+logouser: proxycrawl-logo.png
+homepage: https://proxycrawl.com/
+usage: |
+    [ProxyCrawl](https://proxycrawl.com/) uses Scrapy to parse websites for clients
+    requiring data extracted from the different sites, data collection and other
+    web data tasks.
