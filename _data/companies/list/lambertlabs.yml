@@ -1,0 +1,10 @@
+name: Lambert Labs
+url: https://www.lambertlabs.com/
+logo: lambertlabs-logo.png
+description: |
+    [Lambert Labs](https://www.lambertlabs.com/) specialises in using
+    Scrapy to aggregate structured and unstructured text, images and
+    videos from across the web. It combines Scrapy with Selenium to
+    crawl JavaScript-rendered websites in real time. Lambert Labs
+    also offers web development, automated testing, data science and
+    devops.
