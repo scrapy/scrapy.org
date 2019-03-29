@@ -16,8 +16,6 @@ navigation:
   url: resources/
 - text: Community
   url: community/
-- text: Jobs
-  url: jobs/
 - text: Commercial Support
   url: companies/
 
