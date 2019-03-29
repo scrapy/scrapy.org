@@ -181,8 +181,10 @@ dl, dd, ol, ul, figure {
 // Grid and Structure //
 
 	.container {
+        display: block;
 		width:960px;
 		margin:auto;
+        overflow: auto;
 	}
 
 	.first-row {
@@ -924,6 +926,11 @@ div.badges-bar {
 		margin-right:25px;
 		margin-bottom:10px;
 	}
+
+// Jobs //
+    .jobs-box {
+      @extend .community-box;
+    }
 
 // Footer //
 
