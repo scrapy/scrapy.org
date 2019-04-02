@@ -999,3 +999,67 @@ div.badges-bar {
 		}
 	}
 }
+
+// Menu
+.menu-toggle-button {
+  cursor: pointer;
+  display: none;
+  padding: 9px 14px;
+  user-select: none;
+  color: #ffffff;
+}
+
+.menu-toggle:focus ~ .menu-toggle-button,
+.menu-toggle-button:hover {
+  background-color: $dark-green;
+}
+
+.menu-toggle {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  float: right;
+}
+
+// Responsive Menu
+@media only screen and (max-width: 980px) {
+  i.fa.fa-bars {
+    font-size: 30px;
+  }
+
+  .header ul {
+    position: relative;
+    float: none;
+    li {
+      margin: 15px auto;
+      border-left: none;
+      padding: 0;
+      text-align: center;
+      float: none;
+    }
+  }
+
+  .navigation {
+    background-color: $default-green;
+    display: flex;
+    flex-direction: column;
+    top: -11px;
+    width: 100%;
+
+    a {
+      text-decoration: none;
+        &:hover {
+          background-color: $dark-green;
+      }
+    }
+  }
+
+  .menu-toggle:not(:checked) ~ .navigation {
+      display: none;
+  }
+
+  .menu-toggle-button {
+      display: inline-block;
+      float: right;
+  }
+}
