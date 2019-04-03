@@ -7,6 +7,8 @@
 
 
   {% unless page.layout == 'front' %}
+    <input class="menu-toggle" id="menu-toggle" type="checkbox">
+    <label class="menu-toggle-button" for="menu-toggle"><i class="fa fa-bars"></i></label>
     <ul class="navigation">
       {% for link in site.navigation %}
         {% assign current = nil %}
