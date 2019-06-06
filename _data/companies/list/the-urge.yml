@@ -1,0 +1,8 @@
+name: the urge
+url: https://theurge.com/
+logo: the-urge-logo.png
+description: |
+    [the urge](https://theurge.com/) is a Fashion Search Engine
+    focussed on using Artificial Intelligence to help shoppers
+    find the fashion they're looking for. They use Scrapy at
+    scale to crawl retailers websites for Fashion products.
