@@ -1,3 +1,10 @@
+- title: "Introduction to Scrapy: Web Scraping in Python"
+  url: https://www.pythongasm.com/introduction-to-scrapy/
+  author: pythongasm.com
+  date: December 2019
+  comments: |
+      An introduction to scrapy (in Python 3) - Scraping real estate data, scrapy shell, scrapy settings, etc.
+
 - title: "Web Scraping in Python using Scrapy (with multiple examples)"
   url: https://www.analyticsvidhya.com/blog/2017/07/web-scraping-in-python-using-scrapy/
   author: Mohd Sanad Zaki Rizvi
