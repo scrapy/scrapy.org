@@ -1,9 +1,49 @@
+- title: "Building spiders made easy: GUI For Your Scrapy Shell"
+  url: https://blog.scrapinghub.com/building-spiders-made-easy-gui-for-your-scrapy-shell
+  author: Roy Healy
+  date: March 2020
+
 - title: "Introduction to Scrapy: Web Scraping in Python"
   url: https://www.pythongasm.com/introduction-to-scrapy/
   author: pythongasm.com
   date: December 2019
   comments: |
       An introduction to scrapy (in Python 3) - Scraping real estate data, scrapy shell, scrapy settings, etc.
+
+- title: How to use Crawlera with Scrapy
+  url: https://blog.scrapinghub.com/how-to-use-crawlera-with-scrapy
+  author: Attila Tóth
+  date: November 2019
+  comments: |
+     How to use Scrapinghub’s proxy service with Scrapy.
+
+- title: "Scrapy, Matplotlib and MySQL: Real Estate Data Analysis"
+  url: https://blog.scrapinghub.com/scrapy-matplotlib-and-mysql-real-estate-data-analysis
+  author: Attila Tóth
+  date: November 2019
+
+- title: Scrapy & AutoExtract API integration
+  url: https://blog.scrapinghub.com/scrapy-autoextract-api-integration
+  author: Attila Tóth
+  date: October 2019
+  comments: |
+     How to use Scrapinghub’s AI-based web scraping tool with Scrapy to extract
+     data from web pages without writing extraction code.
+
+- title: "Price intelligence with Python: Scrapy, SQL and Pandas"
+  url: https://blog.scrapinghub.com/price-intelligence-with-python-scrapy-sql-pandas
+  author: Attila Tóth
+  date: October 2019
+
+- title: How to set up a custom proxy in Scrapy?
+  url: https://blog.scrapinghub.com/scrapy-proxy
+  author: Attila Tóth
+  date: August 2019
+
+- title: "ScrapyRT: Turn Websites Into Real-Time APIs"
+  url: https://blog.scrapinghub.com/scrapyrt-turn-websites-into-real-time-apis
+  author: Pawel Miech
+  date: May 2019
 
 - title: "Web Scraping in Python using Scrapy (with multiple examples)"
   url: https://www.analyticsvidhya.com/blog/2017/07/web-scraping-in-python-using-scrapy/
@@ -53,6 +93,11 @@
   author: Hoài Thương
   date: August 2016
 
+- title: How to Crawl the Web Politely with Scrapy
+  url: https://blog.scrapinghub.com/2016/08/25/how-to-crawl-the-web-politely-with-scrapy
+  author: Valdir Stumm Jr
+  date: August 2016
+
 - title: How to Debug your Scrapy Spiders
   url: https://blog.scrapinghub.com/2016/05/18/scrapy-tips-from-the-pros-may-2016-edition/
   author: Valdir Stumm Jr
@@ -64,6 +109,11 @@
   date: April 2016
   comments: |
     Uses Scrapy 1.0 and Python 2, but still relevant.
+
+- title: Handling JavaScript in Scrapy with Splash
+  url: https://blog.scrapinghub.com/2015/03/02/handling-javascript-in-scrapy-with-splash
+  author: Richard Dowinton
+  date: March 2015
 
 - title:  How to Run Scrapy Spiders on Cloud Using Heroku and Redis
   url:    http://www.seckintozlu.com/1148-how-to-run-scrapy-spiders-on-the-cloud-using-heroku-and-redis.html
@@ -78,7 +128,7 @@
   author: Elias Dorneles
   date: August 2014
   comments: |
-    Old but good. Uses `[0].extract()`, you should now use `.extract_first()`.
+    Old but good. Uses `[0].extract()`, you should now use `.get()`.
 
 - title: "Scrapy: Run Using TOR and Multiple Agents"
   parts:
