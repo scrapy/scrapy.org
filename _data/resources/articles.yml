@@ -1,4 +1,4 @@
-- title: Building spiders made easy: GUI For Your Scrapy Shell
+- title: "Building spiders made easy: GUI For Your Scrapy Shell"
   url: https://blog.scrapinghub.com/building-spiders-made-easy-gui-for-your-scrapy-shell
   author: Roy Healy
   date: March 2020
@@ -17,7 +17,7 @@
   comments: |
      How to use Scrapinghub’s proxy service with Scrapy.
 
-- title: Scrapy, Matplotlib and MySQL: Real Estate Data Analysis
+- title: "Scrapy, Matplotlib and MySQL: Real Estate Data Analysis"
   url: https://blog.scrapinghub.com/scrapy-matplotlib-and-mysql-real-estate-data-analysis
   author: Attila Tóth
   date: November 2019
@@ -30,7 +30,7 @@
      How to use Scrapinghub’s AI-based web scraping tool with Scrapy to extract
      data from web pages without writing extraction code.
 
-- title: Price intelligence with Python: Scrapy, SQL and Pandas
+- title: "Price intelligence with Python: Scrapy, SQL and Pandas"
   url: https://blog.scrapinghub.com/price-intelligence-with-python-scrapy-sql-pandas
   author: Attila Tóth
   date: October 2019
@@ -40,7 +40,7 @@
   author: Attila Tóth
   date: August 2019
 
-- title: ScrapyRT: Turn Websites Into Real-Time APIs
+- title: "ScrapyRT: Turn Websites Into Real-Time APIs"
   url: https://blog.scrapinghub.com/scrapyrt-turn-websites-into-real-time-apis
   author: Pawel Miech
   date: May 2019
