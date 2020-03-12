@@ -439,14 +439,18 @@ dl, dd, ol, ul, figure {
 		cursor:pointer;
 	}
 
-// Badges Bar //
+// First Row //
 
 div.badges-bar {
 	float: left;
-	margin-top: 38px;
+	margin: 1em 0;
 	a {
 		text-decoration: none;
 	}
+}
+
+.maintained-by {
+	margin-top: 1em;
 }
 
 // Second Row //
