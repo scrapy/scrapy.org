@@ -30,6 +30,7 @@ dl, dd, ol, ul, figure {
 
 	$grey: #666666;
 	$grey-bg: #F2F2F2;
+	$scrapinghub-red: #C60B0F;
 
 	$border-bot: 3px solid;
 	$big-border-bot: 6px solid;
@@ -451,6 +452,10 @@ div.badges-bar {
 
 .maintained-by {
 	margin-top: 1em;
+	a {
+		text-decoration: none;
+		color: $scrapinghub-red;
+	}
 }
 
 // Second Row //
@@ -956,9 +961,9 @@ div.badges-bar {
 		color:$grey;
 		}
 		a {
-			font-weight:bold;
-			color:$grey;
-			text-decoration:none;
+			font-weight: bold;
+			color: $scrapinghub-red;
+			text-decoration: none;
 		}
 
 		iframe {
