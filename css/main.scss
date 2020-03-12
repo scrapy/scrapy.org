@@ -30,6 +30,7 @@ dl, dd, ol, ul, figure {
 
 	$grey: #666666;
 	$grey-bg: #F2F2F2;
+	$scrapinghub-red: #C60B0F;
 
 	$border-bot: 3px solid;
 	$big-border-bot: 6px solid;
@@ -439,13 +440,21 @@ dl, dd, ol, ul, figure {
 		cursor:pointer;
 	}
 
-// Badges Bar //
+// First Row //
 
 div.badges-bar {
 	float: left;
-	margin-top: 38px;
+	margin: 1em 0;
 	a {
 		text-decoration: none;
+	}
+}
+
+.maintained-by {
+	margin-top: 1em;
+	a {
+		text-decoration: none;
+		color: $scrapinghub-red;
 	}
 }
 
@@ -952,9 +961,9 @@ div.badges-bar {
 		color:$grey;
 		}
 		a {
-			font-weight:bold;
-			color:$grey;
-			text-decoration:none;
+			font-weight: bold;
+			color: $scrapinghub-red;
+			text-decoration: none;
 		}
 
 		iframe {

@@ -8,7 +8,7 @@ Requirements
 
 This website is made with `Jekyll`_. The most universal way to install it is::
 
-    gem install jekyll
+    bundle install
 
 Usage
 =====
