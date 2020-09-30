@@ -1,7 +1,7 @@
-Scrapy website
+Scrapy
 ==============
 
-This is the website that runs on https://scrapy.org.
+This is the domain that runs on website>>>https://scrapy.org.
 
 Requirements
 ============
