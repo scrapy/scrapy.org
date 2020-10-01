@@ -6,7 +6,7 @@ This is the website that runs on https://scrapy.org.
 Requirements
 ============
 
-This website is made with `Jekyll`_. The most universal way to install it is::
+This website is made with `Jekyll`_. The best way to install it is::
 
     bundle install
 
