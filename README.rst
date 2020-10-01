@@ -6,7 +6,7 @@ This is the website that runs on https://scrapy.org.
 Requirements
 ============
 
-This website is made with `Jekyll`_. The most universal way to install it is::
+This website is made with `Jekyll`_. The best way to install it is::
 
     bundle install
 
@@ -21,7 +21,7 @@ The website is updated via the `Travis build`_ when merging to the ``master`` br
 
 .. _Travis build: https://travis-ci.org/scrapy/scrapy.org
 
-Adding your company to the website
+Joining your company to the website
 ==================================
 
 Are you a company or individual using Scrapy for your product or project? Add
