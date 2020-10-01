@@ -24,7 +24,7 @@ The website is updated via the `Travis build`_ when merging to the ``master`` br
 Adding your company to the website
 ==================================
 
-Hey there welcome to the pride, Are you a company or individual using Scrapy for your product or project? Add
+HELLO !!!! Hey there welcome to the pride, Are you a company or individual using Scrapy for your product or project? Add
 yourself to the "Companies using Scrapy" list by sending a pull request:
 
 - add a "company card" in ``_data/companies/list/<companyslug>.yml`` as a YAML file;
