@@ -1,7 +1,7 @@
 Scrapy website
 ==============
 
-This is the website that runs on https://scrapy.org.
+This is the best website that runs on https://scrapy.org.
 
 Requirements
 ============
@@ -13,7 +13,7 @@ This website is made with `Jekyll`_. The most universal way to install it is::
 Usage
 =====
 
-To start the web server locally auto-reloading when files change use::
+To start the web server locally auto-reloading when files change uses::
 
     jekyll serve --watch
 
@@ -35,7 +35,7 @@ yourself to the "Companies using Scrapy" list by sending a pull request:
 - add the slug of your company card to the list in ``_data/companies/users.yml``.
 
 
-Are you providing Scrapy consulting?
+Are you providing Scrapy consulting to user?
 ------------------------------------
 If you are a company providing Scrapy consulting or spider development, you
 can submit a pull request to add your company to the "Scrapy Pros" list.
@@ -82,6 +82,6 @@ In practice, to be listed, you'll need to:
 - add/update your contributions in ``_data/companies/pros/contributions.csv``
 - re-run ``update_ranking.py`` inside ``_data/companies/pros/``
 
-and send a pull request with these changes.
+and send a pull request with these changes  Thank You.
 
 .. _Jekyll: http://jekyllrb.com/
