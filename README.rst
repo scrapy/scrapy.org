@@ -35,7 +35,7 @@ yourself to the "Companies using Scrapy" list by sending a pull request:
 - add the slug of your company card to the list in ``_data/companies/users.yml``.
 
 
-Are you providing Scrapy consulting?
+Are you providing Scrapy consulting ?
 ------------------------------------
 If you are a company providing Scrapy consulting or spider development, you
 can submit a pull request to add your company to the "Scrapy Pros" list.
