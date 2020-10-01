@@ -1,17 +1,17 @@
-Scrapy website
-==============
+# Scrapy website
+  ==============
 
 This is the website that runs on https://scrapy.org.
 
-Requirements
-============
+## Requirements
+   ============
 
 This website is made with `Jekyll`_. The most universal way to install it is::
 
     bundle install
 
-Usage
-=====
+### Usage
+    =====
 
 To start the web server locally auto-reloading when files change use::
 
@@ -21,8 +21,8 @@ The website is updated via the `Travis build`_ when merging to the ``master`` br
 
 .. _Travis build: https://travis-ci.org/scrapy/scrapy.org
 
-Adding your company to the website
-==================================
+#### Adding your company to the website
+     ==================================
 
 Are you a company or individual using Scrapy for your product or project? Add
 yourself to the "Companies using Scrapy" list by sending a pull request:
@@ -85,3 +85,5 @@ In practice, to be listed, you'll need to:
 and send a pull request with these changes.
 
 .. _Jekyll: http://jekyllrb.com/
+
+Best Regards
