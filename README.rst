@@ -1,7 +1,6 @@
 Scrapy website
 ==============
-
-This is the best website that runs on https://scrapy.org.
+Scrapy is an amezing website that runs on https://scrapy.org.
 
 Requirements
 ============
