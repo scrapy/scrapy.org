@@ -51,7 +51,7 @@ and ecosystem. There's a small process to manage that:
 3. This issue must contain references to all the contributions that the company
    made since the last time their rank has been updated.
 
-This is the criteria that will be used:
+This is the criteria that will be used during process:
 
 +----------------------------------------------------------------------+--------+
 | Contribution                                                         | Points |
@@ -71,7 +71,7 @@ This is the criteria that will be used:
 | Answer to StackOverflow question regarding Scrapy                    |    1   |
 +----------------------------------------------------------------------+--------+
 
-In practice, to be listed, you'll need to:
+In practice, to be listed, you'll need to follow:
 
 - add/update your "company card" in ``_data/companies/list/<companyslug>.yml``
   as a YAML file;
