@@ -6,14 +6,14 @@ This is the website that runs on https://scrapy.org.
 Requirements
 ============
 
-This website is made with `Jekyll`_. The most universal way to install it is::
+This website is made with `Jekyll`_. The most universal way to install it is:
 
     bundle install
 
 Usage
 =====
 
-To start the web server locally auto-reloading when files change use::
+To start the web server locally auto-reloading when files change use:
 
     jekyll serve --watch
 
@@ -58,7 +58,7 @@ This is the criteria that will be used:
 +======================================================================+========+
 | Pull request accepted in scrapy repo                                 |   50   |
 +----------------------------------------------------------------------+--------+
-| Creation or contribution to public Scrapy plugins                    |   20   |
+| Creation or contribution to public Scrapy plug in                    |   20   |
 +----------------------------------------------------------------------+--------+
 | Instructional materials such as screencasts, tutorials or blog posts |   10   |
 +----------------------------------------------------------------------+--------+
