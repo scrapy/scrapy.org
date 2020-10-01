@@ -1,4 +1,4 @@
-Scrapy website
+The Amazing - Scrapy website
 ==============
 
 This is the website that runs on https://scrapy.org.
