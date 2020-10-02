@@ -37,7 +37,7 @@ yourself to the "Companies using Scrapy" list by sending a pull request:
 
 Are you providing Scrapy consulting?
 ------------------------------------
-If you are a company providing Scrapy consulting or spider development, you
+If your company is providing Scrapy consulting or spider development, you
 can submit a pull request to add your company to the "Scrapy Pros" list.
 
 The companies are sorted by their overall contribution to the Scrapy project
