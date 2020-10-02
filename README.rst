@@ -1,7 +1,7 @@
 Scrapy website<hr>
 ==============
 
-This is an another amazing website that runs on https://scrapy.org.
+<div>This is an another amazing website that runs on https://scrapy.org.</div>
 
 Requirements<hr>
 ============
