@@ -1,18 +1,16 @@
-<html>
-<body>
-Scrapy website<hr>
+Scrapy website
 ==============
 
-<div>This is an another amazing website that runs on https://scrapy.org.</div>
+This is an another amazing website that runs on https://scrapy.org.
 
-Requirements<hr>
+Requirements
 ============
 
 This website is made with `Jekyll`_. The most universal way to install it is::
 
     bundle install
 
-Usage<hr>
+Usage
 =====
 
 To start the web server locally auto-reloading when files change use::
@@ -23,21 +21,21 @@ The website is updated via the `Travis build`_ when merging to the ``master`` br
 
 .. _Travis build: https://travis-ci.org/scrapy/scrapy.org
 
-Adding your company to the website<hr>
+Adding your company to the website
 ==================================
 
 Are you a company or individual using Scrapy for your product or project? Add
 yourself to the "Companies using Scrapy" list by sending a pull request:
 
-- add a "company card" in ``_data/companies/list/<companyslug>.yml`` as a YAML file;
+- Add a "company card" in ``_data/companies/list/<companyslug>.yml`` as a YAML file;
   you need to set a few fields: a name, a "logouser" for your logo filename,
   a homepage and a blurb in markdown syntax on how you're using Scrapy.
   Do add links to any article or tweet spreading your love of Scrapy
-- add your logo to ``img/``
-- add the slug of your company card to the list in ``_data/companies/users.yml``.
+- Add your logo to ``img/``
+- Add the slug of your company card to the list in ``_data/companies/users.yml``.
 
 
-Are you providing Scrapy consulting?<hr>
+Are you providing Scrapy consulting?
 ------------------------------------
 If you are a company providing Scrapy consulting or spider development, you
 can submit a pull request to add your company to the "Scrapy Pros" list.
@@ -73,6 +71,7 @@ This is the criteria that will be used:
 | Answer to StackOverflow question regarding Scrapy                    |    1   |
 +----------------------------------------------------------------------+--------+
 
+
 In practice, to be listed, you'll need to:
 
 - add/update your "company card" in ``_data/companies/list/<companyslug>.yml``
@@ -87,5 +86,3 @@ In practice, to be listed, you'll need to:
 and send a pull request with these changes and i want to excelence the code continuously.
 
 .. _Jekyll: http://jekyllrb.com/
-</body>
-</html>
