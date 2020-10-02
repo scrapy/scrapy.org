@@ -1,4 +1,4 @@
-Scrapy website
+Scrapy website -- Great Website
 ==============
 
 This is the website that runs on https://scrapy.org.
