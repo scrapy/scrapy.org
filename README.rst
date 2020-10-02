@@ -1,16 +1,16 @@
-Scrapy website
+Scrapy website<hr>
 ==============
 
-This is the website that runs on https://scrapy.org.
+This is an another amazing website that runs on https://scrapy.org.
 
-Requirements
+Requirements<hr>
 ============
 
 This website is made with `Jekyll`_. The most universal way to install it is::
 
     bundle install
 
-Usage
+Usage<hr>
 =====
 
 To start the web server locally auto-reloading when files change use::
@@ -21,7 +21,7 @@ The website is updated via the `Travis build`_ when merging to the ``master`` br
 
 .. _Travis build: https://travis-ci.org/scrapy/scrapy.org
 
-Adding your company to the website
+Adding your company to the website<hr>
 ==================================
 
 Are you a company or individual using Scrapy for your product or project? Add
@@ -35,7 +35,7 @@ yourself to the "Companies using Scrapy" list by sending a pull request:
 - add the slug of your company card to the list in ``_data/companies/users.yml``.
 
 
-Are you providing Scrapy consulting?
+Are you providing Scrapy consulting?<hr>
 ------------------------------------
 If you are a company providing Scrapy consulting or spider development, you
 can submit a pull request to add your company to the "Scrapy Pros" list.
@@ -82,6 +82,6 @@ In practice, to be listed, you'll need to:
 - add/update your contributions in ``_data/companies/pros/contributions.csv``
 - re-run ``update_ranking.py`` inside ``_data/companies/pros/``
 
-and send a pull request with these changes.
+and send a pull request with these changes and i want to excelence the code continuously.
 
 .. _Jekyll: http://jekyllrb.com/
