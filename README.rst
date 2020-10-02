@@ -1,3 +1,5 @@
+<html>
+<body>
 Scrapy website<hr>
 ==============
 
@@ -85,3 +87,5 @@ In practice, to be listed, you'll need to:
 and send a pull request with these changes and i want to excelence the code continuously.
 
 .. _Jekyll: http://jekyllrb.com/
+</body>
+</html>
