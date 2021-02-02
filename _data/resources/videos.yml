@@ -1,6 +1,6 @@
 - title: "Learn Scrapy"
   url: https://www.youtube.com/playlist?list=PLZyvi_9gamL-EE3zQJbU5N3nzJcfNeFHU
-  author: Scrapinghub
+  author: Zyte (formerly Scrapinghub)
   description: |
     Learn how to scrape the web using the Scrapy framework with this series of short videos.
     [Companion code](https://github.com/scrapinghub/learn-scrapy).

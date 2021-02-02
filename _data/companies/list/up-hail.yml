@@ -6,5 +6,4 @@ usage: |
     travel costs — compares them in real time to find the best deal. Uses Scrapy
     to crawl and scrape taxi and transportation sites to gather rates, coverage
     zones, and deals [(blog
-    post)](https://blog.scrapinghub.com/2016/10/06/interview-how-up-hail-uses-
-    scrapy-to-increase-transparency/).
+    post)](https://www.zyte.com/blog/interview-how-up-hail-uses-scrapy-to-increase-transparency/).

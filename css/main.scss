@@ -30,7 +30,7 @@ dl, dd, ol, ul, figure {
 
 	$grey: #666666;
 	$grey-bg: #F2F2F2;
-	$scrapinghub-red: #C60B0F;
+	$zyte-color: #B02CCE;
 
 	$border-bot: 3px solid;
 	$big-border-bot: 6px solid;
@@ -454,7 +454,7 @@ div.badges-bar {
 	margin-top: 1em;
 	a {
 		text-decoration: none;
-		color: $scrapinghub-red;
+		color: $zyte-color;
 	}
 }
 
@@ -957,7 +957,7 @@ div.badges-bar {
 		}
 		a {
 			font-weight: bold;
-			color: $scrapinghub-red;
+			color: $zyte-color;
 			text-decoration: none;
 		}
 

@@ -18,9 +18,10 @@ title: A Fast and Powerful Scraping and Web Crawling Framework
 
       <p class="maintained-by">
         Maintained by
-        <a href="https://scrapinghub.com/">
-          Scrapinghub
+        <a href="https://zyte.com/">
+          Zyte
         </a>
+        (formerly Scrapinghub)
         and
         <a href="https://github.com/scrapy/scrapy/graphs/contributors">
           many other contributors
@@ -52,13 +53,13 @@ import scrapy
 
 class BlogSpider(scrapy.Spider):
     name = 'blogspider'
-    start_urls = ['https://blog.scrapinghub.com']
+    start_urls = ['https://www.zyte.com/blog/']
 
     def parse(self, response):
-        for title in response.css('.post-header>h2'):
-            yield {'title': title.css('a ::text').get()}
+        for title in response.css('.oxy-post-title'):
+            yield {'title': title.css('::text').get()}
 
-        for next_page in response.css('a.next-posts-link'):
+        for next_page in response.css('a.next'):
             yield response.follow(next_page, self.parse)
 {% endhighlight %}EOF
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> scrapy runspider myspider.py
@@ -79,9 +80,9 @@ class BlogSpider(scrapy.Spider):
         <pre>
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> pip install shub
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> shub login
-<span class="comments">Insert your Scrapinghub API Key: <span class="placeholder">&lt;API_KEY&gt;</span></span>
+<span class="comments">Insert your Zyte Scrapy Cloud API Key: <span class="placeholder">&lt;API_KEY&gt;</span></span>
 
-<span class="comments"># Deploy the spider to Scrapy Cloud</span>
+<span class="comments"># Deploy the spider to Zyte Scrapy Cloud</span>
 <span class="prompt" onselectstart="return false"><i class="fa fa-dollar"></i></span> shub deploy</span>
 
 <span class="comments"># Schedule the spider for execution</span>
@@ -99,7 +100,7 @@ https://app.scrapinghub.com/p/26731/job/1/8</span>
       </div>
     </div>
 
-    <div class="code-subs"><p>Deploy them to<br /><a href="https://scrapinghub.com/scrapy-cloud/" title=""><span class="highlight">Scrapy Cloud</span></a></p>
+    <div class="code-subs"><p>Deploy them to<br /><a href="https://www.zyte.com/scrapy-cloud/" title=""><span class="highlight">Zyte Scrapy Cloud</span></a></p>
     <p class="sub-sub">or use <a href="https://github.com/scrapy/scrapyd" title="Scrapyd"><span class="highlight">Scrapyd</span></a> to host the spiders on your own server</p></div>
   </div>
 
