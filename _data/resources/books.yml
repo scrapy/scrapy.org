@@ -10,7 +10,7 @@
     and dive deeper if needed.
     There's [a very cool example of asynchronous sending of items](https://github.com/scalingexcellence/scrapy-apperyio/blob/master/scrapyapperyio.py),
     using `engine.download` and `inlineCallback`.
-    It also shows how to deploy a Scrapy project to Scrapinghub's platform.
+    It also shows how to deploy a Scrapy project to Zyte Scrapy Cloud.
     The book even includes a quite intense introduction to Twisted
     and nonblocking I/O programming (a very good one).
 
