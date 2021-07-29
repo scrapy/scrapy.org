@@ -11,7 +11,7 @@ navigation:
 - text: Download
   url: download/
 - text: Documentation
-  url: doc/
+  url: https://docs.scrapy.org/
 - text: Resources
   url: resources/
 - text: Community
