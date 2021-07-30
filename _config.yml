@@ -19,5 +19,5 @@ navigation:
 - text: Commercial Support
   url: companies/
 
-gems:
+plugins:
   - jekyll-redirect-from
