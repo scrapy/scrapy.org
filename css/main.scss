@@ -1071,34 +1071,3 @@ div.badges-bar {
       float: right;
   }
 }
-
-
-// Announcement
-
-.announcement {
-    padding: 5px;
-    background-color: #db005f;
-    color: #ffffff;
-    text-align: center;
-}
-
-.announcement a {
-    text-decoration: none;
-    color: #ffffff;
-    display: block;
-    line-height: 1.6;
-}
-
-.announcement img {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
-    animation: blink 1s infinite;
-}
-
-@keyframes blink {
-  0%   { opacity:1; }
-  50%  { opacity:0; }
-  100% { opacity:1; }
-}
