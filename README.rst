@@ -1,3 +1,4 @@
+# Mention License agreement on the top od the document
 Scrapy website
 ==============
 
