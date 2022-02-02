@@ -2,5 +2,9 @@ name: Lapis Data Analytics
 logouser: lapis-data-analytics.jpg
 homepage: https://www.lapisdata.com/data-services.html
 usage: |
-    **Lapis Data Analytics:**LapisData offers Scrapy service to crawl and harvest millions of product data information for ecommerce and other domains like Legal, EdTech, Restaurants, Real estate etc. We build specialized custom solutions to combine Scrapy with Selenium, Splash, Puppeteer to crawl JavaScript-rendered site, Cloudflare browser security check and bypassing Captchas in a real time.    
+    **Lapis Data Analytics:**LapisData offers Scrapy service to crawl and harvest millions of product 
+    data information for ecommerce and other domains like Legal, EdTech, Restaurants, Real estate etc. 
+    We build specialized custom solutions to combine Scrapy with Selenium, Splash, 
+    Puppeteer to crawl JavaScript-rendered site, Cloudflare browser security check and bypassing 
+    Captchas in a real time.    
    
