@@ -1,0 +1,13 @@
+name: Simplicity
+url: https://onesimplicity.com
+logo: simplicity-logo.svg
+description: |
+    [Simplicity] is a local social network, accessible only to city communities,
+    public agencies and people living within the city. No ads. No personal data.
+    No misinformation. Available only to verified city communities and organizations.
+logouser: simplicity-logo.svg
+homepage: https://onesimplicity.com
+usage: |
+    **Simplicity:** Uses Scrapy to crawl and scrape data from city web sites.
+    This data is also partly processed using Scrapy and is then displayed to
+    citizens in the Simplicity App both on [Android](https://play.google.com/store/apps/details?id=help.simplicity.simplicity&hl=en&gl=US) and [IOS](https://apps.apple.com/sk/app/simplicity/id1547175115).
