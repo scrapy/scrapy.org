@@ -1,9 +1,9 @@
 stable:
-  version: 2.5.1
+  version: 2.6.1
   rtd: latest
 oldstable:
-  version: 2.4.1
-  rtd: 2.4
+  version: 2.5.1
+  rtd: 2.5
 development:
   version: master
   rtd: master
