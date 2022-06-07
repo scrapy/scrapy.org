@@ -5,5 +5,5 @@ description: |
     [ScrapeOps](https://scrapeops.io/) is a DevOps tool for web scraping, which
     provides a suite of monitoring, error tracking, alerting, scheduling and deployment tools for your 
     Scrapy projects when you install the [scrapeops-scrapy](https://github.com/ScrapeOps/scrapeops-scrapy-sdk) 
-    extension. ScrapeOps also publishes Scrapy guides & tutorials at [The Scrapy Playbook](https://scrapeops.io/python-scrapy-playbook).  
+    extension. ScrapeOps also publishes Scrapy guides & tutorials at [The Scrapy Playbook](https://thepythonscrapyplaybook.com/).  
 

@@ -23,3 +23,5 @@ lambertlabs,G,2016-01,https://stackoverflow.com/questions/34991733/python-scrapy
 lambertlabs,G,2016-01,https://stackoverflow.com/questions/34950362/how-to-select-tables-with-scrapy/34950455#34950455
 lambertlabs,G,2016-03,https://stackoverflow.com/questions/35750838/how-to-download-all-images-under-one-specific-node-in-scrapy/35750947#35750947
 lapisdata,F,,https://www.lapisdata.com/data-services.html
+scrapeops,B,2022-01,https://github.com/ScrapeOps/scrapeops-scrapy-sdk
+scrapeops,C,2022-04,https://scrapeops.io/python-scrapy-playbook
