@@ -1,3 +1,17 @@
+- title: "Scrapy Beginner 5-Part Series: How To Build Your First Production Scraper"
+  url: https://thepythonscrapyplaybook.com/scrapy-beginners-guide
+  author: Ian Kerins
+  date: June 2022
+  comments: |
+    A 5-part Scrapy project where you learn to build your first spider, clean & store your data, integrate proxies, deploy your spider to a server, and run it every day.
+
+- title: "The Python Scrapy Playbook"
+  url: https://thepythonscrapyplaybook.com/
+  author: Ian Kerins
+  date: June 2022
+  comments: |
+    A collection of Scrapy resources, guides, and tutorials to help you become a Scrapy Pro!
+
 - title: "Building spiders made easy: GUI for your Scrapy shell"
   url: https://www.zyte.com/blog/building-spiders-made-easy-gui-for-your-scrapy-shell/
   author: Roy Healy
