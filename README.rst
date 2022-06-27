@@ -10,6 +10,7 @@ This website is made with `Jekyll`_. The most universal way to install it is::
 
     bundle install
 
+
 Usage
 =====
 
@@ -17,9 +18,8 @@ To start the web server locally auto-reloading when files change use::
 
     jekyll serve --watch
 
-The website is updated via the `Travis build`_ when merging to the ``master`` branch.
+The website is updated via CI when merging to the main branch.
 
-.. _Travis build: https://travis-ci.org/scrapy/scrapy.org
 
 Adding your company to the website
 ==================================
@@ -46,7 +46,7 @@ and ecosystem. There's a small process to manage that:
 1. In order to appear in the list, a company must score at least five points
    in the table below.
 2. The company must submit an issue to
-   `scrapy.org repo <https://github.com/scrapy/scrapy.org/>`_ whenever they want
+   `scrapy.org repo <https://github.com/scrapy/scrapy.org/>`_ whenever they want
    to update their contributions and ranking.
 3. This issue must contain references to all the contributions that the company
    made since the last time their rank has been updated.
