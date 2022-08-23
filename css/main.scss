@@ -1085,16 +1085,7 @@ div.badges-bar {
 .announcement a {
     text-decoration: none;
     color: #ffffff;
-    display: block;
     line-height: 1.6;
-}
-
-.announcement img {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
-    animation: blink 1s infinite;
 }
 
 @keyframes blink {
