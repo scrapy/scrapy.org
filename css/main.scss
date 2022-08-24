@@ -1083,9 +1083,9 @@ div.badges-bar {
 }
 
 .announcement a {
-    text-decoration: none;
     color: #ffffff;
     line-height: 1.6;
+    text-decoration: underline;
 }
 
 @keyframes blink {
