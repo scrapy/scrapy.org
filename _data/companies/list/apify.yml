@@ -1,0 +1,5 @@
+name: Apify
+logouser: 59-apify-logo.png
+homepage: https://apify.com/
+usage: |
+    **Apify:** Apify is your one-stop shop for web scraping, data extraction, and RPA. Automate anything you can do manually in a browser. Apify's [Scrapy Executor](https://apify.com/apify/scrapy-executor) actor enables you to run Scrapy Spiders on the Apify platform.
