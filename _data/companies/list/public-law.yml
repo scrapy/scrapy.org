@@ -1,0 +1,8 @@
+name: Public.Law
+homepage: https://www.public.law/
+logouser: public-law-logo.png
+usage: |
+    **Public.Law:** Uses Scrapy to create a [legal dictionary](https://www.public.law/dictionary)
+    and [other law apps](https://world.public.law) from official sources.
+    Our [Scrapy code](https://github.com/public-law/open-gov-crawlers) and
+    [scraped data](https://github.com/public-law/datasets) is open source.
