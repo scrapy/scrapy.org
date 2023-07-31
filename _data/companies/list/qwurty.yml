@@ -1,0 +1,7 @@
+name: Qwurty
+logouser: qwurty-logo.png
+homepage: https://qwurty.com/
+usage: |
+    **Qwurty:** Uses Scrapy to crawl the web for links and incorporate
+    link metadata into the social network for users to view, share, and
+    comment on.
