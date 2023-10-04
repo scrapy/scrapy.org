@@ -1,0 +1,8 @@
+name: GroupBWT
+logouser: 60-bwt-logo.png
+homepage: https://groupbwt.com/?activity=scrapy
+usage: |
+    [**GroupBWT**](https://groupbwt.com/?activity=scrapy) is a company that specializes in the development of data scraping solutions, 
+    including digital shelf monitoring, data aggregators, warehouses, and price comparison systems. 
+    Uses [Scrapy](https://groupbwt.com/blog/unraveling-scrapy-a-deep-dive-into-modern-web-scraping-technology/?activity=scrapy)
+    in tasks and collecting essential data from the web.
