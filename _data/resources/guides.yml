@@ -1,3 +1,10 @@
+- title: "Get started with web scraping"
+  url: https://docs.zyte.com/web-scraping/get-started.html
+  author: Zyte
+  description: |
+    An introduction, a Scrapy-powered tutorial and general guides on web
+    scraping.
+
 - title: "The Python Scrapy Playbook"
   url: https://thepythonscrapyplaybook.com/
   author: Ian Kerins

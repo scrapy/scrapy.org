@@ -2,15 +2,25 @@ name: Zyte
 url: https://www.zyte.com/
 logo: zyte-logo.png
 description: |
-    [Zyte](https://www.zyte.com/) is currently the
-    largest company sponsoring Scrapy development. It specializes in web
-    crawling, it was [founded by Scrapy
-    creators](https://www.zyte.com/meet-zyte/) and employs crawling experts
-    including many Scrapy core developers.
+    [Zyte](https://www.zyte.com/) was founded by the creators of Scrapy and
+    currently is the largest company sponsoring Scrapy development. We provide
+    market-leading web data extraction products and services, Zyte API,
+    [Zyte Data](https://www.zyte.com/data-extraction/?utm_medium=referral&utm_source=scrapy.org)
+    and
+    [Scrapy Cloud](https://www.zyte.com/scrapy-cloud/?utm_medium=referral&utm_source=scrapy.org).
+    [Zyte API](https://www.zyte.com/zyte-api/?utm_medium=referral&utm_source=scrapy.org)
+    is our flagship solution that automatically
+    handles bans, extracts data, renders pages, automates browser actions,
+    generates screenshots, manages sessions and cookies, reports on and
+    analyzes usage, and provides transparent, per-website pricing.
+
 logouser: zyte-logouser.png
 homepage: https://www.zyte.com/
 usage: |
-    **Zyte:** From the [creators of Scrapy](https://www.zyte.com/meet-zyte/),
-    Zyte is a leading technology and professional
-    services company, providing successful web crawling and data processing
-    solutions.
+    **Zyte**, founded by the creators of Scrapy, offers leading web data
+    extraction products and services. Their flagship solution,
+    [Zyte API](https://www.zyte.com/zyte-api/?utm_medium=referral&utm_source=scrapy.org),
+    provides automated handling of bans, data extraction, page rendering,
+    browser action automation, screenshot generation, session and cookie
+    management, along with usage reporting and analysis. It also features
+    transparent, per-website pricing.

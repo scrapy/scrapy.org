@@ -1,3 +1,13 @@
+- title: "Dateparser: A little but powerful date parsing library"
+  url: https://www.zyte.com/blog/dateparser-a-powerful-date-parsing-library/
+  author: Marc Hernandez Cabot
+  date: May 2021
+
+- title: "Scrapy update: Better broad crawl performance"
+  url: https://www.zyte.com/blog/scrapy-update-better-broad-crawl-performance/
+  author: Nikita Vostretsov
+  date: February 2021
+
 - title: "Building spiders made easy: GUI for your Scrapy shell"
   url: https://www.zyte.com/blog/building-spiders-made-easy-gui-for-your-scrapy-shell/
   author: Roy Healy
