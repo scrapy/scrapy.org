@@ -2,7 +2,7 @@ name: Zyte
 url: https://www.zyte.com/
 logo: zyte-logo.png
 description: |
-    [Zyte](https://www.zyte.com/) (formerly Scrapinghub) is currently the
+    [Zyte](https://www.zyte.com/) is currently the
     largest company sponsoring Scrapy development. It specializes in web
     crawling, it was [founded by Scrapy
     creators](https://www.zyte.com/meet-zyte/) and employs crawling experts
@@ -11,6 +11,6 @@ logouser: zyte-logouser.png
 homepage: https://www.zyte.com/
 usage: |
     **Zyte:** From the [creators of Scrapy](https://www.zyte.com/meet-zyte/),
-    Zyte (formerly Scrapinghub) is a leading technology and professional
+    Zyte is a leading technology and professional
     services company, providing successful web crawling and data processing
     solutions.
