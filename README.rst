@@ -24,6 +24,11 @@ To start the web server locally auto-reloading when files change use:
 
 The website is updated via CI when merging to the main branch.
 
+To generate CSS, you can use
+.. code:: bash
+
+   sass --watch ./css/main.scss:./css/main.css 
+
 
 Adding your company to the website
 ==================================
