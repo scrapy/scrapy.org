@@ -1,5 +1,5 @@
 stable:
-  version: 2.11.1
+  version: 2.11.2
   rtd: latest
 oldstable:
   version: 2.10.1
