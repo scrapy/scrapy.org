@@ -99,11 +99,6 @@
   author: Justin Duke
   date: September 2016
 
-- title: Building a Web Crawler with Scrapy
-  url: https://blog.siliconstraits.vn/building-web-crawler-scrapy/
-  author: Hoài Thương
-  date: August 2016
-
 - title: How to crawl the web politely with Scrapy
   url: https://www.zyte.com/blog/how-to-crawl-the-web-politely-with-scrapy/
   author: Valdir Stumm Jr
