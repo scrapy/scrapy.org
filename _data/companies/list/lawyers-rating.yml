@@ -1,0 +1,5 @@
+name: Lawyers Rating
+logouser: lawyers-rating.png
+homepage: https://lawyersrating.fyi/
+usage: |
+    [**LawyersRating.fyi**](https://lawyersrating.fyi/) [uses Scrapy](https://blog.lawyersrating.fyi/know-how-lawyers-rating-uses-web-scraping-for-authentic-lawyer-reviews/) as the primary web scraping tool to gather authentic and trustworthy lawyer reviews, helping you choose the right lawyer with confidence.
