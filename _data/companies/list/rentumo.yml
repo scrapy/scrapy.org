@@ -1,0 +1,5 @@
+name: Rentumo
+logouser: rentumo.svg
+homepage: https://rentumo.com/
+usage: |
+    [**Rentumo**](https://rentumo.com/) provides rental search on autopilot, [leveraging Scrapy](https://rentumo.com/blog/scrapy-the-framework-behind-modern-real-estate-data-intelligence) as its primary web scraping tool to gather and process real estate data efficiently.
