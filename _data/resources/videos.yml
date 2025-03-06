@@ -1,3 +1,13 @@
+- title: "Following LINKS Automatically with Scrapy CrawlSpider"
+  url: https://www.youtube.com/watch?v=o1g8prnkuiQ&t=423s
+  author: John Watson Rooney
+  context: 2021
+  description: |
+    This tutorial explains how to use Scrapy’s CrawlSpider class, 
+    focusing on its key features: Rules and LinkExtractor. 
+    The video demonstrates how to automatically follow links using 
+    a real-world example from a whiskey store.
+
 - title: "Learn Scrapy"
   url: https://www.youtube.com/playlist?list=PLZyvi_9gamL-EE3zQJbU5N3nzJcfNeFHU
   author: Zyte
