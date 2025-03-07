@@ -3,7 +3,7 @@
   author: Percival Villalva
   date: December 2023
   comments: |
-    This blog post explains hot to build custom scrapy middlewares for proxy, header, and error management.
+    This blog post explains how to build custom Scrapy middlewares for proxy, header, and error management.
 
 - title: "Web crawling with Python"
   url: https://www.scrapingbee.com/blog/crawling-python/
