@@ -10,7 +10,7 @@
   author: Ari Bajo
   date: January 2023
   comments: |
-    Introduces web crawling with scrapy as an alternative to using the requests and BeautifulSoup libraries. 
+    Introduces web crawling with Scrapy as an alternative to using the requests and BeautifulSoup libraries. 
     Implements a simple web crawler in Python to collect film metadata from IMDb.
 
 - title: "Easy Web Scraping With Scrapy"
