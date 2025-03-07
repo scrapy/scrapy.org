@@ -1,3 +1,26 @@
+- title: "Scrapy middleware: customizing your Scrapy spider"
+  url: https://blog.apify.com/scrapy-middleware/#spider-middleware-vs-downloader-middleware
+  author: Percival Villalva
+  date: December 2023
+  comments: |
+    This blog post explains how to build custom Scrapy middlewares for proxy, header, and error management.
+
+- title: "Web crawling with Python"
+  url: https://www.scrapingbee.com/blog/crawling-python/
+  author: Ari Bajo
+  date: January 2023
+  comments: |
+    Introduces web crawling with Scrapy as an alternative to using the requests and BeautifulSoup libraries. 
+    Implements a simple web crawler in Python to collect film metadata from IMDb.
+
+- title: "Easy Web Scraping With Scrapy"
+  url: https://www.scrapingbee.com/blog/web-scraping-with-scrapy/
+  author: Kevin Sahin
+  date: December 2022
+  comments: |
+    Showcases some of Scrapy's built in features for extracting products from an e-commerce site. Introduces different
+    Scrapy spiders as well as Item loaders and Item pipelines. 
+
 - title: "Dateparser: A little but powerful date parsing library"
   url: https://www.zyte.com/blog/dateparser-a-powerful-date-parsing-library/
   author: Marc Hernandez Cabot
