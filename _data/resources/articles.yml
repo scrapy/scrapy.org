@@ -19,7 +19,7 @@
   date: December 2022
   comments: |
     Showcases some of Scrapy's built in features for extracting products from an e-commerce site. Introduces different
-    scrapy spiders as well as Item loaders and Item pipelines. 
+    Scrapy spiders as well as Item loaders and Item pipelines. 
 
 - title: "Dateparser: A little but powerful date parsing library"
   url: https://www.zyte.com/blog/dateparser-a-powerful-date-parsing-library/
